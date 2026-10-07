@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login korun</h1>
+    <form action="/login" method="post">
+     <p>
+        <label for="email">Email:</label><br/>
+        <input type="email"id="mail" name="email" required />
+
+     </p>
+
+     <p>
+        <label for="password">Passward:</label><br/>
+        <input type="password"id="password" name="passward" required minlength="6"/>
+     </p>
+     <p>
+        
+        <input type="checkbox"id="remember" name="remember"/>
+        <label for="remember">Remember me</label>
+        
+     </p>
+     
+     <button type="submit">Login</button>
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>contuct with us</h1>
+    <p>Nicher form puron korun,amra 24 ghontar moddha sara dibo</p>
+    <form action="/contact" method="POST">
+        <fieldset>
+            <legend>Apnar tottho </legend>
+            <p>
+                <label for="name">apnar puro name</label><br/>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Surya Tajin" />
+            </p>
+            <p>
+                <label for="email">Email</label><br/>
+                <input type="email" id="email" name="email" required  placeholder="Surya@gmail.com" />
+
+            </p>
+            <p>
+                <label for="phonr">Phone</label><br/>
+                <input type="tel" id="phone" name="phone" r pattern="[0-9]{11}"   placeholder="017....." />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Messege</legend>
+            <p><label for="sub">Bisoi:</label><br/>
+                <select id="sub" name="sub" required>
+                    <option value="">Beche nin</option>
+                    <option value ="general">Sadharon prosno</option> 
+                    <option value ="support">Tecnical suuppor</option>
+                     <option value ="feedback">Feedback</option>
+                
+                </select>
+        
+            </p>
+            <p>
+                 <label for="msg">Apnar barta</label><br/>
+                 <textarea id="msg" name="msg" rows="5" cols="40" required minlength="10" ></textarea>
+                
+            </p>
+        </fieldset>
+        <button type="submit">Pathan</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
