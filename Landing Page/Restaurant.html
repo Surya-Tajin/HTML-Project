@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savoria Luxe Bistro &amp; Culinary Lounge | Artisanal Gastronomy</title>
+  <meta name="description" content="Experience Savoria Luxe Bistro - Artisanal Hot Fast Food, Farm-Crisp Salads, Vitality Healthy Meals, Breezy Pastel Drinks, Gourmet Combos, and Heavenly Desserts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- স্কিমা স্ট্রাকচার্ড ডেটা (এসইও এবং গুগল সার্চের জন্য রেস্তোরাঁর তথ্য) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Savoria Luxe Bistro & Lounge",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    "description": "Authentic multi-cuisine gourmet dining with hot fast food, garden-fresh salads, nutrient-dense vitality meals, chilled artisan sips, signature combos, and decadent desserts.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Thanthania Road",
+      "addressLocality": "Citycorporation",
+      "addressRegion": "NY",
+      "postalCode": "5800",
+      "addressCountry": "Bangladesh"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "telephone": "017----------",
+    "servesCuisine": [
+      "Gourmet Fast Food",
+      "Farm-to-Table Salads",
+      "Organic Healthy Meals",
+      "Artisanal Mocktails & Beverages",
+      "European Desserts"
+    ],
+    "priceRange": "TK",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "22:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1420",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Savoria Full Master Menu",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Hot Sizzle Fast Food",
+          "description": "Artisan smash burgers, authentic street tacos, triple-tier customizable pizzas, and loaded crunch snacks."
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Botanical Harvest Salads",
+          "description": "Crisp organic microgreens, garden herbs,nuts, and cold-pressed emulsion dressings."
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Vitality Earth Healthy Meals",
+          "description": "Nutrient-rich fruit & veggie superbowls, lean grilled proteins, and ancient grains."
+        },
+        
+        {
+          "@type": "MenuSection",
+          "name": "Chef Feast Combos",
+          "description": "Carefully balanced meal pairings with sides and signature drinks."
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Velvet Bliss Desserts",
+          "description": "Handcrafted pastries, layered parfaits,Cheese cake, and rich warm chocolate fondants."
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Chilled Pastel Drinks & Elixirs",
+          "description": "Soft-hued botanical coolers,Milk sheak, fresh cold presses, and gentle iced teas."
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body itemscope itemtype="https://schema.org/Restaurant">
+
+  <!-- ১. শীর্ষ নোটিফিকেশন বার (বিশেষ অফার ও ফ্রি ডেলিভারি ব্যানার) -->
+  <div class="top-ticker">
+    <div class="ticker-content">
+      <span>🔥 Fresh Woodfire Pizzas &bull; 🌿 100% Organic Garden Produce &bull; 🧊 Hand-Shaken Botanical Mocktails &bull; 🚚 Express Table Delivery &amp; Takeaway</span>
+    </div>
+  </div>
+
+  <!-- ২. স্টিকি নেভিগেশন বার (স্ক্রিনের উপরে আটকে থাকা গ্লাস হেডার মেনু) -->
+  <header class="main-header" id="home">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#home" class="brand-logo" itemprop="name">
+        <span class="logo-symbol">🍽️</span>
+        <div class="logo-text">
+          <span class="brand-title">SAVORIA</span>
+          <span class="brand-subtitle">LUXE BISTRO &amp; GRILL</span>
+        </div>
+      </a>
+
+      <!-- প্রতিটি ফুড সেকশনের জন্য আলাদা রঙিন ব্যাজযুক্ত মেনু লিঙ্ক -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#fast-food" class="nav-link hot-nav">
+            <span class="nav-dot fire-dot"></span>
+            <span class="nav-title">Fiery Fast Food</span>
+            <span class="nav-tag hot-tag">Hot &amp; Sizzling</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#salads" class="nav-link green-nav">
+            <span class="nav-dot green-dot"></span>
+            <span class="nav-title">Garden Salads</span>
+            <span class="nav-tag green-tag">Crisp Greens</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#healthy-meals" class="nav-link vitality-nav">
+            <span class="nav-dot vitality-dot"></span>
+            <span class="nav-title">Vitality Meals</span>
+            <span class="nav-tag vitality-tag">Veg &amp; Fruit Rich</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#drinks" class="nav-link breezy-nav">
+            <span class="nav-dot breezy-dot"></span>
+            <span class="nav-title">Breezy Drinks</span>
+            <span class="nav-tag breezy-tag">Light Pastel</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#combos" class="nav-link combo-nav">
+            <span class="nav-dot combo-dot"></span>
+            <span class="nav-title">Feast Combos</span>
+            <span class="nav-tag combo-tag">Value Box</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#desserts" class="nav-link dessert-nav">
+            <span class="nav-dot dessert-dot"></span>
+            <span class="nav-title">Velvet Desserts</span>
+            <span class="nav-tag dessert-tag">Sweet Bliss</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link review-nav">
+            <span class="nav-dot review-dot"></span>
+            <span class="nav-title">Guest Reviews</span>
+            <span class="nav-tag review-tag">Sentiment 94%</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#reviews" class="btn-primary-reserve">Rate Us / Book</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ৩. হিরো সেকশন (ওয়েলকাম ব্যানার, মূল স্লোগান ও স্ট্যাট কার্ড) -->
+  <!-- ওয়েবসাইটের প্রধান পরিচিতি ব্যানার, যেখানে আকর্ষণীয় ব্যাকগ্রাউন্ড ছবি ও বুকিং বাটন থাকে -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">⭐ MICHELIN-RECOMMENDED CULINARY ARTISTRY</div>
+      <h1 class="hero-heading" itemprop="slogan">A Symphony of Flavors, From Fiery Flame to Crisp Vitality</h1>
+      <p class="hero-subtext">
+        Explore culinary craftsmanship with vibrant curated menus: smoky burgers &amp; 3-tier customizable woodfire pizzas, crisp organic garden greens, vitamin-dense vitality bowls, breezy pastel mocktails, and decadent European desserts.
+      </p>
+      <!-- রেস্তোরাঁর অর্জন ও গ্রাহক সন্তুষ্টির স্ট্যাটাস কাউন্টার -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">4.8 / 5.0</span>
+          <span class="stat-label">Positive Sentiment</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Traceable Origins</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">6 Unique</span>
+          <span class="stat-label">Sensory Atmospheres</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#fast-food" class="btn-hero-hot">Explore Fiery Fast Food &darr;</a>
+        <a href="#healthy-meals" class="btn-hero-vitality">Discover Vitality Bowls &darr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 1: FAST FOOD (HOT THEMED: BURGER, TACOS, PIZZA, SNACKS)
+       ===================================================================== -->
+  <section class="section-container fast-food-section" id="fast-food" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill hot-pill">🔥 HOT &amp; SPICY FLAVOR REALM</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title hot-gradient-text" itemprop="name">Fiery Fast Food Emporium</h2>
+      <p class="section-desc" itemprop="description">
+        Infused with smoky charcoal grill notes, caramelized habanero glaze, slow-melt aged cheddar, and fiery spices. Browse through our four distinct artisan fast food kitchens below:
+      </p>
+    </div>
+
+    <!-- ৪. পিওর সিএসএস ফাস্ট ফুড ক্যাটাগরি ফিল্টার (ট্যাব সিস্টেম) -->
+    <!-- জাভাস্ক্রিপ্ট ছাড়া পিওর সিএসএস ফিল্টারিংয়ের জন্য লুকানো রেডিও বাটন ব্যবহার করা হয়েছে -->
+    <div class="ff-tab-system">
+      <!-- রেডিও বাটন: কোনোটিতে ক্লিক করলে সংশ্লিষ্ট ট্যাব একটিভ হবে (:checked এর মাধ্যমে) -->
+      <input type="radio" name="ff_category" id="tab_burger" checked class="ff-radio">
+      <input type="radio" name="ff_category" id="tab_tacos" class="ff-radio">
+      <input type="radio" name="ff_category" id="tab_pizza" class="ff-radio">
+      <input type="radio" name="ff_category" id="tab_snacks" class="ff-radio">
+
+      <!-- ফাস্ট ফুডের বিভিন্ন আইটেম নির্বাচনের জন্য ট্যাব বাটন -->
+      <div class="ff-tab-labels">
+        <label for="tab_burger" class="tab-btn btn-burger">
+          <span class="icon">🍔</span>
+          <span class="title">Artisan Burgers</span>
+        </label>
+        <label for="tab_tacos" class="tab-btn btn-tacos">
+          <span class="icon">🌮</span>
+          <span class="title">Crispy &amp; Soft Tacos</span>
+        </label>
+        <label for="tab_pizza" class="tab-btn btn-pizza">
+          <span class="icon">🍕</span>
+          <span class="title">Woodfire 3-Tier Pizzas</span>
+        </label>
+        <label for="tab_snacks" class="tab-btn btn-snacks">
+          <span class="icon">🍟</span>
+          <span class="title">Loaded Fiery Snacks</span>
+        </label>
+      </div>
+
+      <!-- ট্যাব ১: বার্গার মেনু -->
+      <div class="ff-panel panel-burger">
+        <div class="grid-layout">
+          <!-- ফুড কার্ড ১: বার্গার কার্ডের পূর্ণাঙ্গ কাঠামো -->
+          <!-- <article>: প্রতিটি স্বতন্ত্র খাবারের জন্য সেমান্টিক কন্টেইনার (গুগল এসইওর জন্য MenuItem স্কিমা যুক্ত) -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <!-- [১] ছবির কন্টেইনার এবং স্পেশাল ব্যাজ (হোভার করলে ছবি জুম হয়) -->
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Smoky Volcano Double Beef Smash Burger" itemprop="image" loading="lazy">
+              <!-- খাদ্য তালিকা বা ঝালের মাত্রা নির্দেশক ট্যাগ -->
+              <span class="diet-tag spicy-tag">🔥 Extra Hot</span>
+            </div>
+
+            <!-- [২] কার্ডের মূল বডি (খাবারের বিস্তারিত তথ্য) -->
+            <div class="card-body">
+              <!-- খাবারের নাম এবং মূল্য -->
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Smoky Volcano Double Smash Burger</h3>
+                <span class="price-badge">$14.50</span>
+              </div>
+
+              <!-- [৩] পুষ্টি ও পরিমাপ মিটার (খাবারের মোট ওজন এবং ক্যালোরি পরিমাণ) -->
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>420g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>780 kcal</strong></span>
+              </div>
+
+              <!-- [৪] প্রধান উপকরণসমূহ (খাবারে কী কী উপাদান মেশানো হয়েছে) -->
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Prime Angus beef patties, ghost pepper Monterey Jack, caramelized chipotle onions, brioche bun, house smoked relish.</p>
+              </div>
+
+              <!-- [৫] পিওর এইচটিএমএল ড্রপডাউন: খাবারের ইতিহাস ও উৎপত্তির গল্প -->
+              <!-- <details> ও <summary>: কোনো জাভাস্ক্রিপ্ট ছাড়াই ক্লিকে বিস্তারিত দেখানো ও লুকানোর আধুনিক এইচটিএমএল ট্যাগ -->
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇩🇪 ➡️ 🇺🇸 Hamburg, Germany &amp; Texas, USA</div>
+                  <p>
+                    While the original minced beef patty traces back to 19th century Hamburg, Germany, the modern smash technique with melted cheese and spicy fire relish was perfected in the historic diners of the American Southern heartland during the 1920s.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- ফুড কার্ড ২: ন্যাশভিল হট হানি চিকেন বার্গার -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <!-- [১] খাবারের ছবি এবং হট-হানি ব্যাজ -->
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=800&q=80" alt="Crispy Nashville Hot Honey Chicken Burger" itemprop="image" loading="lazy">
+              <span class="diet-tag hot-crisp-tag">🌶️ Hot Honey</span>
+            </div>
+
+            <!-- [২] কার্ডের বিস্তারিত বডি -->
+            <div class="card-body">
+              <!-- খাবারের নাম এবং মূল্য -->
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Nashville Hot Honey Crisp Burger</h3>
+                <span class="price-badge">$13.20</span>
+              </div>
+
+              <!-- [৩] পুষ্টি ও পরিমাপক বার (ওজন এবং ক্যালোরি) -->
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>390g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>690 kcal</strong></span>
+              </div>
+
+              <!-- [৪] প্রধান উপকরণসমূহ -->
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Buttermilk marinated chicken thigh, cayenne lard glaze, organic wild honey, dill pickle chips, purple cabbage slaw.</p>
+              </div>
+
+              <!-- [৫] পিওর এইচটিএমএল ড্রপডাউন: খাবারের ইতিহাস ও উৎপত্তির গল্প -->
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇺🇸 Nashville, Tennessee, USA</div>
+                  <p>
+                    Originated in the 1930s by Thornton Prince in Nashville. Legend recounts it was created as a spicy revenge dish, but its irresistible fiery crunch turned it into one of the world's most legendary fried chicken traditions.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ট্যাব ২: ট্যাকোস মেনু -->
+      <div class="ff-panel panel-tacos">
+        <div class="grid-layout">
+          <!-- Item 1 -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" alt="Fiery Birria Beef Quesatacos with Consome" itemprop="image" loading="lazy">
+              <span class="diet-tag spicy-tag">🔥 Guajillo Spice</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Fiery Birria Quesatacos (Trio)</h3>
+                <span class="price-badge">$15.00</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>370g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>610 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Slow-braised beef brisket, melted Oaxaca cheese, corn tortillas dipped in chile broth, fresh cilantro, lime, and rich beef consommé.</p>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇲🇽 Jalisco &amp; Tijuana, Mexico</div>
+                  <p>
+                    Birria was born in the state of Jalisco, Mexico during the 16th century colonial period, traditionally made with goat meat stewed in clay pots. Tijuana street taqueros later innovated by griddling crispy tortillas dipped in spiced fat to create Quesatacos.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80" alt="Spicy Grilled Yucatan Chicken Street Tacos" itemprop="image" loading="lazy">
+              <span class="diet-tag hot-crisp-tag">🌶️ Achiote Rub</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Yucatán Charred Chicken Tacos</h3>
+                <span class="price-badge">$12.80</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>330g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>490 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Citrus achiote chicken breast, grilled pineapple habanero salsa, white corn masa, pickled red onion, cotija cheese.</p>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇲🇽 Yucatán Peninsula, Mexico</div>
+                  <p>
+                    Inspired by Mayan culinary heritage where meats were marinated in sour Seville oranges and ground annatto seeds (achiote), wrapped in banana leaves and slow-cooked in earthen ovens.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ট্যাব ৩: পিজ্জা মেনু (৩টি সাইজ এবং ৩ ধরনের মাংস: চিকেন, বিফ, মাটন নির্বাচনের অপশন) -->
+      <div class="ff-panel panel-pizza">
+        <div class="pizza-special-banner">
+          <div class="badge-icon">🍕</div>
+          <div>
+            <h4>Master Woodfire Pizza Customizer (Pure HTML/CSS Enabled)</h4>
+            <p>Select your favorite artisanal crust size &amp; choose between succulent <strong>Chicken</strong>, tender <strong>Smoked Beef</strong>, or royal slow-cooked <strong>Mutton</strong>!</p>
+          </div>
+        </div>
+
+        <div class="grid-layout">
+          <!-- পিজ্জা কার্ড: ৩টি সাইজ ও ৩ ধরনের মাংস নির্বাচনের বিশেষ ইন্টারঅ্যাক্টিভ কার্ড -->
+          <article class="food-card hot-card pizza-interactive-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Woodfire Artisan Gourmet Pizza" itemprop="image" loading="lazy">
+              <span class="diet-tag spicy-tag">🔥 48hr Fermented Crust</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Grand Woodfire Artisan Pizza</h3>
+                <span class="price-badge">$16.00 - $24.00</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>480g - 880g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>820 - 1450 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">San Marzano tomato base, Fior di Latte mozzarella, wood-roasted bell peppers, red chili oil, fresh sweet basil, and your choice of protein.</p>
+              </div>
+
+              <!-- পিজ্জার সাইজ ও মাংস পছন্দ করার কাস্টম রেডিও বাটন -->
+              <!-- পিজ্জা কাস্টমাইজেশন প্যানেল: সাইজ এবং মাংসের পছন্দ -->
+              <div class="pizza-options-container">
+                <!-- ৩টি সাইজ অপশন (Small, Medium, Large) -->
+                <div class="option-group">
+                  <span class="option-label">📏 Choose Pizza Size (3 Available):</span>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_size" value="small" checked>
+                      <span class="radio-badge">Small (8" Personal)</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_size" value="medium">
+                      <span class="radio-badge">Medium (12" Regular)</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_size" value="large">
+                      <span class="radio-badge">Large (16" Feast)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- ৩ ধরনের মাংসের অপশন (চিকেন, বিফ, মাটন) -->
+                <div class="option-group">
+                  <span class="option-label">🥩 Choose Protein Type (3 Available):</span>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_meat" value="chicken" checked>
+                      <span class="radio-badge meat-chicken">🍗 Herb Roasted Chicken</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_meat" value="beef">
+                      <span class="radio-badge meat-beef">🥩 Smoked Angus Beef</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p1_meat" value="mutton">
+                      <span class="radio-badge meat-mutton">🍖 Slow-Braised Mutton</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇮🇹 Naples, Italy</div>
+                  <p>
+                    Modern pizza originated in 18th-century Naples, Italy, where working-class Neapolitans created flatbreads baked in blistering stone ovens. In 1889, pizzaiolo Raffaele Esposito created the famous tricolor pizza representing the Italian flag, which conquered the culinary capitals of the world.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- SECOND PIZZA ITEM -->
+          <article class="food-card hot-card pizza-interactive-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Spicy Diavola Charcoal Crust Pizza" itemprop="image" loading="lazy">
+              <span class="diet-tag spicy-tag">🌶️ Diavola Fire</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Spicy Diavola Tuscan Pizza</h3>
+                <span class="price-badge">$17.50 - $25.50</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>490g - 900g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>860 - 1520 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Calabrian chili paste, crushed plum tomatoes, smoked scamorza, oregano, infused garlic oil, topped with customized meat.</p>
+              </div>
+
+              <div class="pizza-options-container">
+                <div class="option-group">
+                  <span class="option-label">📏 Choose Pizza Size (3 Available):</span>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_size" value="small">
+                      <span class="radio-badge">Small (8")</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_size" value="medium" checked>
+                      <span class="radio-badge">Medium (12")</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_size" value="large">
+                      <span class="radio-badge">Large (16")</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="option-group">
+                  <span class="option-label">🥩 Choose Protein Type (3 Available):</span>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_meat" value="chicken">
+                      <span class="radio-badge meat-chicken">🍗 Spicy Chicken</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_meat" value="beef" checked>
+                      <span class="radio-badge meat-beef">🥩 Ground Beef Salami</span>
+                    </label>
+                    <label class="custom-radio-label">
+                      <input type="radio" name="p2_meat" value="mutton">
+                      <span class="radio-badge meat-mutton">🍖 Spiced Mutton Keema</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇮🇹 Calabria, Southern Italy</div>
+                  <p>
+                    "Pizza alla Diavola" (Devil's Pizza) originated in the fiery southern Italian province of Calabria, famed across the Mediterranean for its fiery peperoncino chilies and spicy cured salami cured under Mediterranean sea breezes.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ট্যাব ৪: স্ন্যাক্স মেনু (ফ্রাইস ও ক্রিস্পি আইটেম) -->
+      <div class="ff-panel panel-snacks">
+        <div class="grid-layout">
+          <!-- Item 1 -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80" alt="Truffle Parmesan Hot Chili Loaded Fries" itemprop="image" loading="lazy">
+              <span class="diet-tag spicy-tag">🍟 Signature Crunch</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Truffle &amp; Habanero Loaded Fries</h3>
+                <span class="price-badge">$8.90</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>310g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>540 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Hand-cut Russet potatoes, white truffle oil, shaved 24-month parmesan, spicy habanero dusting, spring onions.</p>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇧🇪 Wallonia, Belgium</div>
+                  <p>
+                    Deep-fried potato sticks ("pommes frites") originated in the Meuse Valley of Belgium in the late 1600s, where villagers fried thin slices of potatoes when rivers froze over and fish was scarce.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="food-card hot-card" itemscope itemtype="https://schema.org/MenuItem">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=800&q=80" alt="Crispy Spicy Buffalo Wings with Blue Cheese" itemprop="image" loading="lazy">
+              <span class="diet-tag spicy-tag">🔥 Buffalo Heat</span>
+            </div>
+            <div class="card-body">
+              <div class="card-headline">
+                <h3 class="card-title" itemprop="name">Glazed Buffalo Fire Wings</h3>
+                <span class="price-badge">$11.50</span>
+              </div>
+              <div class="metrics-bar">
+                <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>360g</strong></span>
+                <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>630 kcal</strong></span>
+              </div>
+              <div class="ingredients-box">
+                <span class="label">Main Ingredients:</span>
+                <p class="items-list" itemprop="description">Double-dredged chicken wings, aged cayenne pepper hot sauce, sweet butter emulsion, celery batons, Gorgonzola dip.</p>
+              </div>
+
+              <details class="origin-accordion">
+                <summary class="origin-toggle-btn">
+                  <span class="globe-icon">🌍</span> Where Did This Food Originate?
+                </summary>
+                <div class="origin-dropdown-content">
+                  <div class="origin-flag">🇺🇸 Buffalo, New York, USA</div>
+                  <p>
+                    Invented in 1964 at the Anchor Bar in Buffalo, New York by Teressa Bellissimo, who deep-fried leftover chicken wings and tossed them in melted butter and hot cayenne pepper sauce for her son and his midnight companions.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 2: CRISP BOTANICAL SALADS (GREEN THEMED)
+       ===================================================================== -->
+  <section class="section-container salad-section" id="salads" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill green-pill">🥗 BOTANICAL HARVEST &bull; CRISP GREENS</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title green-gradient-text" itemprop="name">Garden-Fresh Botanical Salads</h2>
+      <p class="section-desc" itemprop="description">
+        Crisp hydroponic leaves, heirloom vegetables, cold-pressed extra virgin olive oil, and delicate floral emulsions harvested daily from regional organic farms.
+      </p>
+    </div>
+
+    <div class="grid-layout three-col-grid">
+      <!-- সালাদ আইটেম ১ -->
+      <article class="food-card green-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Mediterranean Feta & Kalamata Garden Salad" itemprop="image" loading="lazy">
+          <span class="diet-tag salad-leaf-tag">🌿 100% Raw Vegan Option</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Aegean Feta &amp; Heirloom Salad</h3>
+            <span class="price-badge green-price">$11.80</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>320g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>260 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Heirloom Roma tomatoes, Persian cucumbers, barrel-aged Greek feta, Kalamata olives, capers, wild oregano, Cretan olive oil.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn green-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇬🇷 Greece (Horiatiki)</div>
+              <p>
+                Known originally as "Horiatiki" (Village Salad) across rural Greece, farmers assembled fresh tomatoes, cucumbers, and sheep's milk feta in fields during tomato harvest seasons in the late 19th century.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- সালাদ আইটেম ২ -->
+      <article class="food-card green-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Crisp Artisanal Caesar Romaine Bowl" itemprop="image" loading="lazy">
+          <span class="diet-tag salad-leaf-tag">🥬 House Sourdough Crisps</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Artisanal Cardini Caesar Bowl</h3>
+            <span class="price-badge green-price">$12.50</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>290g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>310 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Crisp baby romaine hearts, garlic sourdough croutons, Parmigiano-Reggiano, cured white anchovy dressing, cracked tellicherry pepper.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn green-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇲🇽 Tijuana, Mexico</div>
+              <p>
+                Invented on July 4, 1924 by Italian-American restaurateur Caesar Cardini at his restaurant in Tijuana, Mexico, when a holiday rush depleted supplies and he tossed romaine hearts with garlic, parmesan, and coddled egg tableside.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- সালাদ আইটেম ৩ -->
+      <article class="food-card green-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Avocado Quinoa Green Goddess Bowl" itemprop="image" loading="lazy">
+          <span class="diet-tag salad-leaf-tag">🥑 Superfood Packed</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Avocado &amp; Green Goddess Bowl</h3>
+            <span class="price-badge green-price">$13.90</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>340g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>340 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Hass avocado slices, organic tri-color quinoa, baby kale, edamame beans, pumpkin seeds, cold-pressed tarragon green goddess vinaigrette.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn green-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇺🇸 San Francisco, California</div>
+              <p>
+                Green Goddess dressing was created in 1923 at the Palace Hotel in San Francisco by Executive Chef Philip Roemer to honor actor George Arliss starring in the popular hit play "The Green Goddess."
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 3: HEALTHY MEALS (VEGETABLE & FRUIT COMBINATION PALETTE)
+       ===================================================================== -->
+  <section class="section-container vitality-section" id="healthy-meals" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill vitality-pill">🥑 VEGETABLE &amp; FRUIT HARMONY &bull; VITALITY MEALS</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title vitality-gradient-text" itemprop="name">Fruit &amp; Vegetable Vitality Cuisine</h2>
+      <p class="section-desc" itemprop="description">
+        Radiant spectrum of wholesome nutrition. We combine deep vegetable beta-carotenes and fresh antioxidant fruit infusions to supercharge your cellular energy and wellness.
+      </p>
+    </div>
+
+    <div class="grid-layout three-col-grid">
+      <!-- Item 1 -->
+      <article class="food-card vitality-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80" alt="Rainbow Roasted Sweet Potato Buddha Bowl" itemprop="image" loading="lazy">
+          <span class="diet-tag vitality-tag-badge">🥕 Beet &amp; Sweet Potato</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Harvest Vegetable Buddha Bowl</h3>
+            <span class="price-badge vitality-price">$14.20</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>430g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>395 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Caramelized purple sweet potatoes, golden beets, steamed broccoli florets, chickpeas, pomegranate arils, citrus tahini drizzle.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn vitality-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇯🇵 Kyoto, Japan (Zen Shojin Ryori)</div>
+              <p>
+                Rooted in Japanese Zen Buddhist monastic cuisine called "Shojin Ryori" (devotion cuisine), where monks eat balanced meals in round wooden bowls ("oryoki") filled with colorful seasonal vegetables, seeds, and legumes.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="food-card vitality-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Pan-Seared Wild Salmon with Asparagus & Citrus Reduction" itemprop="image" loading="lazy">
+          <span class="diet-tag vitality-tag-badge">🍊 Citrus &amp; Omega-3</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Wild Salmon &amp; Citrus Asparagus</h3>
+            <span class="price-badge vitality-price">$18.90</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>380g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>460 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Wild caught Alaskan salmon fillet, tender steamed asparagus spears, blood orange glaze, baby carrots, fennel fronds, extra virgin olive oil.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn vitality-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇳🇴 Norwegian Fjords &amp; Nordic Kitchens</div>
+              <p>
+                Heralds from Scandinavian fjord traditions where wild migratory salmon was lightly seared over beechwood and seasoned with wild forest herbs and preserved citrus and mountain berries.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="food-card vitality-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80" alt="Organic Berry Acai Antioxidant Super Bowl" itemprop="image" loading="lazy">
+          <span class="diet-tag vitality-tag-badge">🫐 Wild Berry Infusion</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Amazonian Acai &amp; Fruit Crown Bowl</h3>
+            <span class="price-badge vitality-price">$12.40</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>350g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>310 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Pure frozen wild açaí berries, sliced dragonfruit, organic blueberries, chia seed gel, coconut shavings, almond butter swirls.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn vitality-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇧🇷 Amazon River Basin, Pará, Brazil</div>
+              <p>
+                For centuries, indigenous Ribeirinhos and Amazonian tribes consumed açaí palm berry pulp as a primary staple for endurance. In the 1980s, Brazilian surfers brought it to Rio de Janeiro beaches, sparking a global healthy superfood movement.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 4: DRINKS (LIGHT & REFRESHING PASTEL COLOR PALETTE)
+       ===================================================================== -->
+  <section class="section-container drinks-section" id="drinks" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill breezy-pill">🧊 BREEZY PASTEL SIPS &bull; LIGHT COOL PALETTE</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title breezy-gradient-text" itemprop="name">Artisanal Breezy Drinks &amp; Coolers</h2>
+      <p class="section-desc" itemprop="description">
+        Crafted with soft pastel botanical teas, cold-pressed glacier water, delicate blossoms, and chilled citrus nectars in airy, uplifting tones.
+      </p>
+    </div>
+
+    <div class="grid-layout three-col-grid">
+      <!-- ড্রিংকস আইটেম ১ -->
+      <article class="food-card breezy-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Pastel Blue Butterfly Pea & Mint Cooler" itemprop="image" loading="lazy">
+          <span class="diet-tag breezy-tag-badge">🌸 Botanical Blossom</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Pastel Lavender Azure Breeze</h3>
+            <span class="price-badge breezy-price">$7.50</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>400ml</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>95 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Organic blue butterfly pea flower tea, French lavender honey, cold-pressed Sicilian lemon, sparkling spring water, mint sprigs.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn breezy-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇹🇭 Chiang Mai, Thailand (Nam Dok Anchan)</div>
+              <p>
+                Known locally in Thailand as "Nam Dok Anchan", this beverage has been brewed for centuries as an herbal hospitality drink. The natural anthocyanin pigment in butterfly pea petals magically transitions from deep azure to violet when citrus is added.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- ড্রিংকস আইটেম ২ -->
+      <article class="food-card breezy-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80" alt="Cold-Pressed Watermelon Rose Mocktail" itemprop="image" loading="lazy">
+          <span class="diet-tag breezy-tag-badge">🍉 Soft Rose Pastel</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Soft Watermelon &amp; Rose Mocktail</h3>
+            <span class="price-badge breezy-price">$6.80</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>420ml</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>110 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Cold-pressed organic watermelon nectar, Persian distilled rosewater, fresh Persian lime juice, crushed crystalline ice, edible rose petals.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn breezy-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇮🇷 Shiraz &amp; Isfahan, Persia</div>
+              <p>
+                Descended from Persian "Sharbat", the earliest known sweet iced beverage in world culinary history (tracing back to 500 BCE), combining fragrant floral distillates with cold well water and seasonal melon juice.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- ড্রিংকস আইটেম ৩ -->
+      <article class="food-card breezy-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" alt="Iced Ceremonial Matcha Oat Cloud" itemprop="image" loading="lazy">
+          <span class="diet-tag breezy-tag-badge">🍵 Uji Ceremonial Grade</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Pastel Matcha Green Oat Cloud</h3>
+            <span class="price-badge breezy-price">$7.20</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>380ml</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>130 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">First-harvest Uji ceremonial matcha whisked by hand, organic barista oat milk, subtle Madagascar vanilla bean syrup, ice layer.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn breezy-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇯🇵 Uji, Kyoto Prefecture, Japan</div>
+              <p>
+                Brought to Japan by Buddhist monk Eisai in 1191 CE from Tang Dynasty China. The monks of Uji perfected the shading of tencha leaves to boost chlorophyll and theanine, making it the sacred center of ceremonial tea culture.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 5: GOURMET COMBOS (GOLDEN & ROYAL LUXE PALETTE)
+       ===================================================================== -->
+  <section class="section-container combo-section" id="combos" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill combo-pill">👑 CHEF'S SIGNATURE FEAST &bull; GOURMET COMBOS</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title combo-gradient-text" itemprop="name">Chef's Curated Deluxe Combos</h2>
+      <p class="section-desc" itemprop="description">
+        Perfect harmony of mains, crisp sides, and signature refreshments bundled with culinary precision for solo gourmets and sharing tables.
+      </p>
+    </div>
+
+    <div class="grid-layout two-col-grid">
+      <!-- কম্বো অফার ১ -->
+      <article class="food-card combo-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="The Ultimate Fire & Ice Gourmet Combo" itemprop="image" loading="lazy">
+          <span class="diet-tag combo-tag-badge">🏆 Best Seller Feast</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">The "Fire &amp; Ice" Deluxe Combo</h3>
+            <span class="price-badge combo-price">$22.90</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>780g total</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>1180 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Includes: Double Angus Smoky Smash Burger, Truffle Parmesan Habanero Loaded Fries, and Chilled Pastel Lavender Azure Breeze Mocktail.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn combo-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇺🇸 New York &amp; Paris Modern Bistro Culture</div>
+              <p>
+                The contemporary concept of pairing high-heat caramelized smash beef with delicate chilled botanical infusions was popularized in early 2000s New York and Parisian gastro-lounges seeking contrast in temperature and sensory textures.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- কম্বো অফার ২ -->
+      <article class="food-card combo-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Mediterranean Zen Vitality & Salad Pairing" itemprop="image" loading="lazy">
+          <span class="diet-tag combo-tag-badge">🌿 Pure Wellness Pairing</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Mediterranean Vitality Duo Combo</h3>
+            <span class="price-badge combo-price">$25.50</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>720g total</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>740 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Includes: Wild Alaskan Salmon with Asparagus, Aegean Feta Heirloom Salad, and Cold-Pressed Watermelon Rose Elixir.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn combo-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇬🇷 🇮🇹 Mediterranean Blue Zone Islands (Ikaria &amp; Sardinia)</div>
+              <p>
+                Inspired by the UNESCO-recognized longevity diet of the Mediterranean Blue Zones, where daily meals prioritize wild omega-rich seafood, fresh leafy vegetation, and natural polyphenol hydration.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 6: VELVET BLISS DESSERTS (SWEET VELVET & BERRY PASTEL PALETTE)
+       ===================================================================== -->
+  <section class="section-container dessert-section" id="desserts" itemprop="hasMenuSection" itemscope itemtype="https://schema.org/MenuSection">
+    <div class="section-badge-bar">
+      <span class="theme-pill dessert-pill">🍰 SWEET VELVET &bull; EUROPEAN ARTISAN PATISSERIE</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title dessert-gradient-text" itemprop="name">Decadent Velvet Desserts</h2>
+      <p class="section-desc" itemprop="description">
+        Layered Belgian cocoa ganache, delicate Italian mascarpone creams, berry reductions, and flaky butter crusts to sweeten your dining journey.
+      </p>
+    </div>
+
+    <div class="grid-layout three-col-grid">
+      <!-- ডেজার্ট আইটেম ১ -->
+      <article class="food-card dessert-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80" alt="Venetian Espresso Tiramisu Classico" itemprop="image" loading="lazy">
+          <span class="diet-tag dessert-tag-badge">☕ Venetian Classic</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Venetian Espresso Tiramisù</h3>
+            <span class="price-badge dessert-price">$9.50</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>210g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>380 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Handmade savoiardi ladyfingers, single-origin espresso soak, whipped Lombardy mascarpone, Dutch cocoa powder, Marsala wine.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn dessert-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇮🇹 Treviso, Veneto, Italy</div>
+              <p>
+                Created in the 1960s at "Le Beccherie" in Treviso by pastry chef Roberto Linguanotto. The name literally translates to "pick-me-up" due to its revitalizing kick of strong espresso and rich whipped egg yolks.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- ডেজার্ট আইটেম ২ -->
+      <article class="food-card dessert-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Belgian Molten Chocolate Lava Fondant" itemprop="image" loading="lazy">
+          <span class="diet-tag dessert-tag-badge">🍫 72% Valrhona Cocoa</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">Belgian Molten Chocolate Fondant</h3>
+            <span class="price-badge dessert-price">$10.20</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>240g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>490 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">72% Valrhona dark chocolate cake with flowing molten core, Tahitian vanilla bean gelato, dusted gold flakes, fresh raspberries.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn dessert-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇫🇷 Laguiole, France (Chef Michel Bras)</div>
+              <p>
+                Invented in 1981 by legendary French chef Michel Bras after two years of trials. His original creation ("Coulant au chocolat") featured frozen chocolate ganache inserted into biscuit batter to create a surprise warm flowing lava center.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- ডেজার্ট আইটেম ৩ -->
+      <article class="food-card dessert-card" itemscope itemtype="https://schema.org/MenuItem">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80" alt="New York Berry Swirl Cheesecake" itemprop="image" loading="lazy">
+          <span class="diet-tag dessert-tag-badge">🍓 Wild Berry Glaze</span>
+        </div>
+        <div class="card-body">
+          <div class="card-headline">
+            <h3 class="card-title" itemprop="name">New York Wild Berry Cheesecake</h3>
+            <span class="price-badge dessert-price">$8.80</span>
+          </div>
+          <div class="metrics-bar">
+            <span class="metric weight"><span class="m-icon">⚖️</span> Weight: <strong>225g</strong></span>
+            <span class="metric calories"><span class="m-icon">⚡</span> Calories: <strong>410 kcal</strong></span>
+          </div>
+          <div class="ingredients-box">
+            <span class="label">Main Ingredients:</span>
+            <p class="items-list" itemprop="description">Dense Philadelphia cream cheese, graham cracker butter crust, Madagascar vanilla, tart red raspberry and blackberry swirl.</p>
+          </div>
+
+          <details class="origin-accordion">
+            <summary class="origin-toggle-btn dessert-btn">
+              <span class="globe-icon">🌍</span> Where Did This Food Originate?
+            </summary>
+            <div class="origin-dropdown-content">
+              <div class="origin-flag">🇺🇸 New York City, USA</div>
+              <p>
+                While ancient Greeks made cheese cakes for Olympic athletes in 776 BCE, Arnold Reuben revolutionized the dessert in 1929 in Manhattan by substituting soft curds with rich commercial cream cheese, creating the world-renowned dense NY style.
+              </p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 7: POSITIVE & NEGATIVE REVIEW GRAPH & INTERACTIVE REVIEWS
+       (LAST PAGE / FINAL SECTION WITH COMPLETE GRAPH, LIST, AND FORM)
+       ===================================================================== -->
+  <section class="section-container reviews-section" id="reviews">
+    <div class="section-badge-bar">
+      <span class="theme-pill review-pill">📊 TRANSPARENT GUEST SENTIMENT &bull; 94% APPROVAL</span>
+    </div>
+    <div class="section-header">
+      <h2 class="section-title review-gradient-text">Guest Experience &amp; Sentiment Analytics</h2>
+      <p class="section-desc">
+        We value total culinary transparency. Below is our live-compiled positive vs negative feedback telemetry, verified customer reviews, and your personal portal to submit new feedback.
+      </p>
+    </div>
+
+    <!-- ৫. কাস্টমার রিভিউ ও সেন্টিমেন্ট ড্যাশবোর্ড (পজিটিভ বনাম নেগেটিভ অনুপাত) -->
+    <div class="review-graph-card" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+      <meta itemprop="itemReviewed" content="Savoria Luxe Bistro &amp; Lounge">
+      <div class="graph-header">
+        <div class="overall-rating-box">
+          <div class="big-score" itemprop="ratingValue">4.8</div>
+          <div class="stars-display">★★★★★</div>
+          <p class="total-reviews">Based on <strong itemprop="reviewCount">1,420</strong> verified patron ratings</p>
+        </div>
+
+        <!-- সন্তুষ্ট বনাম অসন্তুষ্ট গ্রাহকের শতকরা অনুপাত বার -->
+        <div class="sentiment-split-box">
+          <div class="split-labels">
+            <span class="positive-label">👍 Positive Experience: <strong>94%</strong> (1,335 Guests)</span>
+            <span class="negative-label">👎 Constructive Feedback: <strong>6%</strong> (85 Guests)</span>
+          </div>
+          <!-- দুই রঙের সেন্টিমেন্ট বার গ্রাফ -->
+          <!-- দুই রঙের অনুপাত বার গ্রাফ (৮৮% সন্তুষ্ট গ্রাহক বনাম ১২% পরামর্শ) -->
+        <div class="split-bar-track">
+            <div class="bar-fill-positive" style="width: 94%;">
+              <span class="bar-tooltip">94% Delight</span>
+            </div>
+            <div class="bar-fill-negative" style="width: 6%;">
+              <span class="bar-tooltip">6% Issues</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ৫-স্টার থেকে ১-স্টার রেটিং বন্টন গ্রাফ -->
+      <!-- ৫-স্টার থেকে ১-স্টার রেটিং বন্টন গ্রাফ (স্টার অনুপাত বার) -->
+      <div class="star-breakdown-grid">
+        <h4 class="graph-subtitle">Rating Distribution Graph:</h4>
+
+        <div class="star-row">
+          <span class="star-label">5 Stars (Superb)</span>
+          <div class="bar-track">
+            <div class="bar-level bar-5star" style="width: 82%;"></div>
+          </div>
+          <span class="star-percent">82% (1,164)</span>
+        </div>
+
+        <div class="star-row">
+          <span class="star-label">4 Stars (Good)</span>
+          <div class="bar-track">
+            <div class="bar-level bar-4star" style="width: 12%;"></div>
+          </div>
+          <span class="star-percent">12% (171)</span>
+        </div>
+
+        <div class="star-row">
+          <span class="star-label">3 Stars (Average)</span>
+          <div class="bar-track">
+            <div class="bar-level bar-3star" style="width: 3.5%;"></div>
+          </div>
+          <span class="star-percent">3.5% (50)</span>
+        </div>
+
+        <div class="star-row">
+          <span class="star-label">2 Stars (Disappointed)</span>
+          <div class="bar-track">
+            <div class="bar-level bar-2star" style="width: 1.5%;"></div>
+          </div>
+          <span class="star-percent">1.5% (21)</span>
+        </div>
+
+        <div class="star-row">
+          <span class="star-label">1 Star (Critical)</span>
+          <div class="bar-track">
+            <div class="bar-level bar-1star" style="width: 1.0%;"></div>
+          </div>
+          <span class="star-percent">1.0% (14)</span>
+        </div>
+      </div>
+
+      <!-- গ্রাহকদের ইতিবাচক প্রতিক্রিয়া বনাম গঠনমূলক পরামর্শের তুলনামূলক তালিকা -->
+      <div class="sentiment-factors-grid">
+        <div class="factor-column positive-factors">
+          <h5><span class="icon">✅</span> Top Positive Highlights (94%)</h5>
+          <ul>
+            <li>Crispy crust on the 3-Tier Mutton &amp; Beef Pizzas</li>
+            <li>Incredible origin stories &amp; ingredient transparency</li>
+            <li>Refreshing light breezy mocktails balanced to perfection</li>
+            <li>Swift table arrival &amp; premium presentation</li>
+          </ul>
+        </div>
+        <div class="factor-column negative-factors">
+          <h5><span class="icon">⚠️</span> Constructive Feedback Addressed (6%)</h5>
+          <ul>
+            <li>Weekend peak wait times for Woodfire Pizza oven (15 min)</li>
+            <li>Ghost pepper burger sauce noted as extremely hot</li>
+            <li>Limited outdoor patio seating on rainy evenings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- সাম্প্রতিক গ্রাহকদের রিভিউ ও রেটিং কার্ড -->
+    <div class="reviews-display-area">
+      <h3 class="reviews-feed-title">Recent Patron Reviews &amp; Testimonials</h3>
+
+      <!-- কাস্টমারদের রিভিউ কার্ড গ্রিড (প্রকৃত গ্রাহকের অভিজ্ঞতা) -->
+        <div class="reviews-cards-grid">
+        <!-- Review Card 1 (Positive) -->
+        <article class="review-item-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+          <div class="review-top">
+            <div class="reviewer-profile">
+              <div class="avatar-circle">SR</div>
+              <div>
+                <h4 class="reviewer-name" itemprop="author">Sophia Rodriguez</h4>
+                <span class="review-date" itemprop="datePublished">October 8, 2026</span>
+              </div>
+            </div>
+            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">
+              <span class="stars">★★★★★</span>
+              <span class="sentiment-pill pill-pos">Verified Positive</span>
+            </div>
+          </div>
+          <div class="reviewed-dish">Ordered: <strong>Large Mutton Woodfire Pizza &amp; Azure Breeze Drink</strong></div>
+          <p class="review-text" itemprop="reviewBody">
+            "The 16-inch mutton pizza is hands down the best gourmet pizza in town! Being able to read the culinary origin story right at the table added such a unique touch. The light pastel drink cut through the richness beautifully."
+          </p>
+        </article>
+
+        <!-- Review Card 2 (Positive) -->
+        <article class="review-item-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+          <div class="review-top">
+            <div class="reviewer-profile">
+              <div class="avatar-circle">MK</div>
+              <div>
+                <h4 class="reviewer-name" itemprop="author">Dr. Marcus Vance</h4>
+                <span class="review-date" itemprop="datePublished">October 4, 2026</span>
+              </div>
+            </div>
+            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">
+              <span class="stars">★★★★★</span>
+              <span class="sentiment-pill pill-pos">Verified Positive</span>
+            </div>
+          </div>
+          <div class="reviewed-dish">Ordered: <strong>Wild Salmon &amp; Citrus Asparagus Bowl</strong></div>
+          <p class="review-text" itemprop="reviewBody">
+            "As someone vigilant about micronutrients and clean eating, the vegetable and fruit pairings in the vitality menu are masterfully executed. 460 calories of pure clean energy without sacrificing depth of flavor."
+          </p>
+        </article>
+
+        <!-- Review Card 3 (Constructive/Neutral) -->
+        <article class="review-item-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+          <div class="review-top">
+            <div class="reviewer-profile">
+              <div class="avatar-circle">AL</div>
+              <div>
+                <h4 class="reviewer-name" itemprop="author">Anthony Lewis</h4>
+                <span class="review-date" itemprop="datePublished">September 29, 2026</span>
+              </div>
+            </div>
+            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="3">
+              <span class="stars">★★★☆☆</span>
+              <span class="sentiment-pill pill-neutral">Constructive Feedback</span>
+            </div>
+          </div>
+          <div class="reviewed-dish">Ordered: <strong>Smoky Volcano Double Smash Burger</strong></div>
+          <p class="review-text" itemprop="reviewBody">
+            "The meat quality and burger bun are top tier! However, warning to casual eaters: the habanero ghost pepper sauce is seriously hot. Would love if they offered a mild smoky alternative for people with lower spice tolerance."
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- নতুন রিভিউ সাবমিট করার ফর্ম (কাস্টমার ফিডব্যাক ফর্ম) -->
+    <div class="submit-review-card" id="submit-review-form">
+      <div class="form-header">
+        <h3 class="form-title">Leave Your Gastronomic Review</h3>
+        <p class="form-subtitle">Share your dining sentiment with our executive chef and future patrons. All reviews are logged into our public satisfaction index.</p>
+      </div>
+
+      <form class="pure-review-form" action="#reviews" method="GET">
+        <div class="form-row two-inputs">
+          <div class="form-group">
+            <label for="rev_name">Your Full Name:</label>
+            <input type="text" id="rev_name" name="guest_name" placeholder="e.g. Liam Sterling" required class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="rev_email">Email Address (Private):</label>
+            <input type="email" id="rev_email" name="guest_email" placeholder="e.g. liam@example.com" required class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row two-inputs">
+          <div class="form-group">
+            <label for="rev_dish">Which Dish Did You Savor?</label>
+            <select id="rev_dish" name="dish_experienced" class="form-control">
+              <option value="pizza">🍕 Woodfire Pizza (Chicken/Beef/Mutton)</option>
+              <option value="burger">🍔 Smoky Smash Burger / Nashville Chicken</option>
+              <option value="tacos">🌮 Fiery Birria Quesatacos</option>
+              <option value="salad">🥗 Aegean Feta / Caesar / Green Goddess Salad</option>
+              <option value="vitality">🥑 Salmon Citrus / Harvest Buddha Bowl</option>
+              <option value="drinks">🧊 Breezy Lavender / Rose Watermelon Sips</option>
+              <option value="combo">👑 Chef's Deluxe Feasting Combos</option>
+              <option value="dessert">🍰 Espresso Tiramisù / Molten Lava Fondant</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Overall Experience Sentiment:</label>
+            <div class="sentiment-radio-group">
+              <label class="sentiment-choice positive-choice">
+                <input type="radio" name="overall_sentiment" value="positive" checked>
+                <span>👍 Positive Delight</span>
+              </label>
+              <label class="sentiment-choice negative-choice">
+                <input type="radio" name="overall_sentiment" value="constructive">
+                <span>⚠️ Suggestions</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- পিওর সিএসএস ৫-স্টার রেটিং সিলেক্টর (মাউস নিলে তারাগুলো সোনালী হবে) -->
+        <div class="form-group rating-selector-group">
+          <label>Assign Your Star Rating:</label>
+          <!-- পিওর সিএসএস ৫-স্টার রেটিং সিলেক্টর (মাউস নিলে স্টারগুলো গোল্ডেন হবে) -->
+          <div class="star-rating-radios">
+            <input type="radio" id="star5" name="star_rating" value="5" checked>
+            <label for="star5" title="5 Stars - Exceptional">★</label>
+            <input type="radio" id="star4" name="star_rating" value="4">
+            <label for="star4" title="4 Stars - Very Good">★</label>
+            <input type="radio" id="star3" name="star_rating" value="3">
+            <label for="star3" title="3 Stars - Average">★</label>
+            <input type="radio" id="star2" name="star_rating" value="2">
+            <label for="star2" title="2 Stars - Needs Improvement">★</label>
+            <input type="radio" id="star1" name="star_rating" value="1">
+            <label for="star1" title="1 Star - Poor">★</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rev_comments">Detailed Review &amp; Culinary Feedback:</label>
+          <textarea id="rev_comments" name="comments" rows="4" placeholder="Tell us about the texture, flavors, portion weight, freshness, and ambience..." required class="form-control"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-submit-review">
+            <span>✨ Publish Verified Review</span>
+          </button>
+          <span class="form-note">🔒 Your review immediately informs our kitchen team. No third-party tracking.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ৬. ফুটার সেকশন (রেস্তোরাঁর ঠিকানা, কাজের সময়সূচী ও সোশ্যাল মিডিয়া লিঙ্ক) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <span class="logo-symbol">🍽️</span>
+          <div class="logo-text">
+            <span class="brand-title">SAVORIA</span>
+            <span class="brand-subtitle">LUXE BISTRO &amp; GRILL</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Where fire meets freshness. Savoria delivers unforgettable multi-sensory culinary experiences rooted in authentic global origins, balanced nutrition, and genuine hospitality.
+        </p>
+        <div class="footer-socials">
+          <span class="social-icon" title="Instagram">📸</span>
+          <span class="social-icon" title="Facebook">📘</span>
+          <span class="social-icon" title="Twitter/X">🐦</span>
+          <span class="social-icon" title="TripAdvisor">🦉</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Cuisine Chapters</h4>
+        <ul class="footer-links">
+          <li><a href="#fast-food">🔥 Fiery Fast Food &amp; 3-Tier Pizzas</a></li>
+          <li><a href="#salads">🥗 Farm Botanical Crisp Salads</a></li>
+          <li><a href="#healthy-meals">🥑 Fruit &amp; Veg Vitality Bowls</a></li>
+          <li><a href="#drinks">🧊 Breezy Pastel Mocktails &amp; Sips</a></li>
+          <li><a href="#combos">👑 Chef's Signature Combos</a></li>
+          <li><a href="#desserts">🍰 Velvet Artisan Desserts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <h4 class="footer-heading">Bistro Information</h4>
+        <p><strong>Location:</strong> <span itemprop="streetAddress">742 Evergreen Culinary Avenue</span>, <span itemprop="addressLocality">Metropolis</span>, <span itemprop="addressRegion">NY</span> <span itemprop="postalCode">10001</span></p>
+        <p><strong>Inquiries &amp; Table:</strong> <a href="tel:+18007286742" itemprop="telephone">+1 (800) 728-6742</a></p>
+        <p><strong>Service Hours:</strong> Mon &ndash; Sun: 10:00 AM &ndash; 11:30 PM</p>
+        <p><strong>Dietary Accommodations:</strong> 100% Halal Certified Meats, Vegan &amp; Gluten-Free marked options.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Savoria Luxe Bistro &amp; Culinary Lounge. All rights reserved. Crafted with pure HTML5 &amp; CSS3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

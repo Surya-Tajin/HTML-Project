@@ -1,0 +1,1678 @@
+/* ==========================================================================
+   সাভোরিয়া লাক্স বিস্ট্রো (SAVORIA LUXE BISTRO) - মাস্টার স্টাইলশিট
+   পিওর ভ্যানিলা সিএসএস (Pure Vanilla CSS - কোনো জাভাস্ক্রিপ্ট লাইব্রেরি ছাড়া সম্পূর্ণ ডিজাইন)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ১. ডিজাইন টোকেন এবং রঙের থিম (DESIGN TOKENS & COLOR THEMES)
+   এখানে ওয়েবসাইটের সব গ্লোবাল ভেরিয়েবল (রং, ফন্ট, বর্ডার ইত্যাদি) রাখা হয়েছে
+   যাতে পুরো সাইটে এক জায়গা থেকেই যেকোনো রং পরিবর্তন করা যায়।
+   -------------------------------------------------------------------------- */
+:root {
+  /* --- টাইপোগ্রাফি (ফন্ট স্টাইল) --- */
+  --font-serif: 'Playfair Display', Georgia, serif; /* আভিজাত্যপূর্ণ হেডিংয়ের জন্য সেরিফ ফন্ট */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* পড়ার সুবিধার জন্য পরিষ্কার আধুনিক ফন্ট */
+
+  /* --- গ্লোবাল ডার্ক থিম এবং নিউট্রাল কালার প্যালেট --- */
+  --bg-dark: #0e1117; /* সাইটের মূল ব্যাকগ্রাউন্ডের গাঢ় কালো রং */
+  --bg-surface: #161b22; /* সেকশন সারফেসের রং */
+  --bg-card: #1f242d; /* প্রতিটি ফুড কার্ডের ব্যাকগ্রাউন্ড কালার */
+  --text-main: #f0f3f6; /* প্রধান লেখার উজ্জ্বল সাদাটে রং */
+  --text-muted: #9aa5b5; /* সাবটাইটেল বা বিবরণীর হালকা ধূসর রং */
+  --border-light: rgba(255, 255, 255, 0.08); /* সূক্ষ্ম হালকা বর্ডার */
+  --border-hover: rgba(255, 255, 255, 0.2); /* মাউস হোভার করার পর বর্ডারের উজ্জ্বলতা */
+
+  /* --- সেকশন ১: ফায়ারি ফাস্ট ফুড (ঝাল ও স্পাইসি লালাভ থিম) --- */
+  --hot-primary: #ff3823; /* প্রাথমিক লাল রং */
+  --hot-secondary: #ff7010; /* সেকেন্ডারি কমলা আভা */
+  --hot-accent: #ffb703; /* গোল্ডেন অ্যাকসেন্ট */
+  --hot-glow: rgba(255, 56, 35, 0.25); /* নিয়ন লাল গ্লো এফেক্ট */
+  --hot-surface: #1e1312; /* স্পাইসি সেকশনের গাঢ় লালচে ব্যাকগ্রাউন্ড */
+  --hot-border: rgba(255, 75, 43, 0.28); /* লালাভ বর্ডার */
+
+  /* --- সেকশন ২: বোটানিক্যাল সালাদ (তাজা সবুজ শাকসবজির ন্যাচারাল থিম) --- */
+  --green-primary: #10b981; /* তরতাজা পান্না সবুজ রং */
+  --green-secondary: #059669; /* গাঢ় সবুজ আভা */
+  --green-accent: #34d399; /* উজ্জ্বল কচি সবুজ */
+  --green-glow: rgba(16, 185, 129, 0.25); /* সবুজ নিয়ন গ্লো */
+  --green-surface: #0e1c15; /* সালাদ সেকশনের গাঢ় সবুজ ব্যাকগ্রাউন্ড */
+  --green-border: rgba(16, 185, 129, 0.28); /* সবুজ বর্ডার */
+
+  /* --- সেকশন ৩: হেলদি মিলস ও পুষ্টিকর খাবার (বেগুনি ও গোলাপি ভাইটালিটি থিম) --- */
+  --vitality-primary: #8b5cf6; /* উজ্জ্বল বেগুনি রং */
+  --vitality-secondary: #ec4899; /* ভাইব্রেন্ট গোলাপি রং */
+  --vitality-accent: #f59e0b; /* এম্বার অরেঞ্জ অ্যাকসেন্ট */
+  --vitality-glow: rgba(236, 72, 153, 0.25); /* গোলাপি গ্লো এফেক্ট */
+  --vitality-surface: #1a121e; /* ডার্ক পার্পল ব্যাকগ্রাউন্ড */
+  --vitality-border: rgba(236, 72, 153, 0.3); /* পার্পল বর্ডার */
+
+  /* --- সেকশন ৪: ড্রিংকস ও বেভারেজ (রিফ্রেশিং ও পেস্টেল নীল ওয়াটার থিম) --- */
+  --breezy-primary: #38bdf8; /* উজ্জ্বল আকাশী নীল রং */
+  --breezy-secondary: #818cf8; /* সফট ইন্ডিগো নীল */
+  --breezy-accent: #a7f3d0; /* মিন্ট গ্রিন অ্যাকসেন্ট */
+  --breezy-glow: rgba(56, 189, 248, 0.25); /* হালকা নীল গ্লো এফেক্ট */
+  --breezy-surface: #0f1c24; /* শীতল ব্লু-ডার্ক ব্যাকগ্রাউন্ড */
+  --breezy-border: rgba(56, 189, 248, 0.28); /* নীলাভ বর্ডার */
+
+  /* --- সেকশন ৫: সিগনেচার কম্বো মিল (রয়্যাল গোল্ডেন ও রাজকীয় সোনালী থিম) --- */
+  --combo-primary: #f59e0b; /* সোনালী অ্যাম্বার রং */
+  --combo-secondary: #d97706; /* গাঢ় সোনালী রং */
+  --combo-accent: #fbbf24; /* উজ্জ্বল গোল্ড অ্যাকসেন্ট */
+  --combo-glow: rgba(245, 158, 11, 0.25); /* সোনালী গ্লো */
+  --combo-surface: #1c1810; /* গোল্ডেন-ডার্ক ব্যাকগ্রাউন্ড */
+  --combo-border: rgba(245, 158, 11, 0.3); /* সোনালী বর্ডার */
+
+  /* --- সেকশন ৬: ভেলভেট ডেজার্ট (মিষ্টি চকলেট ও স্ট্রবেরি-বেরি থিম) --- */
+  --dessert-primary: #f43f5e; /* মিষ্টি গোলাপ-লাল রং */
+  --dessert-secondary: #be123c; /* গাঢ় ভেলভেট মেরুন */
+  --dessert-accent: #fbcfe8; /* মিষ্টি হালকা পিংক */
+  --dessert-glow: rgba(244, 63, 94, 0.25); /* সফট পিংক গ্লো */
+  --dessert-surface: #1d1116; /* ডার্ক চকোলেট-বেরি ব্যাকগ্রাউন্ড */
+  --dessert-border: rgba(244, 63, 94, 0.3); /* ডেজার্ট বর্ডার */
+
+  /* --- সেকশন ৭: কাস্টমার রিভিউ ও সেন্টিমেন্ট ড্যাশবোর্ড থিম --- */
+  --review-pos: #10b981; /* পজিটিভ বা সন্তুষ্ট মতামতের সবুজ রং */
+  --review-neg: #f97316; /* গঠনমূলক/উন্নতির প্রয়োজনীয় অংশের কমলা-লাল রং */
+  --review-surface: #111827; /* রিভিউ ড্যাশবোর্ডের গাঢ় ব্যাকগ্রাউন্ড */
+  --review-border: rgba(59, 130, 246, 0.28); /* নীলাভ ট্রাস্ট বর্ডার */
+
+  /* --- বর্ডার রেডিয়াস ও স্মুথ ট্রানজিশন (Border Radius & Smooth Transitions) --- */
+  --radius-sm: 8px; /* ছোট বাটন বা ব্যাজের জন্য হালকা গোল কোনা */
+  --radius-md: 14px; /* মাঝারি কার্ডের জন্য রাউন্ড কোনা */
+  --radius-lg: 22px; /* বড় ফুড কার্ডের মসৃণ কোনা */
+  --radius-full: 9999px; /* সম্পূর্ণ পিল বা ক্যাপসুল আকৃতির গোল বাটন */
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* মাউস হোভারের অতি মসৃণ এনিমেশন কার্ভ */
+}
+
+/* --------------------------------------------------------------------------
+   ২. গ্লোবাল রিসেট এবং মূল বেস স্টাইল (GLOBAL RESET & BASE STYLES)
+   ব্রাউজারের ডিফল্ট ফাঁকা জায়গাগুলো দূর করে পুরো পেইজকে নিয়ন্ত্রণে রাখার নিয়ম।
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box; /* প্যাডিং বা বর্ডার দিলে যেন মোট সাইজ বেড়ে না যায় */
+  margin: 0; /* ডিফল্ট বাইরের মার্জিন শূন্য করা */
+  padding: 0; /* ডিফল্ট ভেতরের প্যাডিং শূন্য করা */
+}
+
+html {
+  scroll-behavior: smooth; /* মেনু লিঙ্কে ক্লিক করলে পেইজ সুন্দরভাবে গ্লাইড করে স্ক্রোল হবে */
+  font-size: 16px; /* বেসিক ফন্ট সাইজ */
+  background-color: var(--bg-dark); /* পুরো ওয়েবসাইটের ব্যাকগ্রাউন্ড */
+  color: var(--text-main); /* ডিফল্ট টেক্সট কালার */
+}
+
+body {
+  font-family: var(--font-sans); /* মূল ফন্ট ফ্যামিলি */
+  line-height: 1.6; /* লাইনগুলোর মধ্যে চোখের আরামদায়ক দূরত্ব */
+  overflow-x: hidden; /* মোবাইল স্ক্রিনে ডানে-বায়ে অপ্রয়োজনীয় স্ক্রোল রোধ করা */
+  background-color: var(--bg-dark);
+}
+
+a {
+  color: inherit; /* লিঙ্কের নিজস্ব নীল রং দূর করে মূল রঙের সাথে মেলানো */
+  text-decoration: none; /* লিঙ্কের নিচের আন্ডারলাইন মুছে ফেলা */
+}
+
+img {
+  max-width: 100%; /* ছবি যেন তার কন্টেইনারের বাইরে উপচে না পড়ে */
+  height: auto; /* ছবির রেশিও বা অনুপাত বজায় রাখা */
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   ৩. শীর্ষ এনাউন্সমেন্ট ব্যানার (TOP ANNOUNCEMENT TICKER)
+   ওয়েবসাইটের একদম উপরে রঙিন চলমান রঙের বিশেষ অফার ও আপডেট বার
+   -------------------------------------------------------------------------- */
+.top-ticker {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #f59e0b, #10b981, #06b6d4, #8b5cf6);
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --------------------------------------------------------------------------
+   ৪. স্টিকি নেভিগেশন বার (STICKY THEMED NAVIGATION BAR)
+   স্ক্রোল করার সময় উপরে আটকে থাকে এবং ঝাপসা গ্লাস এফেক্ট (Blur) দেয়
+   -------------------------------------------------------------------------- */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(14, 17, 23, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+.nav-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-symbol {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 2px 8px rgba(255, 112, 16, 0.4));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #ffffff, #fcd34d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-subtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: var(--text-muted);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.nav-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+
+.nav-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  margin-top: 2px;
+  transition: var(--transition-smooth);
+}
+
+.nav-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+/* --- মেনু আইটেমগুলোর সাথে সেকশনের রঙের মিল (NAVBAR COLOR MATCHING TO SECTIONS) --- 
+   প্রতিটি মেনু আইটেমের হোভার স্টেটে তার সংশ্লিষ্ট সেকশনের নিজস্ব কালার গ্লো পায় */
+.hot-nav .fire-dot { background-color: var(--hot-primary); box-shadow: 0 0 8px var(--hot-primary); }
+.hot-nav .hot-tag { background: rgba(255, 56, 35, 0.15); color: #ff6b35; border: 1px solid rgba(255, 56, 35, 0.3); }
+.hot-nav:hover { background: rgba(255, 56, 35, 0.1); border-color: rgba(255, 56, 35, 0.4); }
+
+.green-nav .green-dot { background-color: var(--green-primary); box-shadow: 0 0 8px var(--green-primary); }
+.green-nav .green-tag { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+.green-nav:hover { background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.4); }
+
+.vitality-nav .vitality-dot { background-color: var(--vitality-secondary); box-shadow: 0 0 8px var(--vitality-secondary); }
+.vitality-nav .vitality-tag { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
+.vitality-nav:hover { background: rgba(236, 72, 153, 0.1); border-color: rgba(236, 72, 153, 0.4); }
+
+.breezy-nav .breezy-dot { background-color: var(--breezy-primary); box-shadow: 0 0 8px var(--breezy-primary); }
+.breezy-nav .breezy-tag { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
+.breezy-nav:hover { background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.4); }
+
+.combo-nav .combo-dot { background-color: var(--combo-primary); box-shadow: 0 0 8px var(--combo-primary); }
+.combo-nav .combo-tag { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.combo-nav:hover { background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.4); }
+
+.dessert-nav .dessert-dot { background-color: var(--dessert-primary); box-shadow: 0 0 8px var(--dessert-primary); }
+.dessert-nav .dessert-tag { background: rgba(244, 63, 94, 0.15); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.3); }
+.dessert-nav:hover { background: rgba(244, 63, 94, 0.1); border-color: rgba(244, 63, 94, 0.4); }
+
+.review-nav .review-dot { background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6; }
+.review-nav .review-tag { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
+.review-nav:hover { background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.4); }
+
+.btn-primary-reserve {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+}
+
+.btn-primary-reserve:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   ৫. হিরো ব্যানার সেকশন (HERO BANNER SECTION)
+   ওয়েবসাইটে ঢোকার সাথে সাথে যে বিশাল প্রথম দৃশ্য, ক্যাচলাইন ও বাটন দেখা যায়
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background: radial-gradient(circle at center, rgba(30, 20, 24, 0.8) 0%, rgba(14, 17, 23, 0.98) 100%),
+              url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(14, 17, 23, 0.4) 0%, rgba(14, 17, 23, 0.9) 100%);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  z-index: 10;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.hero-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff 30%, #fbd5c6 70%, #ff8c69 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtext {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto 36px auto;
+  line-height: 1.7;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 24px;
+  min-width: 160px;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-hero-hot {
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #ff3823, #ff7010);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 6px 20px rgba(255, 56, 35, 0.35);
+  transition: var(--transition-smooth);
+}
+
+.btn-hero-hot:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(255, 56, 35, 0.5);
+}
+
+.btn-hero-vitality {
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.btn-hero-vitality:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* --------------------------------------------------------------------------
+   ৬. সেকশন কন্টেইনার এবং সার্বজনীন হেডিং (SECTION CONTAINER & UNIVERSAL HEADINGS)
+   সবগুলো ক্যাটাগরি সেকশনের টাইটেল, ব্যাজ এবং সেন্ট্রাল এলাইনমেন্ট
+   -------------------------------------------------------------------------- */
+.section-container {
+  padding: 90px 24px;
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-badge-bar {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.theme-pill {
+  display: inline-block;
+  padding: 5px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.hot-pill { background: rgba(255, 56, 35, 0.15); color: #ff6b35; border: 1px solid rgba(255, 56, 35, 0.35); }
+.green-pill { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+.vitality-pill { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.35); }
+.breezy-pill { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.35); }
+.combo-pill { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35); }
+.dessert-pill { background: rgba(244, 63, 94, 0.15); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.35); }
+.review-pill { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35); }
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* --- প্রতিটি সেকশনের টাইটেলের মাল্টিকালার গ্রেডিয়েন্ট টেক্সট এফেক্ট --- 
+   background-clip: text ব্যবহার করে লেখার ভেতরে রঙের সুন্দর মিশ্রণ ফুটানো হয়েছে */
+.hot-gradient-text {
+  background: linear-gradient(135deg, #ffedd5 10%, #ff6b35 60%, #ff3823 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-gradient-text {
+  background: linear-gradient(135deg, #ecfdf5 10%, #34d399 60%, #059669 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vitality-gradient-text {
+  background: linear-gradient(135deg, #fdf2f8 10%, #ec4899 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.breezy-gradient-text {
+  background: linear-gradient(135deg, #f0fdf4 10%, #38bdf8 60%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.combo-gradient-text {
+  background: linear-gradient(135deg, #fffbeb 10%, #fbbf24 60%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dessert-gradient-text {
+  background: linear-gradient(135deg, #ffe4e6 10%, #fb7185 60%, #e11d48 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.review-gradient-text {
+  background: linear-gradient(135deg, #eff6ff 10%, #60a5fa 60%, #2563eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   ৭. সেকশনভিত্তিক ব্যাকগ্রাউন্ড ও পরিবেশ (SECTION-SPECIFIC BACKGROUNDS & ATMOSPHERE)
+   প্রতিটি খাবারের ক্যাটাগরিতে ভিন্ন ভিন্ন রেডিয়াল লাইট গ্লো যা আলাদা আমেজ তৈরি করে
+   -------------------------------------------------------------------------- */
+.fast-food-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(255, 56, 35, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--hot-border);
+}
+
+.salad-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--green-border);
+}
+
+.vitality-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(236, 72, 153, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--vitality-border);
+}
+
+.drinks-section {
+  /* LIGHT PASTEL WATER / BREEZE ATMOSPHERE */
+  background: radial-gradient(ellipse at 50% 10%, rgba(56, 189, 248, 0.12) 0%, rgba(15, 28, 36, 0.95) 70%);
+  border-top: 1px solid var(--breezy-border);
+}
+
+.combo-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--combo-border);
+}
+
+.dessert-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(244, 63, 94, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--dessert-border);
+}
+
+.reviews-section {
+  background: radial-gradient(ellipse at 50% 10%, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  border-top: 1px solid var(--review-border);
+}
+
+/* --------------------------------------------------------------------------
+   ৮. পিওর সিএসএস ফাস্ট ফুড ফিল্টারিং ট্যাব (PURE CSS FAST FOOD TAB SYSTEM)
+   কোনো জাভাস্ক্রিপ্ট ছাড়াই কেবল রেডিও বাটনের :checked অবস্থা ব্যবহার করে তৈরি
+   -------------------------------------------------------------------------- */
+.ff-tab-system {
+  width: 100%;
+}
+
+.ff-radio {
+  display: none;
+}
+
+.ff-tab-labels {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.tab-btn .icon {
+  font-size: 1.25rem;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- ট্যাব সক্রিয় অবস্থা (সংশ্লিষ্ট রেডিও বাটন সিলেক্ট হলে বাটনের রং পরিবর্তন) --- */
+#tab_burger:checked ~ .ff-tab-labels .btn-burger,
+#tab_tacos:checked ~ .ff-tab-labels .btn-tacos,
+#tab_pizza:checked ~ .ff-tab-labels .btn-pizza,
+#tab_snacks:checked ~ .ff-tab-labels .btn-snacks {
+  background: linear-gradient(135deg, var(--hot-primary), var(--hot-secondary));
+  color: #ffffff;
+  border-color: var(--hot-primary);
+  box-shadow: 0 4px 20px var(--hot-glow);
+  transform: translateY(-2px);
+}
+
+/* --- ট্যাব প্যানেল দেখানো বা লুকানো (ট্যাব সিলেক্ট হলে নির্দিষ্ট খাবারগুলো শো করা) --- */
+.ff-panel {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#tab_burger:checked ~ .panel-burger { display: block; }
+#tab_tacos:checked ~ .panel-tacos { display: block; }
+#tab_pizza:checked ~ .panel-pizza { display: block; }
+#tab_snacks:checked ~ .panel-snacks { display: block; }
+
+/* --------------------------------------------------------------------------
+   ৯. ফুড কার্ড গ্রিড এবং আইটেম কার্ড (CARD GRIDS & UNIVERSAL FOOD CARDS)
+   খাবারের প্রতিটি কার্ডের সাইজ, ছবি, ব্যাকগ্রাউন্ড, শ্যাডো এবং হোভার ইফেক্ট
+   -------------------------------------------------------------------------- */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.two-col-grid {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+.three-col-grid {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.food-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+/* --- কার্ডের ছবির অংশ (মাউস নিলে ছবি আস্তে করে জুম হওয়ার এনিমেশন) --- */
+.card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.food-card:hover .card-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.diet-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.spicy-tag { background: rgba(220, 38, 38, 0.85); color: #fff; }
+.hot-crisp-tag { background: rgba(234, 88, 12, 0.85); color: #fff; }
+.salad-leaf-tag { background: rgba(16, 185, 129, 0.85); color: #fff; }
+.vitality-tag-badge { background: rgba(147, 51, 234, 0.85); color: #fff; }
+.breezy-tag-badge { background: rgba(14, 165, 233, 0.85); color: #fff; }
+.combo-tag-badge { background: rgba(217, 119, 6, 0.85); color: #fff; }
+.dessert-tag-badge { background: rgba(225, 29, 72, 0.85); color: #fff; }
+
+/* --- কার্ডের লেখার অংশ (খাবারের নাম, দাম, বর্ণনা) --- */
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.price-badge {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--hot-primary);
+  white-space: nowrap;
+}
+
+.green-price { color: var(--green-primary); }
+.vitality-price { color: var(--vitality-secondary); }
+.breezy-price { color: var(--breezy-primary); }
+.combo-price { color: var(--combo-primary); }
+.dessert-price { color: var(--dessert-primary); }
+
+/* --- পুষ্টি ও ওজনের মেট্রিক্স বার (খাবারের ওজন ও ক্যালোরি পরিমাপ) --- */
+.metrics-bar {
+  display: flex;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  border: 1px solid var(--border-light);
+}
+
+.metric {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metric strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+/* --- প্রধান উপকরণের তালিকা (খাবারে কী কী উপাদান ব্যবহার করা হয়েছে) --- */
+.ingredients-box {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.ingredients-box .label {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.ingredients-box .items-list {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   ১০. খাবারের ইতিহাস ও উৎপত্তির গল্প (PURE CSS FOOD ORIGIN STORY ACCORDION)
+   HTML5 <details> এবং <summary> ট্যাগ ব্যবহার করে জাভাস্ক্রিপ্ট ছাড়া ড্রপডাউন
+   -------------------------------------------------------------------------- */
+.origin-accordion {
+  border-top: 1px dashed var(--border-light);
+  padding-top: 14px;
+  margin-top: auto;
+}
+
+.origin-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ff9e58;
+  border: 1px solid rgba(255, 112, 16, 0.25);
+  list-style: none; /* remove default triangle in modern browsers */
+  transition: var(--transition-smooth);
+}
+
+.origin-toggle-btn::-webkit-details-marker {
+  display: none;
+}
+
+.origin-toggle-btn:hover {
+  background: rgba(255, 112, 16, 0.12);
+  border-color: rgba(255, 112, 16, 0.5);
+}
+
+.origin-accordion[open] .origin-toggle-btn {
+  background: rgba(255, 112, 16, 0.18);
+  border-color: #ff7010;
+  color: #ffffff;
+}
+
+.green-btn {
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+.green-btn:hover {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+.origin-accordion[open] .green-btn {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--green-primary);
+  color: #ffffff;
+}
+
+.vitality-btn {
+  color: #f472b6;
+  border-color: rgba(236, 72, 153, 0.25);
+}
+.vitality-btn:hover {
+  background: rgba(236, 72, 153, 0.12);
+  border-color: rgba(236, 72, 153, 0.5);
+}
+.origin-accordion[open] .vitality-btn {
+  background: rgba(236, 72, 153, 0.2);
+  border-color: var(--vitality-secondary);
+  color: #ffffff;
+}
+
+.breezy-btn {
+  color: #7dd3fc;
+  border-color: rgba(56, 189, 248, 0.25);
+}
+.breezy-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+.origin-accordion[open] .breezy-btn {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: var(--breezy-primary);
+  color: #ffffff;
+}
+
+.combo-btn {
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+.combo-btn:hover {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+.origin-accordion[open] .combo-btn {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: var(--combo-primary);
+  color: #ffffff;
+}
+
+.dessert-btn {
+  color: #fda4af;
+  border-color: rgba(244, 63, 94, 0.25);
+}
+.dessert-btn:hover {
+  background: rgba(244, 63, 94, 0.12);
+  border-color: rgba(244, 63, 94, 0.5);
+}
+.origin-accordion[open] .dessert-btn {
+  background: rgba(244, 63, 94, 0.2);
+  border-color: var(--dessert-primary);
+  color: #ffffff;
+}
+
+.origin-dropdown-content {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #e2e8f0;
+  animation: fadeIn 0.3s ease;
+}
+
+.origin-flag {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #fcd34d;
+  margin-bottom: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   ১১. পিজ্জা স্পেশাল অপশন কন্ট্রোল (PIZZA SECTION SPECIALS - সাইজ ও মাংস নির্বাচন)
+   গ্রাহক যেন পছন্দমতো সাইজ (Small/Medium/Large) ও মাংস সিলেক্ট করতে পারে
+   -------------------------------------------------------------------------- */
+.pizza-special-banner {
+  background: linear-gradient(135deg, rgba(255, 56, 35, 0.15), rgba(245, 158, 11, 0.15));
+  border: 1px solid var(--hot-border);
+  border-radius: var(--radius-md);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.pizza-special-banner .badge-icon {
+  font-size: 2.2rem;
+}
+
+.pizza-special-banner h4 {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.pizza-special-banner p {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+
+.pizza-interactive-card {
+  border-color: rgba(255, 75, 43, 0.35);
+}
+
+.pizza-options-container {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.custom-radio-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.custom-radio-label {
+  cursor: pointer;
+}
+
+.custom-radio-label input[type="radio"] {
+  display: none;
+}
+
+.radio-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.custom-radio-label input[type="radio"]:checked + .radio-badge {
+  background: linear-gradient(135deg, var(--hot-primary), var(--hot-secondary));
+  color: #ffffff;
+  border-color: var(--hot-primary);
+  box-shadow: 0 2px 10px rgba(255, 56, 35, 0.35);
+}
+
+.meat-chicken, .meat-beef, .meat-mutton {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --------------------------------------------------------------------------
+   ১২. ক্যাটাগরি অনুসারে কার্ডের নিজস্ব বর্ডার ও ব্যাকগ্রাউন্ড কালার (THEMED CARD ACCENTS)
+   -------------------------------------------------------------------------- */
+.hot-card { border-color: var(--hot-border); background: var(--hot-surface); }
+.hot-card:hover { border-color: rgba(255, 75, 43, 0.6); }
+
+.green-card { border-color: var(--green-border); background: var(--green-surface); }
+.green-card:hover { border-color: rgba(16, 185, 129, 0.6); }
+
+.vitality-card { border-color: var(--vitality-border); background: var(--vitality-surface); }
+.vitality-card:hover { border-color: rgba(236, 72, 153, 0.6); }
+
+.breezy-card { border-color: var(--breezy-border); background: var(--breezy-surface); }
+.breezy-card:hover { border-color: rgba(56, 189, 248, 0.6); }
+
+.combo-card { border-color: var(--combo-border); background: var(--combo-surface); }
+.combo-card:hover { border-color: rgba(245, 158, 11, 0.6); }
+
+.dessert-card { border-color: var(--dessert-border); background: var(--dessert-surface); }
+.dessert-card:hover { border-color: rgba(244, 63, 94, 0.6); }
+
+/* --------------------------------------------------------------------------
+   ১৩. কাস্টমার রিভিউ, সেন্টিমেন্ট গ্রাফ এবং রিভিউ সাবমিশন ফর্ম
+   খাবারের রেটিং স্কোর, ভালো-মন্দ মতামতের শতকরা হিসাব এবং স্টার রেটিং উইজেট
+   -------------------------------------------------------------------------- */
+.review-graph-card {
+  background: var(--review-surface);
+  border: 1px solid var(--review-border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+
+.graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border-light);
+  flex-wrap: wrap;
+}
+
+.overall-rating-box {
+  text-align: left;
+}
+
+.big-score {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.stars-display {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin: 4px 0;
+}
+
+.total-reviews {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.sentiment-split-box {
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+.split-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.positive-label { color: var(--review-pos); font-weight: 600; }
+.negative-label { color: var(--review-neg); font-weight: 600; }
+
+/* --- পজিটিভ বনাম ক্রিটিক্যাল সেন্টিমেন্ট প্রগ্রেস বার (Dual Sentiment Bar) --- */
+.split-bar-track {
+  height: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full);
+  display: flex;
+  overflow: hidden;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.bar-fill-positive {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  height: 100%;
+  position: relative;
+  transition: width 1s ease-in-out;
+}
+
+.bar-fill-negative {
+  background: linear-gradient(90deg, #f97316, #ef4444);
+  height: 100%;
+  position: relative;
+  transition: width 1s ease-in-out;
+}
+
+.bar-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* --- ৫-স্টার থেকে ১-স্টার রেটিং বন্টন গ্রাফ (Star Breakdown Bars) --- */
+.star-breakdown-grid {
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.graph-subtitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.star-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.star-label {
+  width: 130px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bar-track {
+  flex-grow: 1;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.bar-level {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.bar-5star { background: #10b981; }
+.bar-4star { background: #34d399; }
+.bar-3star { background: #f59e0b; }
+.bar-2star { background: #f97316; }
+.bar-1star { background: #ef4444; }
+
+.star-percent {
+  width: 90px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: right;
+  color: #e2e8f0;
+}
+
+/* --- সেন্টিমেন্ট ফ্যাক্টর্স (গ্রাহকদের পছন্দের দিক বনাম পরামর্শের তালিকা) --- */
+.sentiment-factors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 26px;
+}
+
+.factor-column {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  border: 1px solid var(--border-light);
+}
+
+.positive-factors h5 {
+  color: var(--green-primary);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.negative-factors h5 {
+  color: var(--hot-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.factor-column ul {
+  list-style: none;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.factor-column ul li::before {
+  content: "•";
+  margin-right: 8px;
+  color: var(--text-muted);
+}
+
+/* --- সাম্প্রতিক কাস্টমারদের রিভিউ কার্ড ও মন্তব্য প্রদর্শন --- */
+.reviews-display-area {
+  margin-bottom: 60px;
+}
+
+.reviews-feed-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.reviews-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.review-item-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.reviewer-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.reviewer-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.review-rating .stars {
+  color: #fbbf24;
+  font-size: 0.95rem;
+}
+
+.sentiment-pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  margin-top: 4px;
+}
+
+.pill-pos { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.pill-neutral { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+
+.reviewed-dish {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  border-left: 2px solid var(--border-hover);
+  padding-left: 8px;
+}
+
+.reviewed-dish strong {
+  color: #e2e8f0;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* --- নতুন রিভিউ পাঠানোর সুন্দর ফর্ম কার্ড --- */
+.submit-review-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.form-header {
+  margin-bottom: 26px;
+}
+
+.form-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.form-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.pure-review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row.two-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+}
+
+.sentiment-radio-group {
+  display: flex;
+  gap: 12px;
+}
+
+.sentiment-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.sentiment-choice input[type="radio"] {
+  accent-color: #3b82f6;
+}
+
+.sentiment-choice:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* --- পিওর সিএসএস ইন্টারেক্টিভ ৫-স্টার রেটিং উইজেট --- 
+   flex-direction: row-reverse ব্যবহার করে মাউস নিলে সুন্দরভাবে স্টারগুলো সোনালী হয়ে জ্বলে ওঠে */
+.rating-selector-group {
+  align-items: flex-start;
+}
+
+.star-rating-radios {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 6px;
+}
+
+.star-rating-radios input[type="radio"] {
+  display: none;
+}
+
+.star-rating-radios label {
+  font-size: 1.8rem;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star-rating-radios label:hover,
+.star-rating-radios label:hover ~ label,
+.star-rating-radios input[type="radio"]:checked ~ label {
+  color: #fbbf24;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn-submit-review {
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.btn-submit-review:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.6);
+}
+
+.form-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   ১৪. লাক্স ফুটার সেকশন (LUXE FOOTER)
+   ওয়েবসাইটের নিচের অংশ: রেস্তোরাঁর পরিচিতি, সোশ্যাল মিডিয়া, সময়সূচী ও কপিরাইট
+   -------------------------------------------------------------------------- */
+.main-footer {
+  background: #090c10;
+  border-top: 1px solid var(--border-light);
+  padding: 70px 24px 30px 24px;
+}
+
+.footer-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.brand-col .footer-bio {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 16px 0 20px 0;
+  max-width: 400px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  transition: var(--transition-smooth);
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.footer-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li a {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.footer-links li a:hover {
+  color: #f59e0b;
+  padding-left: 6px;
+}
+
+.footer-col p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.footer-col p strong {
+  color: #e2e8f0;
+}
+
+.footer-col a {
+  color: #38bdf8;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+/* --------------------------------------------------------------------------
+   ১৫. রেসপনসিভ ডিজাইন (RESPONSIVE DESIGN - মোবাইল ও ট্যাবলেটের জন্য স্ক্রিন সাইজ সমন্বয়)
+   যেকোনো মোবাইল বা ট্যাবলেটে যাতে সুন্দর ও নিখুঁতভাবে প্রদর্শিত হয়
+   -------------------------------------------------------------------------- */
+/* --- ট্যাবলেট ও ছোট ল্যাপটপ স্ক্রিনের জন্য (১০২৪ পিক্সেল বা তার নিচে) --- */
+@media (max-width: 1024px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 16px;
+    gap: 12px;
+  }
+  .brand-logo {
+    justify-content: center;
+  }
+  .nav-menu {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    gap: 6px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-menu::-webkit-scrollbar {
+    height: 4px;
+  }
+  .nav-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  .nav-link {
+    flex-shrink: 0;
+    padding: 6px 10px;
+  }
+  .nav-actions {
+    display: none;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- মোবাইল ফোন স্ক্রিনের জন্য (৭৬৮ পিক্সেল বা তার নিচে) --- */
+@media (max-width: 768px) {
+  .section-container {
+    padding: 60px 18px;
+  }
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+  .ff-tab-labels {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tab-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .grid-layout, .two-col-grid, .three-col-grid {
+    grid-template-columns: 1fr;
+  }
+  .graph-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sentiment-split-box {
+    width: 100%;
+  }
+  .star-row {
+    flex-wrap: wrap;
+  }
+  .star-label {
+    width: 100%;
+  }
+}
