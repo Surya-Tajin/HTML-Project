@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeHorizon Disaster Survival Guide: Comprehensive preparation, immediate action, and recovery protocols for 9 natural and climate hazards.">
+  <title>Disaster Survival Guide | SafeHorizon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Urgent Hotline Ribbon -->
+  <aside class="emergency-hotline-bar" aria-label="Emergency Hotlines">
+    <div class="container hotline-container">
+      <div class="hotline-title">
+        <span aria-hidden="true">🚨</span>
+        <span>National Emergency Dispatch: Call <strong>999</strong> | Disaster Bureau: <strong>1090</strong></span>
+      </div>
+      <div class="hotline-numbers">
+        <span class="hotline-item">Fire Rescue: <strong>16163</strong></span>
+        <span class="hotline-item">Red Crescent Rescue: <strong>+880-2-9330188</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="SafeHorizon Home">
+        <div class="shield-icon" aria-hidden="true">SH</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">Safe<span>Horizon</span></div>
+          <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+        </div>
+      </a>
+
+      <!-- CSS-only Mobile Nav Toggle -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="disaster-guide.html" class="nav-link active" aria-current="page">Disaster Guide</a></li>
+          <li><a href="climate.html" class="nav-link">Climate</a></li>
+          <li><a href="emergency-help.html" class="nav-link">Emergency Help</a></li>
+          <li><a href="missing-persons.html" class="nav-link">Missing Persons</a></li>
+          <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-help.html" class="nav-emergency-btn">Emergency Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero hero-with-bg" aria-labelledby="guide-hero-heading">
+      <img src="images/hero-disaster.jpg" alt="Disaster rescue team operating in flooded emergency zone" class="hero-overlay-img">
+      <div class="hero-overlay-dark"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Verified Disaster Protocols
+          </div>
+          <h1 id="guide-hero-heading" class="hero-title">Comprehensive <span>Disaster Survival</span> Guide</h1>
+          <p class="hero-description">
+            Scientific, life-tested action plans for 9 major disaster categories. Master the critical triad: what to execute <em>Before</em>, how to survive <em>During</em>, and how to recover safely <em>After</em> each event.
+          </p>
+          <div class="btn-group">
+            <a href="#flood" class="btn btn-emergency">Select Disaster Category</a>
+            <a href="resources.html" class="btn btn-secondary">Get 72-Hour Kit List</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Jump Navigation Grid -->
+    <section class="section section-navy-surface" aria-labelledby="hazard-jump-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quick Jump Index</span>
+          <h2 id="hazard-jump-title" class="section-title">Jump to Specific Disaster Protocol</h2>
+          <p class="section-subtitle">Select any hazard below to navigate directly to its survival guidelines, kit specs, and evacuation procedures.</p>
+        </div>
+        <div class="grid-3">
+          <a href="#flood" class="card-navy">
+            <h3>🌊 1. Floods &amp; Flash Floods</h3>
+            <p>Rising river swells, torrential monsoons, and sudden highland runoff.</p>
+          </a>
+          <a href="#cyclone" class="card-navy">
+            <h3>🌀 2. Cyclones &amp; Storm Surges</h3>
+            <p>High-velocity gale forces, tropical depressions, and tidal coastal walls.</p>
+          </a>
+          <a href="#earthquake" class="card-navy">
+            <h3>🏚️ 3. Earthquakes</h3>
+            <p>Tectonic fractures, building tremors, structural collapse protection.</p>
+          </a>
+          <a href="#landslide" class="card-navy">
+            <h3>⛰️ 4. Landslides</h3>
+            <p>Hillside mudflows, hillside collapses, and slope saturation hazards.</p>
+          </a>
+          <a href="#lightning" class="card-navy">
+            <h3>⚡ 5. Lightning &amp; Thunderstorms</h3>
+            <p>High-voltage atmospheric strikes, open field danger, electrical grounding.</p>
+          </a>
+          <a href="#heatwave" class="card-navy">
+            <h3>☀️ 6. Severe Heatwaves</h3>
+            <p>Extreme thermal spikes, fatal heatstroke, and dehydration mitigation.</p>
+          </a>
+          <a href="#coldwave" class="card-navy">
+            <h3>❄️ 7. Cold Waves</h3>
+            <p>Sudden winter temperature drops, dense fog, and hypothermia shielding.</p>
+          </a>
+          <a href="#fire" class="card-navy">
+            <h3>🔥 8. Building Fires</h3>
+            <p>High-rise blazes, electrical short-circuit infernos, and toxic smoke escape.</p>
+          </a>
+          <a href="#drought" class="card-navy">
+            <h3>🌾 9. Severe Droughts</h3>
+            <p>Aquifer depletion, crop failure, water rationing, and sanitary resilience.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disaster 1: Floods & Flash Floods -->
+    <article id="flood" class="section disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 01</span>
+            <h2>Floods and Flash Floods</h2>
+            <p class="lead">From rapid mountain flash floods with zero warning to slow-inundating river basin overflows.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Flood</h4>
+            <ul>
+              <li>Identify elevated community flood shelters and memorize multiple high-ground routes.</li>
+              <li>Elevate valuable electronics, agricultural seeds, and household assets above historic flood marks.</li>
+              <li>Clean municipal storm drains and prepare sandbags around property entrance thresholds.</li>
+              <li>Secure toxic chemicals and fuel cans in elevated waterproof containers to avoid contaminating water.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Flood</h4>
+            <ul>
+              <li>Cut off main electrical power switches and shut gas cylinders immediately before waters enter.</li>
+              <li>Never walk, wade, or drive through floodwaters—as little as 15 cm of moving water can knock an adult down.</li>
+              <li>Stay out of basements and underground parking structures; they can become death traps in minutes.</li>
+              <li>If trapped inside a building, move to the highest level. Do not enter a sealed attic unless an escape route to the roof exists.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Flood</h4>
+            <ul>
+              <li>Do not return home until civil authorities officially declare the area dry and structurally safe.</li>
+              <li>Beware of displaced snakes, rodents, and electrical wires hidden under muddy standing water pools.</li>
+              <li>Boil all water vigorously for at least 1 minute or use certified water purification tablets before ingestion.</li>
+              <li>Throw away all food items that made contact with contaminated floodwaters.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Essential Flood Kit Additions</h5>
+            <p>Inflatable life rings, water purification tablets (Halazone), Oral Rehydration Salts (ORS), waterproof pouches for passports/deeds, high-frequency whistle, tall rubber boots, and portable rope line.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> Evacuate the moment civil alert <em>Danger Level (Bipod Shonketo)</em> is issued, or water rises past boundary markers. <strong>How:</strong> Move on foot to high-ground shelters along elevated roadways; never attempt crossing swollen culverts in vehicles.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Driving cars or motorbikes across flooded causeways (vehicles float in 30 cm of water).</li>
+              <li>Allowing children to play or swim in flood currents (extreme risk of electrocution and waterborne cholera).</li>
+              <li>Consuming raw tap water or unboiled tube-well water after wellhead submergence.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Carry toddlers in high chest carriers; fit elderly and disabled family members with buoyant safety vests early; unchain all livestock and pets so they are not trapped as waters rise.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 2: Cyclones and Storm Surges -->
+    <article id="cyclone" class="section section-navy-surface disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 02</span>
+            <h2>Cyclones and Storm Surges</h2>
+            <p class="lead">Tropical revolving storms packing destructive winds exceeding 150 km/h and catastrophic tidal surges.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Cyclone</h4>
+            <ul>
+              <li>Trim overgrown tree branches near roofs and power lines to reduce wind shear damage.</li>
+              <li>Board up glass windows or criss-cross them with heavy tape; secure tin roof corrugated sheeting with tie-down wire.</li>
+              <li>Stock non-perishable foods that require no cooking (chira, gur, biscuits) and fresh drinking water.</li>
+              <li>Listen to maritime storm warnings; heed Signal 4 (Local Warning) and Signal 7–10 (Great Danger).</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Cyclone</h4>
+            <ul>
+              <li>Remain strictly inside designated reinforced concrete cyclone shelters or an interior windowless room.</li>
+              <li>Do not leave shelter when the eye of the storm passes (the deceptive calm); extreme reverse gales follow immediately.</li>
+              <li>Keep battery radio tuned to emergency broadcast stations for official landfall updates.</li>
+              <li>Protect your head with mattresses or heavy blankets if structural roof failure begins.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Cyclone</h4>
+            <ul>
+              <li>Watch for severed high-voltage power lines dangling in puddles or wrapped around debris.</li>
+              <li>Do not enter coastal areas affected by storm surge until flood levels recede completely.</li>
+              <li>Assist emergency responders in locating trapped neighbours using acoustic whistle signalling.</li>
+              <li>Report severed gas lines and structural damage to local disaster management teams immediately.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Cyclone Specific Emergency Kit</h5>
+            <p>Heavy-duty tarpaulins, nylon utility ropes, thick protective gloves, waterproof flashlights with spare bulbs, dry matches in wax-sealed jars, battery AM radio, and essential family medical doses.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> The moment Signal 7 or higher is hoisted, immediate mandatory evacuation to fortified cyclone shelters is required. <strong>How:</strong> Walk in bonded family groups using ropes along predetermined embankment ridges before surge heights rise.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Delaying evacuation to guard household possessions or cattle at coastal embankments.</li>
+              <li>Venturing outside during the cyclone eye calm thinking the storm has passed.</li>
+              <li>Touching metallic fences or corrugated tin sheds during or after the storm.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Escort pregnant mothers, infants, and seniors to the nearest cyclone shelter at Signal 4. Ensure designated pet carriers or release livestock to high-embankment <em>killas</em> (raised earth mounds) with fodder.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 3: Earthquakes -->
+    <article id="earthquake" class="section disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 03</span>
+            <h2>Earthquakes</h2>
+            <p class="lead">Sudden, violent crustal tremors that occur without warning, triggering structural fractures and falling debris.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Earthquake</h4>
+            <ul>
+              <li>Anchor tall bookshelves, heavy mirrors, gas cylinders, and water heaters firmly to structural wall studs.</li>
+              <li>Identify safe spots in every room: under sturdy wooden tables or desks, against interior load-bearing walls.</li>
+              <li>Keep heavy objects on lower shelves to prevent them from becoming falling projectiles.</li>
+              <li>Conduct regular "Drop, Cover, and Hold On" household and classroom drills.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Earthquake</h4>
+            <ul>
+              <li><strong>DROP</strong> to your hands and knees immediately to prevent being knocked down.</li>
+              <li><strong>COVER</strong> your head and neck under a sturdy table or desk. If no shelter is nearby, cover against an interior wall.</li>
+              <li><strong>HOLD ON</strong> to your shelter until shaking stops completely; be prepared for it to shift.</li>
+              <li>If outdoors: move to a clear open area away from buildings, glass windows, streetlights, and power cables.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Earthquake</h4>
+            <ul>
+              <li>Expect dangerous aftershocks. Each aftershock can bring down weakened structures.</li>
+              <li>Evacuate the building via stairs only. <strong>NEVER USE ELEVATORS</strong> under any circumstances.</li>
+              <li>Check for gas leaks by smell. If gas is suspected, shut off the valve and do not operate electrical switches or open flames.</li>
+              <li>Check yourself and neighbours for injuries; apply direct pressure to any bleeding wounds.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Earthquake Kit Essentials</h5>
+            <p>Sturdy leather work gloves, dust masks (N95 or particulate), safety goggles, loud metal whistle, crescent wrench (for gas/water shut-off), and hard-soled boots kept right beside your bed.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> Evacuate only AFTER ground tremors stop. <strong>How:</strong> Move calmly down emergency stairwells. Do not rush panic exits. Assemble in designated open parks or sports fields away from glass facades.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Running outside while the building is actively shaking (falling glass and parapets are the #1 cause of fatalities).</li>
+              <li>Standing inside doorways (modern doorways are not stronger than the rest of the house and do not protect from flying debris).</li>
+              <li>Igniting matches or lighters after the tremor before verifying gas line integrity.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Shield children and wheelchair users under desks; lock wheelchair wheels and cover heads with cushions. Keep leashes near exits for pets who may run away in panic.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 4: Landslides -->
+    <article id="landslide" class="section section-navy-surface disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 04</span>
+            <h2>Landslides and Hill Collapses</h2>
+            <p class="lead">Catastrophic downward movements of soil, rock, and saturated mud on steep hilly terrains during intense monsoons.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Landslide</h4>
+            <ul>
+              <li>Learn your hillside risk history: slopes stripped of vegetation or cut for informal housing are extremely dangerous.</li>
+              <li>Watch for warning signs: doors or windows sticking, new cracks in foundations, leaning trees, or utility poles.</li>
+              <li>Notice sudden changes in water flow: streams turning muddy, or sudden loss of water flow that indicates an upstream debris blockage.</li>
+              <li>Evacuate immediately when monsoon downpours exceed 100 mm in a 24-hour cycle.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Landslide</h4>
+            <ul>
+              <li>Listen for unusual rumblings, cracking trees, or boulder impacts. Debris flows can move at 50 km/h.</li>
+              <li>If sudden movement occurs near your dwelling, move quickly out of the path to stable higher ground.</li>
+              <li>If escape is impossible, curl into a tight ball and protect your head with your arms and thick bedding.</li>
+              <li>Never cross a river valley or ravine if you suspect a debris flow upstream.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Landslide</h4>
+            <ul>
+              <li>Stay away from the slide area. Additional slope failures frequently follow the initial collapse.</li>
+              <li>Check for trapped and injured persons near the slide perimeter without entering the unstable mud zone.</li>
+              <li>Report broken utility lines and cracked roadways to municipal emergency authorities immediately.</li>
+              <li>Re-plant damaged slopes with deep-root native vetiver grass and trees to stabilize surrounding soil.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Landslide Emergency Kit</h5>
+            <p>High-visibility emergency vest, heavy-duty crowbar, shovel, battery headlamp, thermal emergency blanket, waterproof footwear, and personal emergency cash.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> Evacuate hill slopes the moment heavy rain alerts are sounded by authorities. <strong>How:</strong> Move perpendicular to the slope fall line, toward certified low-risk civic shelters.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Building homes directly at the toe or crest of un-retained steep soil slopes.</li>
+              <li>Sleeping on lower floors of hillside homes during torrential continuous nighttime rains.</li>
+              <li>Returning to a slide site to retrieve belongings while soil remains waterlogged.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Proactively relocate seniors and persons with mobility impairments to flatland relative residences prior to peak monsoon season.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 5: Lightning & Thunderstorms -->
+    <article id="lightning" class="section disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 05</span>
+            <h2>Lightning and Severe Thunderstorms</h2>
+            <p class="lead">Intense electrical discharges capable of exceeding 300 million volts, responsible for hundreds of rural and open-field fatalities annually.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Storm</h4>
+            <ul>
+              <li>Follow the <strong>30/30 Rule:</strong> If time between seeing lightning and hearing thunder is under 30 seconds, seek substantial shelter immediately.</li>
+              <li>Check weather bulletins before heading into open agricultural fields, river journeys, or sports grounds.</li>
+              <li>Install copper lightning arresters with dedicated earth ground rods on roof parapets.</li>
+              <li>Unplug sensitive home electronics and television antennas before storm cells arrive.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Storm</h4>
+            <ul>
+              <li>Seek shelter inside a fully enclosed substantial building or a metal-topped hardtop vehicle.</li>
+              <li><strong>NO OPEN SHELTERS:</strong> Corrugated tin sheds, bus stops, open pavilions, and thatch huts offer ZERO protection.</li>
+              <li>If caught in an open field with no shelter: crouch down on the balls of your feet, tuck head in, hands over ears. <strong>Never lie flat!</strong></li>
+              <li>Stay completely away from isolated tall trees, metal fences, cell towers, and bodies of water.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Storm</h4>
+            <ul>
+              <li>Remain inside safe shelter for at least 30 minutes after hearing the last sound of thunder.</li>
+              <li>If someone is struck by lightning: <strong>IT IS SAFE TO TOUCH THEM IMMEDIATELY.</strong> Victims carry no residual electrical charge!</li>
+              <li>Check breathing and pulse immediately; begin CPR without delay if victim is unresponsive.</li>
+              <li>Call 999 for urgent paramedic transport; treat shock with thermal blankets.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Lightning Safety Essentials</h5>
+            <p>Rubber soled footwear, surge protection power strips for homes, portable weather radio, and printed CPR resuscitation reference card.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> The moment thunder is heard in the distance. <strong>How:</strong> Exit open agricultural fields and bodies of water immediately; move into brick or concrete buildings.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Taking refuge under isolated tall trees or solitary palm trees (classic lightning target).</li>
+              <li>Holding metal umbrellas, farming implements, or fishing rods during lightning activity.</li>
+              <li>Believing that lightning victims carry an electrical charge and hesitating to perform CPR.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Bring working children and farming youth indoors at the first rumble of thunder; keep frightened domestic pets inside quiet rooms.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 6: Severe Heatwaves -->
+    <article id="heatwave" class="section section-navy-surface disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 06</span>
+            <h2>Severe Heatwaves</h2>
+            <p class="lead">Prolonged spells of abnormally high ambient temperatures above 38°C–42°C with high humidity, creating life-threatening heatstroke risks.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Heatwave</h4>
+            <ul>
+              <li>Insulate home ceilings and hang thick light-coloured curtains or bamboo blinds over sun-facing windows.</li>
+              <li>Prepare multiple water cooling containers, Oral Rehydration Salt (ORS) packets, and lemon electrolytes.</li>
+              <li>Identify air-conditioned or well-shaded community public cooling centres in your district.</li>
+              <li>Reschedule strenuous outdoor labor, sports, and construction tasks to early morning or late evening.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Heatwave</h4>
+            <ul>
+              <li>Drink plenty of clean water and electrolyte fluids continuously, even if you do not feel thirsty.</li>
+              <li>Avoid sugary sodas, strong tea, coffee, and alcohol, which exacerbate bodily dehydration.</li>
+              <li>Wear loose, lightweight, light-coloured cotton clothing and wide-brim hats or umbrellas when stepping outside.</li>
+              <li>Watch for heatstroke signs: confusion, hot red dry skin, lack of sweating, rapid pulse, and fainting. Treat as medical emergency!</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Heatwave</h4>
+            <ul>
+              <li>Continue gradual hydration to restore internal mineral and electrolyte balance safely.</li>
+              <li>Check on isolated elderly neighbours, infants, and chronic kidney or cardiovascular patients.</li>
+              <li>Check food supplies: hot weather accelerates perishable food spoilage and bacterial food poisoning.</li>
+              <li>Maintain tree canopies around your dwelling to create natural microclimate cooling for future seasons.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Heatwave Support Kit</h5>
+            <p>Reusable insulated water bottles, multiple boxes of WHO-standard ORS, handheld battery fans, clinical thermometer, wide-brim sun hats, and wet cooling towels.</p>
+            <h5>Evacuation / Cooling Transfer</h5>
+            <p><strong>When:</strong> Body core temperature exceeds 39°C or heat exhaustion symptoms (dizziness, nausea, clamminess) develop. <strong>How:</strong> Move immediately to air-conditioned medical clinics or shaded cool rooms.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Leaving children or pets unattended inside locked vehicles for even 2 minutes (temperatures reach 60°C).</li>
+              <li>Consuming unsafe street drinks, contaminated crushed ice, or unpasteurized syrups.</li>
+              <li>Giving extremely cold ice water to a heatstroke patient (can trigger fatal peripheral vasoconstriction and shivering).</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Keep infants out of direct sunlight; hydrate nursing mothers frequently; provide continuous fresh drinking bowls and shaded cool flooring for pets and livestock.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 7: Cold Waves -->
+    <article id="coldwave" class="section disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 07</span>
+            <h2>Cold Waves and Dense Fog</h2>
+            <p class="lead">Abrupt Arctic or Himalayan cold air incursions dropping temperatures below 6°C–10°C, triggering respiratory illnesses and hypothermia.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Cold Wave</h4>
+            <ul>
+              <li>Insulate draughty doors and window frames with old blankets or plastic sealing film.</li>
+              <li>Gather layered woolen garments, thermal innerwear, socks, woolen caps, and thick blankets for family members.</li>
+              <li>Stock adequate supplies of warm nutritious meals, lentils, and hot herbal teas.</li>
+              <li>Check condition of vehicle fog lights and emergency heaters before travelling on highways.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Cold Wave</h4>
+            <ul>
+              <li>Dress in multiple loose, lightweight layers—trapped air between clothing layers insulates far better than a single heavy coat.</li>
+              <li>Always wear a warm cap and scarf: up to 30% of bodily heat loss occurs through an uncovered head and neck.</li>
+              <li>Keep elderly family members and newborns in warm interior rooms; monitor for signs of hypothermia (slurred speech, shivering, drowsiness).</li>
+              <li>Exercise extreme caution when driving through dense morning fog: keep low-beam headlights on and reduce speed by half.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Cold Wave</h4>
+            <ul>
+              <li>Air out rooms and bedding in direct sunlight as soon as fog clears to eliminate dampness and mould.</li>
+              <li>Monitor children for pneumonia and asthmatic bronchial infections; seek clinic attention early.</li>
+              <li>Inspect pipes and water lines for blockages or burst sections in cold-exposed outdoor setups.</li>
+              <li>Donate clean warm winter garments to local community shelter drives for disadvantaged labourers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Cold Weather Emergency Kit</h5>
+            <p>Mylar thermal space blankets, woolen caps, thick wool socks, petroleum jelly/moisturizers for chapped skin, thermal flasks for hot liquids, and cough/fever medications.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> When indoor temperatures drop dangerously low and housing lacks windbreaks. <strong>How:</strong> Move vulnerable seniors to heated municipal community welfare halls.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Burning charcoal, wood coals, or gas stoves inside sealed, unventilated bedrooms (fatal Carbon Monoxide poisoning).</li>
+              <li>Rubbing frostbitten or numb extremities vigorously (causes severe tissue damage).</li>
+              <li>Driving with high-beam headlights on in dense fog (blinds oncoming traffic with backscatter glare).</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Ensure infants sleep in warm sleep-sacks rather than heavy suffocating loose quilts; provide warm straw bedding for outdoor cattle and pets.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 8: Building Fires -->
+    <article id="fire" class="section section-navy-surface disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 08</span>
+            <h2>Building Fires and Smoke Inhalation</h2>
+            <p class="lead">Rapidly spreading structural fires fuelled by electrical short circuits, gas leaks, and flammable materials, producing lethal toxic smoke.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Fire</h4>
+            <ul>
+              <li>Install working smoke alarms on every floor and test their batteries every six months.</li>
+              <li>Keep multi-purpose ABC dry chemical fire extinguishers on each floor and master the <strong>PASS</strong> method (Pull, Aim, Squeeze, Sweep).</li>
+              <li>Map out at least two independent escape routes from every room and ensure window security grilles have an operable emergency release latch.</li>
+              <li>Never overload electrical wall multi-plugs; replace frayed appliance cords immediately.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Fire</h4>
+            <ul>
+              <li><strong>GET OUT AND STAY OUT:</strong> Evacuate immediately! Never waste time collecting laptops, jewellery, or passports.</li>
+              <li><strong>CRAWL LOW UNDER SMOKE:</strong> Toxic gases and superheated smoke rise to the ceiling; clean breathable air is 30–60 cm above the floor.</li>
+              <li>Feel closed doors with the back of your hand before opening: if the door or doorknob is hot, do not open it—use your alternate escape route.</li>
+              <li>If your clothes catch fire: <strong>STOP, DROP, AND ROLL</strong> immediately to smother the flames.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Fire</h4>
+            <ul>
+              <li>Assemble at your predetermined exterior meeting point and take a full family headcount.</li>
+              <li>Dial <strong>999</strong> or local Fire Rescue (16163) immediately from outside the structure.</li>
+              <li>Never re-enter a burning or extinguished building until the Fire Marshall certifies it structurally sound.</li>
+              <li>Seek immediate medical evaluation for smoke inhalation, coughing, or soot around nostrils even if you feel fine initially.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Fire Safety Kit</h5>
+            <p>ABC Dry Chemical fire extinguisher, emergency escape smoke hood / particulate respirator, bright LED flashlight, flame-resistant emergency ladder for upper floors, and loud battery smoke alarm.</p>
+            <h5>Evacuation Directives</h5>
+            <p><strong>When:</strong> The instant smoke or flames are detected. <strong>How:</strong> Exit via stairwells; close doors behind you to slow flame spread. Never use elevators. If trapped, seal door gaps with wet towels and signal at windows.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Using elevators during a fire evacuation (power failure will trap occupants in smoke-filled shafts).</li>
+              <li>Pouring water on kitchen grease or oil frying fires (triggers massive fireball explosion; use a metal lid or fire blanket).</li>
+              <li>Re-entering a burning home to rescue pets or heirlooms.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Assign designated adults to assist elderly or disabled individuals down stairs; teach children never to hide under beds or in closets from firefighters.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Disaster 9: Severe Droughts -->
+    <article id="drought" class="section disaster-section">
+      <div class="container">
+        <div class="disaster-header">
+          <div>
+            <span class="disaster-badge">Hazard Category 09</span>
+            <h2>Severe Droughts and Water Scarcity</h2>
+            <p class="lead">Prolonged absence of precipitation resulting in depleted groundwater aquifers, crop failures, and severe water shortages.</p>
+          </div>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase-card phase-before">
+            <h4>🛡️ Before the Drought</h4>
+            <ul>
+              <li>Install household rainwater harvesting systems with multi-stage sand-and-charcoal filtration tanks.</li>
+              <li>Fix all leaking plumbing faucets, toilets, and pipe joints; a dripping tap wastes up to 30 litres daily.</li>
+              <li>Adopt drip irrigation techniques and mulch soil beds to retain valuable moisture for home vegetable patches.</li>
+              <li>Choose drought-resistant native crop varieties and indigenous fruit-bearing trees.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-during">
+            <h4>⚡ During the Drought</h4>
+            <ul>
+              <li>Prioritize water use strictly for drinking, food preparation, and personal medical hygiene.</li>
+              <li>Reuse greywater from laundry and rice rinsing to flush latrines and hydrate non-edible plants.</li>
+              <li>Never drink untreated agricultural run-off or stagnant pond water without thorough boiling or chemical disinfection.</li>
+              <li>Report illegal municipal water theft or broken distribution mains to local water authorities.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card phase-after">
+            <h4>🔄 After the Drought</h4>
+            <ul>
+              <li>Gradually restore community groundwater reserves by expanding community recharge ponds.</li>
+              <li>Test tube-well water for elevated arsenic or mineral concentration that often spikes during prolonged dry periods.</li>
+              <li>Support community watershed protection zones and community tree-planting barriers.</li>
+              <li>Review household water usage metrics and retain water-saving habits long-term.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="disaster-extra-grid">
+          <div class="extra-box">
+            <h5>Drought Kit &amp; Water Supplies</h5>
+            <p>Food-grade water storage drums with sealed lids, ceramic water filter candles, water purification drops, moisture retention mulch, and manual hand-crank tube-well spares.</p>
+            <h5>Community Water Protocol</h5>
+            <p><strong>When:</strong> Groundwater levels drop below pump intake depths. <strong>How:</strong> Coordinate with municipal emergency water bowsers and share communal deep tube-well rosters equitably.</p>
+          </div>
+
+          <div class="extra-box">
+            <h5>Common Mistakes to Avoid</h5>
+            <ul class="mistake-list">
+              <li>Using hosepipes to wash cars, pathways, or courtyards during critical municipal water shortages.</li>
+              <li>Drinking unpurified ditch or shallow canal water due to desperation (causes cholera and amoebic dysentery outbreaks).</li>
+              <li>Hoarding community water supplies and inflating prices during crises.</li>
+            </ul>
+            <h5>Vulnerable Populations &amp; Pets</h5>
+            <p>Ensure pregnant women and small children receive sterilized clean drinking water first; place shaded shallow water troughs for village cattle and community birds.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo footer-brand-wrap">
+            <div class="shield-icon" aria-hidden="true">SH</div>
+            <div class="brand-text-wrap">
+              <div class="brand-title">Safe<span>Horizon</span></div>
+              <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+            </div>
+          </div>
+          <p>
+            SafeHorizon is an open civic safety initiative providing evidence-based disaster mitigation, first aid, climate resilience, and vulnerable population protection.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Essential Guides</h4>
+          <ul class="footer-links">
+            <li><a href="disaster-guide.html">Disaster Survival Guide</a></li>
+            <li><a href="climate.html">Climate Change &amp; Safety</a></li>
+            <li><a href="emergency-help.html">Emergency Help Centre</a></li>
+            <li><a href="missing-persons.html">Missing Persons Network</a></li>
+            <li><a href="alerts.html">Alerts &amp; Signal Warnings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resources.html">Survival Kit Checklist</a></li>
+            <li><a href="resources.html#hotlines">Emergency Hotlines</a></li>
+            <li><a href="resources.html#shelters">Shelter Locator Protocol</a></li>
+            <li><a href="about.html">About SafeHorizon</a></li>
+            <li><a href="about.html#faq">Safety FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Instant Helplines</h4>
+          <div class="footer-hotlines">
+            <div class="footer-hotline-row">
+              <span>National Unified</span>
+              <strong>999</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Disaster Helpline</span>
+              <strong>1090</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Child Rescue</span>
+              <strong>1098</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Fire Rescue Dispatch</span>
+              <strong>16163</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; SafeHorizon Civic Emergency Project. Developed with pure HTML5 &amp; CSS3 standards.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="about.html#ethics">Ethics &amp; Medical Disclaimer</a></li>
+          <li><a href="about.html#privacy">Community Data Policy</a></li>
+          <li><a href="alerts.html">Signal Verification</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

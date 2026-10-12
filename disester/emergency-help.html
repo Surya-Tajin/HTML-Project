@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeHorizon Emergency Help Centre: Verified immediate first response protocols for 14 life-threatening medical emergencies, accidents, and acute crises.">
+  <title>Emergency Help Centre | SafeHorizon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Urgent Hotline Ribbon -->
+  <aside class="emergency-hotline-bar" aria-label="Emergency Hotlines">
+    <div class="container hotline-container">
+      <div class="hotline-title">
+        <span aria-hidden="true">🚨</span>
+        <span>National 24/7 Emergency Services: <strong>Dial 999</strong> immediately</span>
+      </div>
+      <div class="hotline-numbers">
+        <span class="hotline-item">Ambulance Dispatch: <strong>999</strong></span>
+        <span class="hotline-item">Fire Service Rescue: <strong>16163</strong></span>
+        <span class="hotline-item">Mental Health Lifeline (Kaan Pete Roi): <strong>+880-1779554391</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="SafeHorizon Home">
+        <div class="shield-icon" aria-hidden="true">SH</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">Safe<span>Horizon</span></div>
+          <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+        </div>
+      </a>
+
+      <!-- CSS-only Mobile Nav Toggle -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="disaster-guide.html" class="nav-link">Disaster Guide</a></li>
+          <li><a href="climate.html" class="nav-link">Climate</a></li>
+          <li><a href="emergency-help.html" class="nav-link active" aria-current="page">Emergency Help</a></li>
+          <li><a href="missing-persons.html" class="nav-link">Missing Persons</a></li>
+          <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-help.html" class="nav-emergency-btn">Emergency Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero hero-with-bg" aria-labelledby="help-hero-heading">
+      <img src="images/medical-first-aid.jpg" alt="Emergency paramedic team administering vital life support at an emergency scene" class="hero-overlay-img">
+      <div class="hero-overlay-dark"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Critical Emergency Directives &amp; First Care
+          </div>
+          <h1 id="help-hero-heading" class="hero-title">Emergency <span>Help Centre</span></h1>
+          <p class="hero-description">
+            Standardized, evidence-based immediate action protocols for 14 life-critical emergency situations. Prioritize professional emergency dispatch, prevent secondary trauma, and deliver certified basic stabilization safely.
+          </p>
+          <div class="btn-group">
+            <a href="#dispatch-contact" class="btn btn-emergency">Call Emergency Services (999)</a>
+            <a href="#emergency-index" class="btn btn-secondary">Select Emergency Situation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vital Medical Care Disclaimer -->
+    <aside class="container" aria-label="Medical Protocol Disclaimer">
+      <div class="alert-box alert-box-critical">
+        <h4>Important Clinical Safety Notice</h4>
+        <p>
+          <strong>Untrained bystanders must NEVER attempt complex invasive medical or dangerous rescue operations.</strong> SafeHorizon provides basic stabilization guidance only. In situations involving severe arterial bleeding, third-degree burns, electric shock, chemical poisoning, suspected heart attack, stroke, or unconsciousness, always prioritize calling emergency medical services (999) immediately before any other action.
+        </p>
+      </div>
+    </aside>
+
+    <!-- Emergency Categories Jump Matrix -->
+    <section id="emergency-index" class="section section-navy-surface" aria-labelledby="matrix-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Situation Directory</span>
+          <h2 id="matrix-title" class="section-title">14 Life-Critical Emergency Scenarios</h2>
+          <p class="section-subtitle">Click on any situation to view its step-by-step immediate safe actions, prohibited mistakes, and hospital dispatch criteria.</p>
+        </div>
+
+        <div class="grid-4">
+          <a href="#accident" class="emergency-card">
+            <h3>🚗 1. Road Accidents</h3>
+            <p>Traffic crashes, vehicular trauma, spinal immobilization rules.</p>
+          </a>
+          <a href="#cardiac" class="emergency-card">
+            <h3>❤️ 2. Heart Attack &amp; Stroke</h3>
+            <p>Chest pressure, facial drooping, FAST stroke identification.</p>
+          </a>
+          <a href="#bleeding" class="emergency-card">
+            <h3>🩸 3. Severe Bleeding &amp; Cuts</h3>
+            <p>Arterial haemorrhage control, direct pressure, tourniquets.</p>
+          </a>
+          <a href="#burns" class="emergency-card">
+            <h3>🔥 4. Burns &amp; Scalds</h3>
+            <p>20-minute cool running water rule, heat dissipation, blister care.</p>
+          </a>
+          <a href="#electric" class="emergency-card">
+            <h3>⚡ 5. Electric Shock</h3>
+            <p>Power source disconnection, non-conductive rescue, cardiac arrest.</p>
+          </a>
+          <a href="#choking" class="emergency-card">
+            <h3>🗣️ 6. Acute Choking</h3>
+            <p>Airway obstruction, back blows, abdominal thrusts, infant care.</p>
+          </a>
+          <a href="#unconscious" class="emergency-card">
+            <h3>🛌 7. Fainting &amp; Coma</h3>
+            <p>Recovery position, airway monitoring, unresponsive triage.</p>
+          </a>
+          <a href="#poisoning" class="emergency-card">
+            <h3>🧪 8. Poisoning &amp; Toxins</h3>
+            <p>Chemical ingestion, inhalation, corrosive substance management.</p>
+          </a>
+          <a href="#drowning" class="emergency-card">
+            <h3>🌊 9. Drowning Emergencies</h3>
+            <p>Non-swimmer rescue reach, water expulsion myths, rescue breathing.</p>
+          </a>
+          <a href="#smoke" class="emergency-card">
+            <h3>💨 10. Fire &amp; Smoke</h3>
+            <p>Carbon monoxide inhalation, thermal airway edema, safe evacuation.</p>
+          </a>
+          <a href="#snakebite" class="emergency-card">
+            <h3>🐍 11. Snake &amp; Animal Bites</h3>
+            <p>Limb immobilization, anti-venom coordination, rabies prevention.</p>
+          </a>
+          <a href="#mental-health" class="emergency-card">
+            <h3>🧠 12. Mental Health &amp; Crisis</h3>
+            <p>Acute suicidal ideation, panic desensitization, de-escalation.</p>
+          </a>
+          <a href="#missing-child" class="emergency-card">
+            <h3>👶 13. Missing Children</h3>
+            <p>First-hour search perimeter, vulnerable adult disorientation.</p>
+          </a>
+          <a href="#urgent-other" class="emergency-card">
+            <h3>⚠️ 14. Other Urgent Crises</h3>
+            <p>Anaphylaxis allergic shock, heatstroke, traumatic fractures.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Emergency Sections (1 to 14) -->
+    <section class="section" aria-labelledby="protocols-heading">
+      <div class="container">
+        <h2 id="protocols-heading" class="section-title">Standardized Emergency Triage Protocols</h2>
+        <p class="lead">
+          Follow these structured protocols strictly. Maintain safety for yourself first before approaching any casualty.
+        </p>
+
+        <!-- Emergency 1: Road Accidents -->
+        <article id="accident" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">1</span>
+              <div>
+                <h3>Road Accidents and Traffic Injuries</h3>
+                <p>High-energy impact trauma, vehicular entrapment, and highway collisions.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Trauma Alert</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Secure the Perimeter:</strong> Park hazards, place reflective triangles 50 metres back, and turn off crashed vehicle ignitions to prevent fire.</li>
+                <li><strong>Call 999 Immediately:</strong> Provide the exact highway mile marker, number of vehicles, and approximate casualty count.</li>
+                <li><strong>Keep Casualties Immobile:</strong> Keep the victim's head and neck completely still in the neutral position found.</li>
+                <li>Control life-threatening external bleeding by pressing sterile cloth directly over wounds.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER pull or drag an injured victim from a vehicle unless there is an immediate fire or sinking hazard (prevents irreversible spinal paralysis).</li>
+                <li>NEVER remove a motorcyclist's crash helmet unless they have stopped breathing and airway access is impossible.</li>
+                <li>NEVER offer food, water, or cigarettes to injured victims (interferes with emergency surgery anesthesia).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Immediately upon witnessing the collision.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> All high-speed collisions, vehicle rollovers, pedestrians struck by vehicles, or any loss of consciousness.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 2: Heart Attack & Stroke -->
+        <article id="cardiac" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">2</span>
+              <div>
+                <h3>Heart Attack and Suspected Stroke</h3>
+                <p>Cardiovascular arterial blockage and cerebrovascular infarction.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Critical Time Window</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Heart Attack:</strong> Seat the person comfortably on the floor in the "W-position" (knees bent, back supported) to reduce cardiac workload. Loosen restrictive collar and waist garments.</li>
+                <li>If the victim is not allergic, recommend chewing one standard non-coated adult Aspirin (300 mg) while awaiting ambulance.</li>
+                <li><strong>Stroke — Test FAST:</strong>
+                  <ul>
+                    <li><strong>F (Face):</strong> Ask them to smile. Does one side of the face droop?</li>
+                    <li><strong>A (Arms):</strong> Ask them to raise both arms. Does one arm drift downward?</li>
+                    <li><strong>S (Speech):</strong> Ask them to repeat a simple phrase. Is speech slurred or strange?</li>
+                    <li><strong>T (Time):</strong> If ANY sign is present, dial 999 immediately. Note the exact time symptoms started.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER allow a person having chest tightness to walk around or drive themselves to the hospital.</li>
+                <li>NEVER administer Aspirin to a suspected stroke patient (if the stroke is hemorrhagic, Aspirin will worsen brain bleeding).</li>
+                <li>NEVER wait more than 5 minutes hoping symptoms "will go away."</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Within the first 60 seconds of chest crushing pain or failed FAST stroke test.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Every suspected cardiovascular event is a mandatory intensive hospital admission.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 3: Severe Bleeding & Minor Cuts -->
+        <article id="bleeding" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">3</span>
+              <div>
+                <h3>Severe Bleeding and Minor Cuts</h3>
+                <p>Arterial spurting, deep lacerations, and capillary trauma.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Immediate Pressure Required</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Severe Bleeding:</strong> Apply firm, continuous direct pressure over the bleeding wound using a sterile pad or clean cloth for at least 10 minutes without lifting to check.</li>
+                <li>Elevate the injured limb above heart level if no bone fracture is suspected.</li>
+                <li>If blood soaks through, add another pad directly on top. Do not remove the initial pad as it disrupts early clot formation.</li>
+                <li><strong>Minor Cuts:</strong> Clean under clean running water, pat dry with sterile gauze, apply antiseptic, and cover with a sterile adhesive dressing.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER remove large embedded objects (knives, glass shards, metal nails). Stabilize the object with bulky bandages around it; removal causes massive exsanguination.</li>
+                <li>NEVER use unapproved makeshift string or thin wire tourniquets that cut into muscle tissue.</li>
+                <li>NEVER apply turmeric, mud, lime, or coffee powder to bleeding wounds (causes catastrophic septic infection).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Blood spurting in pulses, continuous bleeding failing to stop after 10 minutes of direct pressure, or signs of shock (pallor, dizziness).
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Any wound gaping wider than 0.5 cm, wounds caused by rusted metal (tetanus risk), or wounds over joints.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 4: Burns and Scalds -->
+        <article id="burns" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">4</span>
+              <div>
+                <h3>Burns and Scalds</h3>
+                <p>Thermal flames, hot liquid scalds, electrical flashes, and corrosive heat.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">20-Minute Water Rule</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>COOL IMMEDIATELY FOR 20 MINUTES:</strong> Place the affected burned area under gentle, cool running tap water for a full 20 minutes continuously. This halts the thermal burn progression into deeper tissue layers.</li>
+                <li>Remove tight rings, wristwatches, bracelets, and belts from the burned area gently before swelling starts.</li>
+                <li>After thorough cooling, cover the burn loosely with clean, non-adherent sterile plastic cling wrap or a clean sterile cloth to prevent airborne bacteria.</li>
+                <li>Keep the patient warm with blankets over non-burned regions to prevent systemic hypothermia.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do (STRICT SAFETY RULES)</h5>
+              <ul class="mistake-list">
+                <li><strong>NEVER APPLY ICE OR ICE-COLD WATER:</strong> Extreme cold causes tissue necrosis, frostbite, and severe vasoconstriction that deepens tissue death.</li>
+                <li><strong>NEVER APPLY TOOTHPASTE, OIL, BUTTER, GHEE, RAW EGGS, OR POWDER:</strong> Domestic kitchen pastes trap heat inside the flesh and cause severe bacterial contamination.</li>
+                <li><strong>NEVER BURST OR PUNCTURE BLISTERS:</strong> Intact blister skin is the body's natural sterile biological barrier against infection.</li>
+                <li>NEVER pull off clothing that is stuck to charred burned flesh. Cut loosely around adhering fabric.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Any burn larger than the patient's palm, all burns to the face, hands, feet, joints, or groin, electrical burns, or burns causing white charred skin.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> All second-degree blistering burns in infants or seniors require direct burn unit admission.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 5: Electric Shock -->
+        <article id="electric" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">5</span>
+              <div>
+                <h3>Electric Shock</h3>
+                <p>High and low voltage electrical contacts, severed lines, and appliance shorts.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Isolate Power First</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>DO NOT TOUCH THE VICTIM:</strong> Touching a casualty still in contact with an electric current will electrocute the rescuer instantly.</li>
+                <li>Immediately switch off the main circuit breaker, pull the wall plug, or shut off the main fuse board.</li>
+                <li>If power cannot be cut, use a dry, non-conductive object (dry wooden broom handle, dry PVC pipe, rolled cardboard) to push the wire away while standing on dry insulated material.</li>
+                <li>Once separated, check breathing immediately. If not breathing, begin CPR without delay and dial 999.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER touch the person with bare hands or metallic items while current is live.</li>
+                <li>NEVER use damp wood or wet objects to push electrical lines away.</li>
+                <li>NEVER approach high-voltage downed utility cables (stay at least 10 metres away until utility workers declare line dead).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Immediately in all electric shock incidents. Internal cardiac arrhythmias can develop hours after the shock.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Every victim of electric shock requires an emergency 12-lead hospital ECG examination.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 6: Choking -->
+        <article id="choking" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">6</span>
+              <div>
+                <h3>Choking and Foreign Body Airway Obstruction</h3>
+                <p>Food bolus or foreign object trapped in trachea causing asphyxiation.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Airway Clearance</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Encourage Coughing:</strong> If the person can speak, cough forcefully, or breathe, encourage them to cough. Do not interfere with coughing.</li>
+                <li><strong>Severe Choking (Cannot speak or breathe, grasping throat):</strong>
+                  <ul>
+                    <li>Deliver <strong>5 sharp back blows</strong> between the shoulder blades with the heel of your hand, leaning the person forward.</li>
+                    <li>If back blows fail, deliver <strong>5 abdominal thrusts (Heimlich maneuver):</strong> Stand behind, place a fist just above the navel, grasp with other hand, pull inward and upward sharply.</li>
+                    <li>Alternate 5 back blows and 5 abdominal thrusts until object is expelled or patient loses consciousness.</li>
+                  </ul>
+                </li>
+                <li><strong>Infant Choking:</strong> Place infant face down along your forearm supporting head, deliver 5 gentle back blows, then turn face up and deliver 5 two-finger chest thrusts.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER perform blind finger sweeps in the mouth (you risk pushing the foreign object deeper into the vocal cords).</li>
+                <li>NEVER perform abdominal thrusts on infants under 1 year old (risk of liver laceration; use chest thrusts instead).</li>
+                <li>NEVER give a choking person water to drink.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> If the obstruction is not expelled after two cycles of 5 back blows and 5 thrusts, or if victim loses consciousness.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Anyone who receives abdominal thrusts must be checked at hospital for internal rib or organ trauma.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 7: Fainting and Unconsciousness -->
+        <article id="unconscious" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">7</span>
+              <div>
+                <h3>Fainting and Unconsciousness</h3>
+                <p>Syncope, diabetic coma, traumatic brain injury, and neurological collapse.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Airway Preservation</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Simple Faint (Vasovagal):</strong> Lay the person flat on their back and elevate legs 30 cm above heart level. Loosen tight collars. Ensure fresh air circulation. Recovery usually occurs in under 60 seconds.</li>
+                <li><strong>Unresponsive but Breathing:</strong> Place the person into the <strong>Recovery Position:</strong> roll them onto their side, tilt head gently back to keep airway open, bend upper leg at right angle to prevent rolling forward.</li>
+                <li>Monitor breathing continuously. If breathing stops, roll flat onto back and start CPR immediately (30 chest compressions to 2 rescue breaths).</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER pour water over an unconscious person's face or force water/liquids into their mouth (leads to fatal pulmonary aspiration).</li>
+                <li>NEVER slap, shake, or shout at an unresponsive casualty.</li>
+                <li>NEVER place pillows under the head of an unconscious person lying on their back (forces chin toward chest, obstructing airway).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> If the person remains unconscious for longer than 60 seconds, fell and struck their head, or has irregular noisy breathing.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Every episode of unexplained collapse requires diagnostic evaluation for seizures, stroke, or heart rhythm disorder.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 8: Poisoning and Chemical Exposure -->
+        <article id="poisoning" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">8</span>
+              <div>
+                <h3>Poisoning and Chemical Exposure</h3>
+                <p>Ingestion of pesticides, caustic household cleaners, drug overdoses, or toxic gas inhalation.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Toxicological Emergency</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Call Poison Control / 999 Immediately:</strong> Identify the chemical container, brand label, chemical ingredients, and estimated quantity ingested.</li>
+                <li><strong>Inhaled Poison (Gas/Fumes):</strong> Evacuate casualty to fresh open air immediately, protecting yourself with a respirator.</li>
+                <li><strong>Skin Chemical Splash:</strong> Douse skin under copious running water for at least 15 minutes, removing contaminated clothes.</li>
+                <li><strong>Eye Chemical Exposure:</strong> Flush open eye with gentle clean water for 20 minutes from the inner bridge of nose outward.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER INDUCE VOMITING unless instructed by a qualified doctor or poison center. If a caustic acid, alkali, or petroleum product was swallowed, vomiting burns the esophagus a second time.</li>
+                <li>NEVER give raw milk, raw eggs, or mustard water as home remedies.</li>
+                <li>NEVER perform mouth-to-mouth resuscitation without a protective pocket barrier if toxic chemical residue is around victim's lips.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Immediately upon discovery of any toxic ingestion, overdose, or chemical contact.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Bring the original chemical container or medicine bottle to the emergency room for targeted antidote selection.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 9: Drowning and Water Emergencies -->
+        <article id="drowning" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">9</span>
+              <div>
+                <h3>Drowning and Water Emergencies</h3>
+                <p>Submersion in rivers, ponds, flood currents, and drainage ditches.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Rescue From Land First</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Follow the Rule: REACH, THROW, ROW, GO:</strong>
+                  <ul>
+                    <li>1. Reach: Extend a bamboo pole, branch, or clothing from safe dry land.</li>
+                    <li>2. Throw: Cast a buoyant lifebuoy, rope, or empty plastic canister.</li>
+                    <li>3. Row: Use a boat or canoe if available.</li>
+                    <li>4. Go: Only trained certified lifeguards with buoyant gear should ever enter water.</li>
+                  </ul>
+                </li>
+                <li>Once rescued to land, check breathing immediately. If not breathing, deliver <strong>5 rescue breaths first</strong>, followed by 30 chest compressions, repeating CPR cycles.</li>
+                <li>Wrap casualty in warm dry blankets to counter rapid hypothermia.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER jump into water to rescue a struggling drowning person if you are untrained (a panicked drowning victim will pull the rescuer under).</li>
+                <li>NEVER waste time trying to "drain water from the lungs" by holding the person upside down or pushing on stomach (delays oxygen delivery and causes stomach contents to choke lungs).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Immediately when a person goes missing or is submerged in water.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Anyone rescued from near-drowning must be admitted to hospital due to the risk of "secondary drowning" (delayed pulmonary edema) up to 48 hours later.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 10: Fire and Smoke Inhalation -->
+        <article id="smoke" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">10</span>
+              <div>
+                <h3>Fire and Smoke Inhalation</h3>
+                <p>Carbon monoxide, hydrogen cyanide poisoning, and thermal airway burns.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Toxic Smoke Escape</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li>Evacuate immediately into open fresh air. Crawl on hands and knees beneath smoke layers.</li>
+                <li>Cover mouth and nose with a damp cloth if available to filter coarse particulates.</li>
+                <li>Provide high-flow oxygen at the earliest moment through paramedics.</li>
+                <li>Rest the patient in a sitting position to ease labored breathing.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER re-enter a smoke-filled room or building for any reason.</li>
+                <li>NEVER underestimate smoke exposure: airway swelling can close the windpipe hours after leaving the scene.</li>
+                <li>NEVER ignore coughing, black soot around nostrils, or singed nasal hairs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Dial 999 immediately for Fire Rescue and Ambulance dispatch.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Anyone trapped in an enclosed fire requires mandatory hospital observation and blood carboxyhemoglobin screening.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 11: Snakebites and Animal Bites -->
+        <article id="snakebite" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">11</span>
+              <div>
+                <h3>Snakebites and Animal Bites</h3>
+                <p>Venomous elapid/viper bites and mammalian rabies exposure risks.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Immobilize Limb</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Snakebite:</strong> Keep the patient calm and completely still. Any muscular movement speeds venom circulation through lymph channels.</li>
+                <li>Immobilize the bitten limb using a rigid wooden splint and loose bandage, keeping the limb at or slightly below heart level.</li>
+                <li>Transport immediately to the nearest Upazila Health Complex or District Hospital with Anti-Venom Serum (AVS).</li>
+                <li><strong>Dog / Animal Bite:</strong> Wash wound immediately with running water and soap for a full 15 minutes to wash out rabies virus. Proceed to hospital for Anti-Rabies Vaccine (ARV) and Immunoglobulin.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do (FATAL SNAKEBITE MYTHS)</h5>
+              <ul class="mistake-list">
+                <li>NEVER CUT THE BITE WOUND WITH RAZOR BLADES (causes massive uncontrolled bleeding and tissue necrosis).</li>
+                <li>NEVER ATTEMPT TO SUCK VENOM WITH YOUR MOUTH (ineffective and poisons rescuer via oral micro-cuts).</li>
+                <li>NEVER APPLY TIGHT TOURNIQUETS OR ROPE LIGATURES (causes gangrene and limb amputation).</li>
+                <li>NEVER visit traditional faith healers (Ozha/Kobiraj); delay in anti-venom administration is the leading cause of death.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999 / Hospital:</strong> Immediately. Note the physical description of the snake if safe to observe (do not attempt to capture or kill it).
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Every venomous snakebite and mammalian animal bite requires certified hospital care.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 12: Mental Health Crises & Suicide Emergencies -->
+        <article id="mental-health" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">12</span>
+              <div>
+                <h3>Mental Health Crises and Suicide Emergencies</h3>
+                <p>Acute psychological distress, severe panic attacks, and imminent self-harm risk.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Compassionate Crisis Care</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Stay Present:</strong> Never leave a person in acute suicidal crisis alone. Stay with them in a calm, quiet environment.</li>
+                <li><strong>Remove Lethal Means:</strong> Discreetly remove access to toxic medications, pesticides, sharp knives, ropes, and firearms.</li>
+                <li><strong>Listen Without Judgment:</strong> Speak in a calm, grounded voice. Acknowledge their emotional pain: "I am here with you, and you are safe right now."</li>
+                <li>Connect immediately with verified crisis hotlines: <strong>Kaan Pete Roi (+880-1779554391)</strong> or National Emergency <strong>999</strong>.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER dismiss or debate their feelings ("You are overreacting" or "Others have it worse").</li>
+                <li>NEVER promise absolute secrecy if the person is threatening immediate self-harm.</li>
+                <li>NEVER leave the person unattended to go search for help alone.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> If the individual has self-injured, ingested harmful substances, or is on an elevated ledge.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Connect with psychiatric and psychosocial emergency units immediately following initial stabilization.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 13: Missing Children & Vulnerable People -->
+        <article id="missing-child" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">13</span>
+              <div>
+                <h3>Missing Children and Vulnerable People</h3>
+                <p>Lost children in crowds, disoriented elderly persons with Alzheimer's/dementia, and disaster separation.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Golden Hour Response</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Search Water Hazards First:</strong> Check nearby ponds, open wells, ditches, rivers, swimming pools, and construction pits immediately.</li>
+                <li><strong>Alert Hub Management:</strong> If in a shopping mall, transit station, or ferry terminal, demand an immediate security lockdown of exits and public address broadcast.</li>
+                <li><strong>Dial 999 &amp; Child Helpline 1098:</strong> Report the disappearance immediately. <strong>There is NO 24-hour waiting requirement</strong> for children or vulnerable persons!</li>
+                <li>Provide police with recent clear color photos, exact clothing descriptions, and identifying birthmarks.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER wait hours hoping the missing child will return on their own before calling authorities.</li>
+                <li>NEVER assume someone else is looking after the vulnerable individual.</li>
+                <li>NEVER post personal home phone numbers publicly without official police liaison guidance (prevents extortion scams).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Within the first 15 minutes of an unsuccessful local search.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> File an immediate General Diary (GD) and national law enforcement alert dispatch.
+            </div>
+          </div>
+        </article>
+
+        <!-- Emergency 14: Other Urgent Crises -->
+        <article id="urgent-other" class="emergency-protocol-card">
+          <div class="protocol-header">
+            <div class="protocol-title-wrap">
+              <span class="protocol-number">14</span>
+              <div>
+                <h3>Other Urgent Crises: Anaphylaxis &amp; Fractures</h3>
+                <p>Acute systemic allergic shock and traumatic closed/open bone fractures.</p>
+              </div>
+            </div>
+            <span class="card-badge-urgent">Urgent Intervention</span>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-box safe">
+              <h5>Immediate Safe Actions</h5>
+              <ul>
+                <li><strong>Severe Allergic Reaction (Anaphylaxis):</strong> Look for throat swelling, hives, lip puffiness, and wheezing. Help victim administer their autoinjector (EpiPen) into the outer mid-thigh if available. Call 999 instantly.</li>
+                <li><strong>Suspected Fractures:</strong> Support the injured limb in the position found. Splint the joint above and below the fracture using rolled newspapers or cardboard and loose ties.</li>
+                <li>Cover open fracture wounds with sterile dry dressings without pushing protruding bones back inside.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-box danger">
+              <h5>What NOT to Do</h5>
+              <ul class="mistake-list">
+                <li>NEVER attempt to straighten, align, or "set" a fractured bone yourself.</li>
+                <li>NEVER massage or violently rotate a joint that could be dislocated.</li>
+                <li>NEVER delay emergency transport for an anaphylactic patient even if an autoinjector was given.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="protocol-triage">
+            <div>
+              <strong>When to Contact 999:</strong> Breathing difficulty during allergy, loss of consciousness, open protruding bone fractures, or absent pulse in limb.
+            </div>
+            <div>
+              <strong>Professional Care Threshold:</strong> Orthopedic surgical evaluation and radiological imaging required for all suspected fractures.
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Prominent Emergency Contact Section -->
+    <section id="dispatch-contact" class="section section-navy-surface" aria-labelledby="dispatch-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">24/7 National Emergency Command</span>
+          <h2 id="dispatch-heading" class="section-title">Emergency Contact Directory</h2>
+          <p class="section-subtitle">
+            Save these numbers on your mobile devices and post them visibly near your home entrance.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="custom-table" aria-label="National Emergency Directory">
+            <thead>
+              <tr>
+                <th scope="col">Service / Bureau</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Hours</th>
+                <th scope="col">Scope of Service</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>National Unified Emergency</strong></td>
+                <td><span class="badge-signal">999</span></td>
+                <td>24 Hours / 7 Days</td>
+                <td>Police, Fire Service Rescue, and Emergency Ambulance dispatch.</td>
+              </tr>
+              <tr>
+                <td><strong>Disaster Warning &amp; Weather Info</strong></td>
+                <td><span class="badge-signal">1090</span></td>
+                <td>24 Hours / 7 Days</td>
+                <td>Official cyclone, flood, and tsunami warnings by Ministry of Disaster Management.</td>
+              </tr>
+              <tr>
+                <td><strong>Child Protection &amp; Helpline</strong></td>
+                <td><span class="badge-signal">1098</span></td>
+                <td>24 Hours / 7 Days</td>
+                <td>Emergency rescue for missing, separated, abused, and runaway children.</td>
+              </tr>
+              <tr>
+                <td><strong>Fire Service &amp; Civil Defence Control</strong></td>
+                <td><span class="badge-signal">16163</span></td>
+                <td>24 Hours / 7 Days</td>
+                <td>Direct fire rescue headquarters, search &amp; water rescue teams.</td>
+              </tr>
+              <tr>
+                <td><strong>Mental Health Crisis Lifeline</strong></td>
+                <td><span class="badge-signal">+880-1779554391</span></td>
+                <td>Daily 3:00 PM – 3:00 AM</td>
+                <td>Kaan Pete Roi confidential suicide prevention and emotional distress hotline.</td>
+              </tr>
+              <tr>
+                <td><strong>National Health Call Centre</strong></td>
+                <td><span class="badge-signal">16263</span></td>
+                <td>24 Hours / 7 Days</td>
+                <td>Ministry of Health direct telemedicine and hospital referral directory.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo footer-brand-wrap">
+            <div class="shield-icon" aria-hidden="true">SH</div>
+            <div class="brand-text-wrap">
+              <div class="brand-title">Safe<span>Horizon</span></div>
+              <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+            </div>
+          </div>
+          <p>
+            SafeHorizon Emergency Help Centre provides clinically verified first-response triage directives for life-threatening crises and medical emergencies.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Essential Guides</h4>
+          <ul class="footer-links">
+            <li><a href="disaster-guide.html">Disaster Survival Guide</a></li>
+            <li><a href="climate.html">Climate Change &amp; Safety</a></li>
+            <li><a href="emergency-help.html">Emergency Help Centre</a></li>
+            <li><a href="missing-persons.html">Missing Persons Network</a></li>
+            <li><a href="alerts.html">Alerts &amp; Signal Warnings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resources.html">Survival Kit Checklist</a></li>
+            <li><a href="resources.html#hotlines">Emergency Hotlines</a></li>
+            <li><a href="resources.html#shelters">Shelter Locator Protocol</a></li>
+            <li><a href="about.html">About SafeHorizon</a></li>
+            <li><a href="about.html#faq">Safety FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Instant Helplines</h4>
+          <div class="footer-hotlines">
+            <div class="footer-hotline-row">
+              <span>National Unified</span>
+              <strong>999</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Disaster Helpline</span>
+              <strong>1090</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Child Rescue</span>
+              <strong>1098</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Fire Rescue Dispatch</span>
+              <strong>16163</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; SafeHorizon Civic Emergency Project. Developed with pure HTML5 &amp; CSS3 standards.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="about.html#ethics">Ethics &amp; Medical Disclaimer</a></li>
+          <li><a href="about.html#privacy">Community Data Policy</a></li>
+          <li><a href="alerts.html">Signal Verification</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

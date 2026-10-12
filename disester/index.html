@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeHorizon - Comprehensive emergency, disaster, climate resilience, and life-safety portal. Learn how to prepare, react, and protect loved ones during crises.">
+  <title>SafeHorizon | Emergency, Disaster &amp; Climate Safety Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Urgent Hotline Ribbon -->
+  <aside class="emergency-hotline-bar" aria-label="National Emergency Hotlines">
+    <div class="container hotline-container">
+      <div class="hotline-title">
+        <span aria-hidden="true">🚨</span>
+        <span>National 24/7 Emergency Dispatch</span>
+      </div>
+      <div class="hotline-numbers">
+        <span class="hotline-item">Police / Fire / Ambulance: <strong>999</strong></span>
+        <span class="hotline-item">Disaster Helpline: <strong>1090</strong></span>
+        <span class="hotline-item">Child Helpline: <strong>1098</strong></span>
+        <span class="hotline-item">Women &amp; Child Safety: <strong>109</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="SafeHorizon Home">
+        <div class="shield-icon" aria-hidden="true">SH</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">Safe<span>Horizon</span></div>
+          <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+        </div>
+      </a>
+
+      <!-- CSS-only Mobile Nav Toggle -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="disaster-guide.html" class="nav-link">Disaster Guide</a></li>
+          <li><a href="climate.html" class="nav-link">Climate</a></li>
+          <li><a href="emergency-help.html" class="nav-link">Emergency Help</a></li>
+          <li><a href="missing-persons.html" class="nav-link">Missing Persons</a></li>
+          <li><a href="alerts.html" class="nav-link">Alerts</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-help.html" class="nav-emergency-btn">Emergency Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero hero-with-bg" aria-labelledby="hero-heading">
+      <img src="images/hero-disaster.jpg" alt="Emergency response boat rescuing civilians during severe weather and flooding" class="hero-overlay-img">
+      <div class="hero-overlay-dark"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Civic Preparedness &amp; Life Protection Network
+          </div>
+          <h1 id="hero-heading" class="hero-title">Be Prepared. Stay Safe. <span>Save Lives.</span></h1>
+          <p class="hero-description">
+            SafeHorizon equips families, schools, and communities with life-saving protocols for natural catastrophes, severe weather events, acute medical emergencies, missing person alerts, and climate disruptions.
+          </p>
+          <div class="btn-group">
+            <a href="emergency-help.html" class="btn btn-emergency">Get Immediate Emergency Help</a>
+            <a href="disaster-guide.html" class="btn btn-secondary">Explore Disaster Survival Guides</a>
+            <a href="resources.html" class="btn btn-navy">Family Go-Bag Checklist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Critical Emergency Quick Access Cards -->
+    <section class="section" aria-labelledby="quick-access-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Rapid Response Action</span>
+          <h2 id="quick-access-title" class="section-title">Emergency Quick Access Directives</h2>
+          <p class="section-subtitle">
+            Immediate, time-critical action plans categorized for urgent response. Select your situation below for instant instructions.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card 1: Flood -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🌊</span>
+              <span class="card-badge-urgent">Critical</span>
+            </div>
+            <h3>Flood &amp; Flash Flood</h3>
+            <p>Move immediately to elevated shelter. Turn off main electric breakers. Never walk, swim, or drive through flowing water.</p>
+            <a href="disaster-guide.html#flood" class="emergency-card-link">View Flood Protocol &rarr;</a>
+          </article>
+
+          <!-- Card 2: Cyclone -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🌀</span>
+              <span class="card-badge-urgent">Warning</span>
+            </div>
+            <h3>Cyclone &amp; Storm Surge</h3>
+            <p>Secure windows, disconnect gas supplies, and evacuate to designated cyclone shelters before the landfall perimeter closes.</p>
+            <a href="disaster-guide.html#cyclone" class="emergency-card-link">View Cyclone Protocol &rarr;</a>
+          </article>
+
+          <!-- Card 3: Earthquake -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🏚️</span>
+              <span class="card-badge-urgent">Instant Action</span>
+            </div>
+            <h3>Earthquake</h3>
+            <p>Drop, Cover, and Hold On! Do not run outdoors during tremor shaking. Stay clear of glass windows and unsupported masonry.</p>
+            <a href="disaster-guide.html#earthquake" class="emergency-card-link">View Earthquake Protocol &rarr;</a>
+          </article>
+
+          <!-- Card 4: Building Fire -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🔥</span>
+              <span class="card-badge-urgent">High Risk</span>
+            </div>
+            <h3>Fire &amp; Smoke Inhalation</h3>
+            <p>Crawl low under toxic smoke. Feel doors before opening. Evacuate immediately without gathering belongings and call 999.</p>
+            <a href="emergency-help.html#fire" class="emergency-card-link">View Fire Protocol &rarr;</a>
+          </article>
+
+          <!-- Card 5: Road Accident -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🚗</span>
+              <span class="card-badge-urgent">Accident</span>
+            </div>
+            <h3>Road Traffic Accident</h3>
+            <p>Secure the perimeter first. Never move casualties with suspected spinal trauma unless there is immediate fire hazard.</p>
+            <a href="emergency-help.html#accident" class="emergency-card-link">View Crash Protocol &rarr;</a>
+          </article>
+
+          <!-- Card 6: Medical Emergency -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🏥</span>
+              <span class="card-badge-urgent">Medical</span>
+            </div>
+            <h3>Severe Medical Crisis</h3>
+            <p>Immediate steps for cardiac arrest, suspected stroke, severe arterial bleeding, unconsciousness, and pediatric choking.</p>
+            <a href="emergency-help.html" class="emergency-card-link">View Medical Help &rarr;</a>
+          </article>
+
+          <!-- Card 7: Missing Persons -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">🔍</span>
+              <span class="card-badge-urgent">Urgent</span>
+            </div>
+            <h3>Missing Persons Alert</h3>
+            <p>Golden Hour response steps for missing children, disoriented elderly persons with dementia, and disaster separation.</p>
+            <a href="missing-persons.html" class="emergency-card-link">View Search Hub &rarr;</a>
+          </article>
+
+          <!-- Card 8: Climate Emergency -->
+          <article class="emergency-card">
+            <div class="card-icon-header">
+              <span class="card-icon-badge" aria-hidden="true">☀️</span>
+              <span class="card-badge-urgent">Climate</span>
+            </div>
+            <h3>Heatwave &amp; Extreme Weather</h3>
+            <p>Protecting vulnerable bodies from heatstroke, saline intrusion, lightning storms, and drought water scarcity.</p>
+            <a href="climate.html" class="emergency-card-link">View Climate Safety &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent Emergency Assistance Section -->
+    <section class="section section-navy-surface" aria-labelledby="urgent-assistance-title">
+      <div class="container">
+        <div class="split-content">
+          <div>
+            <span class="section-tag">24/7 First Response Protocol</span>
+            <h2 id="urgent-assistance-title" class="section-title">Are You Experiencing an Active Emergency Right Now?</h2>
+            <p class="lead">
+              Stay calm. Your safety is paramount. Follow our 3-step immediate safety rule before attempting any intervention:
+            </p>
+            <ol>
+              <li><strong>Assess Danger:</strong> Ensure the scene is safe for you. Do not become a second casualty.</li>
+              <li><strong>Call Dispatch:</strong> Dial <strong>999</strong> immediately for professional ambulance, fire, or police dispatch. State your exact location first.</li>
+              <li><strong>Basic First Care Only:</strong> Apply direct pressure on severe bleeding or cool fresh burns with clean cool water. Never perform uncertified invasive maneuvers.</li>
+            </ol>
+            <div class="btn-group">
+              <a href="emergency-help.html" class="btn btn-emergency">Browse All 14 Emergency Guides</a>
+              <a href="alerts.html" class="btn btn-secondary">Check Official Disaster Signals</a>
+            </div>
+          </div>
+          <div>
+            <div class="checklist-card">
+              <h3 class="checklist-title">Primary Emergency Dispatch Directory</h3>
+              <div class="checklist-item">
+                <div class="check-indicator">1</div>
+                <div>
+                  <strong>National Unified Emergency: 999</strong>
+                  <p>Immediate dispatch for Ambulance, Fire Service Rescue, and Police nationwide.</p>
+                </div>
+              </div>
+              <div class="checklist-item">
+                <div class="check-indicator">2</div>
+                <div>
+                  <strong>Disaster Warning Bureau: 1090</strong>
+                  <p>Official flood levels, cyclone landfall warnings, and river erosion bulletins.</p>
+                </div>
+              </div>
+              <div class="checklist-item">
+                <div class="check-indicator">3</div>
+                <div>
+                  <strong>Child Protection Hotline: 1098</strong>
+                  <p>Missing, separated, stranded, or endangered child recovery dispatch.</p>
+                </div>
+              </div>
+              <div class="checklist-item">
+                <div class="check-indicator">4</div>
+                <div>
+                  <strong>National Poison Information Centre</strong>
+                  <p>Direct toxicological guidance for chemical exposure, snakebites, and ingestion.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disaster Preparedness Checklist Section -->
+    <section class="section" aria-labelledby="checklist-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Family &amp; Household Resilience</span>
+          <h2 id="checklist-heading" class="section-title">The Master 72-Hour Survival Checklist</h2>
+          <p class="section-subtitle">
+            During major floods, earthquakes, or storm surges, municipal rescue services may take up to 72 hours to reach isolated sectors. Assemble this kit today.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Column 1: Water & Sustenance -->
+          <article class="checklist-card">
+            <div class="checklist-group">
+              <h4>Water &amp; Essential Nutrition</h4>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>4 Litres of water per person per day</strong> (3-day minimum supply for drinking &amp; sanitation).</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Water purification tablets</strong> (chlorine/halazone) &amp; oral rehydration salts (ORS packets).</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Non-perishable ready-to-eat food</strong> (flattened rice, biscuits, canned proteins, nuts).</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Manual can opener &amp; disposable utensils</strong>.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Column 2: First Aid & Health -->
+          <article class="checklist-card">
+            <div class="checklist-group">
+              <h4>Medical &amp; Personal Care</h4>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Sterile gauze pads, bandages, &amp; medical tape</strong> for wound management.</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>7-day reserve of prescription medications</strong> (insulin, heart/blood pressure pills).</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Antiseptic solution, burn dressing, and safety shears</strong>.</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Sanitary hygiene supplies &amp; wet wipes</strong> for waterless decontamination.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Column 3: Tools & Documents -->
+          <article class="checklist-card">
+            <div class="checklist-group">
+              <h4>Power, Signal &amp; Records</h4>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Battery-powered AM/FM radio</strong> with 3 complete spare battery sets.</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>High-lumen LED flashlight &amp; loud safety whistle</strong> for acoustic distress signalling.</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Waterproof pouch for critical documents</strong> (NID, birth certificates, deeds, cash).</div>
+              </div>
+              <div class="checklist-item">
+                <span class="check-indicator" aria-hidden="true">✓</span>
+                <div><strong>Heavy-duty power bank &amp; waterproof matchbox</strong>.</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="action-center-wrap">
+          <a href="resources.html" class="btn btn-emergency">Download Complete Household Survival Plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Climate and Weather Safety -->
+    <section class="section section-navy-dark" aria-labelledby="climate-feature-title">
+      <div class="container">
+        <div class="split-content">
+          <div class="img-frame">
+            <img src="images/climate-resilience.jpg" alt="Community climate resilience including solar rooftops, mangrove seawalls, and tree planting">
+          </div>
+          <div>
+            <span class="section-tag">Climate Disruption &amp; Future Protection</span>
+            <h2 id="climate-feature-title" class="section-title">Building Resilient Communities Against Climate Extremes</h2>
+            <p>
+              Rising global temperatures are amplifying flash floods in low-lying river deltas, triggering historic salinity intrusion in coastal aquifers, and multiplying prolonged 42°C+ heatwaves.
+            </p>
+            <p>
+              At SafeHorizon, we bridge the gap between global climate awareness and hyper-local community action. Discover how grassroots mangrove barriers, rainwater harvesting tanks, and urban tree canopies save vulnerable lives during seasonal superstorms.
+            </p>
+            <div class="alert-box">
+              <h4>Weather Integrity Commitment</h4>
+              <p>SafeHorizon displays verified safety protocols only. We do not host speculative forecasts or unverified automated sensors; always consult the national meteorological department for official storm paths.</p>
+            </div>
+            <a href="climate.html" class="btn btn-secondary">Read the Full Climate Safety Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Missing Persons & Vulnerable Care Section -->
+    <section class="section" aria-labelledby="missing-persons-feature">
+      <div class="container">
+        <div class="split-content">
+          <div>
+            <span class="section-tag">Community Safety Network</span>
+            <h2 id="missing-persons-feature" class="section-title">Rapid Recovery for Missing Children &amp; Vulnerable Persons</h2>
+            <p class="lead">
+              When disaster strikes or a loved one goes missing in crowded transit hubs, the first 60 minutes determine recovery outcomes.
+            </p>
+            <p>
+              SafeHorizon provides an open-access emergency registry, verified step-by-step reporting guidelines, and reunification shelter contacts to mobilize community volunteer search parties safely.
+            </p>
+            <div class="btn-group">
+              <a href="missing-persons.html" class="btn btn-emergency">Access Missing Persons Hub</a>
+              <a href="missing-persons.html#report" class="btn btn-navy">Submit Missing Report Form</a>
+            </div>
+          </div>
+          <div class="img-frame">
+            <img src="images/missing-persons.jpg" alt="Community volunteers and emergency responders coordinating missing person recovery and shelter reunification">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <div class="brand-logo footer-brand-wrap">
+            <div class="shield-icon" aria-hidden="true">SH</div>
+            <div class="brand-text-wrap">
+              <div class="brand-title">Safe<span>Horizon</span></div>
+              <div class="brand-tagline">Disaster &amp; Climate Safety</div>
+            </div>
+          </div>
+          <p>
+            SafeHorizon is an open public safety initiative dedicated to disaster survival, medical emergency preparedness, climate education, and vulnerable community protection.
+          </p>
+          <p>
+            Operated in adherence to strict ethical safety protocols and national emergency guidelines.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Essential Guides</h4>
+          <ul class="footer-links">
+            <li><a href="disaster-guide.html">Disaster Survival Guide</a></li>
+            <li><a href="climate.html">Climate Change &amp; Safety</a></li>
+            <li><a href="emergency-help.html">Emergency Help Centre</a></li>
+            <li><a href="missing-persons.html">Missing Persons Network</a></li>
+            <li><a href="alerts.html">Alerts &amp; Signal Warnings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources & About -->
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resources.html">Survival Kit Checklist</a></li>
+            <li><a href="resources.html#hotlines">Emergency Hotlines</a></li>
+            <li><a href="resources.html#shelters">Shelter Locator Protocol</a></li>
+            <li><a href="about.html">About SafeHorizon</a></li>
+            <li><a href="about.html#faq">Safety FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Rapid Dispatch -->
+        <div class="footer-col">
+          <h4>Instant Helplines</h4>
+          <div class="footer-hotlines">
+            <div class="footer-hotline-row">
+              <span>National Unified</span>
+              <strong>999</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Disaster Helpline</span>
+              <strong>1090</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Child Rescue</span>
+              <strong>1098</strong>
+            </div>
+            <div class="footer-hotline-row">
+              <span>Fire Rescue Dispatch</span>
+              <strong>16163</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; SafeHorizon Civic Emergency Project. Developed with pure HTML5 &amp; CSS3 standards.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="about.html#ethics">Ethics &amp; Medical Disclaimer</a></li>
+          <li><a href="about.html#privacy">Community Data Policy</a></li>
+          <li><a href="alerts.html">Signal Verification</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
