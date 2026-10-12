@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags for Character Encoding and Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Library &amp; Research Archives | Metropolitan University</title>
+  
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Discover the Central Library at Metropolitan University: digital library, physical book collections, research journals, quiet study rooms, hours, rules, and membership instructions.">
+  
+  <!-- External Stylesheet (Pure CSS, No Inline/Internal Styles) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pure CSS Mobile Navigation Toggle (Checkbox Hack) -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation Menu">
+  <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+  <!-- =========================================================================
+       1. HEADER AND TOP NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Left Header: Hamburger Menu Icon with Visible Label & Language Switcher -->
+      <div class="header-left">
+        <label for="nav-toggle" class="nav-toggle-label" title="Toggle Navigation">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="menu-text">Menu</span>
+        </label>
+
+        <div class="language-selector" title="Select Website Language">
+          <a href="library.html" class="lang-link active">English</a>
+          <a href="#language-bn" class="lang-link">বাংলা</a>
+        </div>
+      </div>
+
+      <!-- Center Header: Navigation Links -->
+      <div class="header-center">
+        <nav class="main-navigation" aria-label="Main Navigation">
+          <div class="mobile-nav-header">
+            <span class="brand-title">University Menu</span>
+            <label for="nav-toggle" class="mobile-close-btn" title="Close Menu">&times;</label>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="undergraduate-details.html" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="library.html" class="nav-link active">Library</a></li>
+            <li class="nav-item"><a href="sports.html" class="nav-link">Campus Life</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="mobile-search-wrap">
+            <form action="#search" method="get" class="search-form">
+              <input type="search" name="q" class="search-input" placeholder="Search library catalog..." aria-label="Search library">
+              <button type="submit" class="search-button" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <div class="header-search">
+          <form action="#search" method="get" class="search-form">
+            <input type="search" name="q" class="search-input" placeholder="Search catalog..." aria-label="Search catalog">
+            <button type="submit" class="search-button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Header: University Logo & Name -->
+      <div class="header-right">
+        <a href="index.html" class="university-brand">
+          <div class="brand-text-wrap">
+            <span class="brand-title">METROPOLITAN</span>
+            <span class="brand-subtitle">University of Excellence</span>
+          </div>
+          <div class="university-logo-box" aria-hidden="true">
+            <span>MU</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       PAGE HERO
+       ========================================================================= -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <span class="hero-badge">Academic Information Center &bull; Knowledge Commons</span>
+      <h1 class="page-hero-title">Metropolitan Central Library</h1>
+      <p class="page-hero-subtitle">
+        A premier research repository offering access to over 500,000 physical volumes, 1.2 million peer-reviewed e-journals, collaborative study environments, and high-speed digital research terminals.
+      </p>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&gt;</span>
+        <span class="breadcrumb-current">University Library</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN DETAILS CONTENT & SIDEBAR
+       ========================================================================= -->
+  <main class="container section-padding">
+    
+    <!-- Book Catalog Search Toolbar -->
+    <div class="program-search-toolbar">
+      <div class="toolbar-title-wrap">
+        <h3>Online Public Access Catalog (OPAC)</h3>
+        <p>Find books, doctoral theses, journal articles, and multimedia archives</p>
+      </div>
+      <div class="program-search-box">
+        <input type="text" placeholder="Search title, author, ISBN or subject..." aria-label="Search catalog">
+      </div>
+    </div>
+
+    <div class="details-layout">
+      
+      <!-- Primary Content Area -->
+      <article>
+        
+        <!-- 1. Library Overview -->
+        <section id="overview" class="content-block">
+          <h2 class="content-block-title">Library Overview &amp; Mission</h2>
+          <p class="section-description">
+            The Metropolitan Central Library serves as the intellectual heart of the university campus. Spanning five modern floors, it provides an inspiring academic sanctuary for undergraduate students, graduate scholars, and faculty researchers.
+          </p>
+          <p class="section-description mt-md">
+            With quiet reflection lounges, state-of-the-art multimedia presentation pods, assistive learning technologies, and a dedicated research consultation desk, our mission is to foster discovery, intellectual inquiry, and lifelong scholarship.
+          </p>
+        </section>
+
+        <!-- 2. Digital Library, E-Books & Research Papers -->
+        <section id="digital-library" class="content-block">
+          <h2 class="content-block-title">Digital Library, E-Books &amp; Research Papers</h2>
+          <p>
+            Members enjoy unrestricted 24/7 off-campus and on-campus access to leading global scholarly repositories:
+          </p>
+          <ul class="checklist">
+            <li><strong>Online Peer-Reviewed Journals:</strong> Direct access to IEEE Xplore, ScienceDirect, JSTOR, SpringerLink, Nature Portfolio, and ACM Digital Library.</li>
+            <li><strong>Digital E-Books Collection:</strong> Over 1,200,000 downloadable academic e-books via ProQuest, Wiley Online Library, and Oxford Academic.</li>
+            <li><strong>Research Paper Repository:</strong> Institutional digital repository hosting over 25,000 university doctoral dissertations, master's theses, and faculty working papers.</li>
+            <li><strong>Plagiarism Detection Tools:</strong> Turnitin and Grammarly Premium accounts provided complimentary to all enrolled researchers.</li>
+          </ul>
+        </section>
+
+        <!-- 3. Physical Book Collection & Book Categories -->
+        <section id="physical-collection" class="content-block">
+          <h2 class="content-block-title">Physical Book Collection &amp; Stacks</h2>
+          <p>
+            Our open-shelf book stacks house more than half a million cataloged volumes classified systematically:
+          </p>
+          
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Floor</th>
+                <th>Major Subject Category</th>
+                <th>Classification Range</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Floor 1</td>
+                <td>Reference Works, Rare Manuscripts &amp; Encyclopedias</td>
+                <td>LC Class A &ndash; C</td>
+              </tr>
+              <tr>
+                <td>Floor 2</td>
+                <td>Engineering, Computer Science &amp; Applied Technology</td>
+                <td>LC Class Q &ndash; T</td>
+              </tr>
+              <tr>
+                <td>Floor 3</td>
+                <td>Business Administration, Economics &amp; Social Sciences</td>
+                <td>LC Class H &ndash; J</td>
+              </tr>
+              <tr>
+                <td>Floor 4</td>
+                <td>Literature, Humanities, Fine Arts &amp; History</td>
+                <td>LC Class P &ndash; Z</td>
+              </tr>
+              <tr>
+                <td>Floor 5</td>
+                <td>Periodicals, Printed Archives &amp; Quiet Thesis Zone</td>
+                <td>Serial Records</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 4. Study Rooms & Computing Facilities -->
+        <section id="facilities" class="content-block">
+          <h2 class="content-block-title">Study Rooms &amp; Computer Facilities</h2>
+          <div class="cards-grid cards-grid-2">
+            <div class="facility-card">
+              <h3 class="facility-title">Collaborative Study Pods</h3>
+              <p class="facility-desc">
+                24 reservable group study pods equipped with smart 65-inch interactive displays, whiteboard walls, and acoustic sound dampening.
+              </p>
+            </div>
+            <div class="facility-card">
+              <h3 class="facility-title">Quiet Research Cubicles</h3>
+              <p class="facility-desc">
+                180 individual study carrels on floors 4 and 5 designed for silent deep work, thesis drafting, and concentrated reading.
+              </p>
+            </div>
+            <div class="facility-card">
+              <h3 class="facility-title">High-Speed Computing Lab</h3>
+              <p class="facility-desc">
+                120 dedicated desktop workstations featuring gigabit internet, CAD software, SPSS, MATLAB, and specialized digital media editors.
+              </p>
+            </div>
+            <div class="facility-card">
+              <h3 class="facility-title">Wireless Printing &amp; Scanning</h3>
+              <p class="facility-desc">
+                Self-service cloud printing stations and high-resolution book scanners available across every library level.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. Library Membership & Application Instructions -->
+        <section id="membership" class="content-block">
+          <h2 class="content-block-title">Library Membership &amp; Application Instructions</h2>
+          <p>
+            All registered undergraduate students, graduate scholars, and faculty members are automatically eligible for library privileges:
+          </p>
+          <ol class="ordered-steps">
+            <li><strong>Step 1: ID Card Activation:</strong> Present your university Smart ID card at the Circulation Desk on the 1st floor.</li>
+            <li><strong>Step 2: Digital Portal PIN:</strong> Set up your library OPAC password and remote proxy credentials at the circulation kiosk.</li>
+            <li><strong>Step 3: Barcode Verification:</strong> Verify your active enrollment status for borrowing privileges (up to 6 books simultaneously for undergraduates, 12 for graduates).</li>
+            <li><strong>Step 4: Orientation Tour:</strong> Attend a 15-minute library resource and database orientation held every Monday at 11:00 AM.</li>
+          </ol>
+        </section>
+
+        <!-- 6. Library Opening Hours -->
+        <section id="hours" class="content-block">
+          <h2 class="content-block-title">Library Opening Hours</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Physical Stacks &amp; Help Desk</th>
+                <th>Quiet Study Lounges</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday &ndash; Thursday</td>
+                <td>8:00 AM &ndash; 10:00 PM</td>
+                <td>24 Hours Open</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8:00 AM &ndash; 8:00 PM</td>
+                <td>24 Hours Open</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>9:00 AM &ndash; 6:00 PM</td>
+                <td>24 Hours Open</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>10:00 AM &ndash; 6:00 PM</td>
+                <td>24 Hours Open</td>
+              </tr>
+              <tr>
+                <td>Exam Weeks</td>
+                <td>24 Hours Fully Open</td>
+                <td>24 Hours Open</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 7. Library Rules & Regulations -->
+        <section id="rules" class="content-block">
+          <h2 class="content-block-title">Library Code of Conduct &amp; Rules</h2>
+          <ul class="checklist">
+            <li>A valid university Smart ID card must be presented for library entrance and book circulation.</li>
+            <li>Mobile devices must be kept on silent mode; voice phone calls are strictly prohibited inside reading halls.</li>
+            <li>Beverages in spill-proof covered containers are permitted; hot food and snacks are confined to the ground floor cafe lounge.</li>
+            <li>Standard borrowing duration is 21 days for general books, renewable twice online if not reserved by another patron.</li>
+            <li>Overdue fines are charged at $0.50 per book per day to encourage timely circulation among students.</li>
+          </ul>
+        </section>
+
+        <!-- 8. Contact Information -->
+        <section id="contact" class="content-block">
+          <h2 class="content-block-title">Library Help Desk &amp; Subject Specialists</h2>
+          <div class="contact-details-box">
+            <p><strong>Circulation Desk:</strong> Ground Floor &bull; library.desk@metropolitan.edu</p>
+            <p><strong>Research &amp; Reference Consultations:</strong> reference@metropolitan.edu</p>
+            <p><strong>Telephone Hotline:</strong> +1 (800) 555-METRO ext. 301</p>
+            <p><strong>Inter-Library Loan Desk:</strong> ill@metropolitan.edu</p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky-sidebar">
+          
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Library At A Glance</h3>
+            <div class="sidebar-info-row">
+              <strong>Total Volumes:</strong>
+              <span>520,000+ Books</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>E-Books:</strong>
+              <span>1.2 Million+</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>E-Journals:</strong>
+              <span>65,000 Titles</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Seating Capacity:</strong>
+              <span>1,800 Seats</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Study Pods:</strong>
+              <span>24 Rooms</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Wi-Fi Speed:</strong>
+              <span>1 Gbps Campus Net</span>
+            </div>
+
+            <div class="footer-cta-box">
+              <a href="#membership" class="btn btn-primary btn-block">Apply for Membership</a>
+              <a href="#digital-library" class="btn btn-secondary btn-block mt-xs">Explore E-Resources</a>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Quick Links</h3>
+            <ul class="footer-links-list">
+              <li><a href="#hours">&bull; View Daily Hours</a></li>
+              <li><a href="#facilities">&bull; Reserve a Study Pod</a></li>
+              <li><a href="#rules">&bull; Borrowing Policies</a></li>
+              <li><a href="#contact">&bull; Book a Subject Librarian</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <h3 class="footer-col-title">Metropolitan Central Library</h3>
+          <p class="footer-about-text">
+            Empowering students, scholars, and researchers through open access to knowledge, cutting-edge digital resources, and quiet academic sanctums.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Quick Navigation</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">University Home</a></li>
+            <li><a href="undergraduate-details.html">Undergraduate Programs</a></li>
+            <li><a href="graduate-details.html">Graduate Studies</a></li>
+            <li><a href="sports.html">Athletics &amp; Sports</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Library Hours</h3>
+          <ul class="footer-links-list">
+            <li><a>Mon &ndash; Thu: 8 AM &ndash; 10 PM</a></li>
+            <li><a>Fri: 8 AM &ndash; 8 PM</a></li>
+            <li><a>Sat &ndash; Sun: 10 AM &ndash; 6 PM</a></li>
+            <li><a>Study Lounges: 24/7</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contact Library</h3>
+          <div class="footer-contact-item">
+            <strong>Desk:</strong>
+            <span>library.desk@metropolitan.edu</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Phone:</strong>
+            <span>+1 (800) 555-METRO ext. 301</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metropolitan University of Excellence. Designed with pure HTML5 and CSS3.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="index.html">Back to Home</a></li>
+          <li><a href="#overview">Top of Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

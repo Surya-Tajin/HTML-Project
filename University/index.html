@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags for Character Encoding and Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metropolitan University of Excellence | Higher Education & Research</title>
+  
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Welcome to Metropolitan University of Excellence. Explore world-class undergraduate, graduate programs, research facilities, sports, cultural activities, and campus life.">
+  
+  <!-- External Stylesheet (Strictly External CSS, No Inline/Internal Styles) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       PURE CSS MOBILE NAVIGATION TOGGLE (Checkbox Hack - No JavaScript)
+       ========================================================================= -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation Menu">
+  <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+  <!-- =========================================================================
+       1. HEADER AND TOP NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Left Header: Hamburger Menu Icon with Visible Label & Language Switcher -->
+      <div class="header-left">
+        <!-- Pure CSS Hamburger Menu Toggle Button with Visible Label -->
+        <label for="nav-toggle" class="nav-toggle-label" title="Toggle Main Navigation">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="menu-text">Menu</span>
+        </label>
+
+        <!-- Language Selection (Pure HTML & CSS Links) -->
+        <div class="language-selector" title="Select Website Language">
+          <a href="index.html" class="lang-link active" title="English Version">English</a>
+          <a href="#language-bn" class="lang-link" title="বাংলা সংস্করণ">বাংলা</a>
+        </div>
+      </div>
+
+      <!-- Center Header: Desktop Navigation & Search Input Bar -->
+      <div class="header-center">
+        <!-- Main Navigation Bar -->
+        <nav class="main-navigation" aria-label="Main Navigation">
+          <!-- Mobile Drawer Header with Close Button -->
+          <div class="mobile-nav-header">
+            <span class="brand-title">University Menu</span>
+            <label for="nav-toggle" class="mobile-close-btn" title="Close Menu">&times;</label>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#academics" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="#campus-life" class="nav-link">Campus Life</a></li>
+            <li class="nav-item"><a href="#faculty" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Mobile Specific Search Bar inside Drawer -->
+          <div class="mobile-search-wrap">
+            <form action="#search-results" method="get" class="search-form">
+              <input type="search" name="q" class="search-input" placeholder="Search website..." aria-label="Search website">
+              <button type="submit" class="search-button" aria-label="Submit search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Desktop Quick Search Input -->
+        <div class="header-search">
+          <form action="#search-results" method="get" class="search-form">
+            <input type="search" name="q" class="search-input" placeholder="Search..." aria-label="Search">
+            <button type="submit" class="search-button" aria-label="Search Submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Header: Official University Emblem Logo & Name -->
+      <div class="header-right">
+        <a href="index.html" class="university-brand" title="Metropolitan University Homepage">
+          <div class="brand-text-wrap">
+            <span class="brand-title">METROPOLITAN</span>
+            <span class="brand-subtitle">University of Excellence</span>
+          </div>
+          <div class="university-logo-box" aria-hidden="true">
+            <span>MU</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main>
+
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" aria-label="Welcome Hero">
+      <!-- High Quality University Campus Image Background -->
+      <div class="hero-background-wrapper">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80" 
+             alt="Metropolitan University Historic Campus and Academic Quad" 
+             class="hero-img">
+        <!-- Pure CSS Dark Overlay for Maximum Contrast & Readability -->
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Hero Text Content and Call to Action Buttons -->
+      <div class="container hero-content">
+        <span class="hero-badge">Est. 1984 &bull; Accredited Global Institution</span>
+        <h1 class="hero-headline">Empowering Tomorrow's Leaders Through Knowledge &amp; Innovation</h1>
+        <p class="hero-description">
+          Metropolitan University provides world-class undergraduate and graduate programs, cutting-edge research laboratories, distinguished faculty mentors, and an inclusive global campus culture designed to turn your academic ambition into real-world impact.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#academics" class="btn btn-white">Explore Programs</a>
+          <a href="undergraduate-details.html#apply" class="btn btn-outline-white">Apply Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Institutional Stats Ribbon -->
+    <section class="stats-ribbon" aria-label="Key Statistics">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">28,000+</span>
+          <span class="stat-label">Active Students</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">140+</span>
+          <span class="stat-label">Accredited Programs</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">96%</span>
+          <span class="stat-label">Graduate Employment</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">#1</span>
+          <span class="stat-label">Research Impact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. UNDERGRADUATE PROGRAMS SECTION
+         ======================================================================= -->
+    <section id="academics" class="section-padding programs-section" aria-label="Undergraduate Programs">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Academic Degrees</span>
+          <h2 class="section-title">Undergraduate Programs</h2>
+          <p class="section-description">
+            Build a solid intellectual foundation with our four-year bachelor's degree programs led by internationally renowned professors, modern laboratories, and experiential internships.
+          </p>
+        </div>
+
+        <!-- Featured Large Banner Layout with Student Image and Overview -->
+        <article class="section-banner-card">
+          <div class="banner-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Students studying collaboratively on campus" 
+                 class="banner-img">
+          </div>
+          <div class="banner-content">
+            <span class="section-tag">Bachelor of Science &amp; Arts</span>
+            <h3 class="banner-title">Start Your Undergraduate Journey</h3>
+            <p class="banner-text">
+              Our comprehensive undergraduate curriculum combines rigorous foundational theory with project-based learning. Benefit from personalized academic advising, merit-based scholarship funding, and global exchange opportunities across 45 partner universities.
+            </p>
+            <div class="hero-cta-group">
+              <a href="undergraduate-details.html" class="btn btn-primary">View Admission Guide</a>
+              <a href="undergraduate-details.html#apply" class="btn btn-secondary">Apply Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program Search Input Toolbar -->
+        <div class="program-search-toolbar">
+          <div class="toolbar-title-wrap">
+            <h3>Find Your Degree Program</h3>
+            <p>Search over 40 undergraduate disciplines across Engineering, Business, and Humanities</p>
+          </div>
+          <div class="program-search-box">
+            <input type="text" placeholder="Search undergraduate programs..." aria-label="Filter undergraduate programs">
+          </div>
+        </div>
+
+        <!-- Program Cards Grid -->
+        <div class="cards-grid cards-grid-4">
+          
+          <!-- Program Card 1: Computer Science and Engineering -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" 
+                   alt="Computer Science student coding in laboratory" 
+                   class="program-card-img">
+              <span class="program-category-pill">Engineering</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">B.Sc. Degree &bull; 4 Years</span>
+              <h3 class="program-card-title">Computer Science and Engineering</h3>
+              <p class="program-card-desc">
+                Master software architecture, artificial intelligence, algorithms, distributed systems, and cyber defense with top-tier industry projects.
+              </p>
+              <div class="program-card-meta">
+                <span>148 Credits</span>
+                <span>On Campus</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="undergraduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program Card 2: Electrical and Electronic Engineering -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" 
+                   alt="Electrical engineering circuitry testing" 
+                   class="program-card-img">
+              <span class="program-category-pill">Engineering</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">B.Sc. Degree &bull; 4 Years</span>
+              <h3 class="program-card-title">Electrical Engineering</h3>
+              <p class="program-card-desc">
+                Design power grids, microelectronics, embedded systems, telecommunications, and sustainable renewable energy solutions.
+              </p>
+              <div class="program-card-meta">
+                <span>152 Credits</span>
+                <span>On Campus</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="undergraduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program Card 3: Business Administration -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" 
+                   alt="Business students reviewing market analytics" 
+                   class="program-card-img">
+              <span class="program-category-pill">Business</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">BBA Degree &bull; 4 Years</span>
+              <h3 class="program-card-title">Business Administration</h3>
+              <p class="program-card-desc">
+                Develop strategic leadership, global finance acumen, digital marketing skills, and entrepreneurial ventures with real-world corporate case studies.
+              </p>
+              <div class="program-card-meta">
+                <span>132 Credits</span>
+                <span>On Campus</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="undergraduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program Card 4: Civil and Environmental Engineering -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" 
+                   alt="Architectural bridge structure design" 
+                   class="program-card-img">
+              <span class="program-category-pill">Engineering</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">B.Sc. Degree &bull; 4 Years</span>
+              <h3 class="program-card-title">Civil Engineering</h3>
+              <p class="program-card-desc">
+                Engineer resilient modern infrastructure, sustainable smart cities, transportation networks, and environmental water systems.
+              </p>
+              <div class="program-card-meta">
+                <span>150 Credits</span>
+                <span>On Campus</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="undergraduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. GRADUATE AND MASTER'S PROGRAMS SECTION
+         ======================================================================= -->
+    <section class="section-padding" aria-label="Graduate and Masters Programs">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Advanced Studies &amp; Research</span>
+          <h2 class="section-title">Graduate &amp; Master's Programs</h2>
+          <p class="section-description">
+            Advance your career trajectory and pursue pioneering research with our specialized graduate degrees taught by recognized international researchers.
+          </p>
+        </div>
+
+        <!-- Large Graduate Showcase Banner -->
+        <article class="section-banner-card">
+          <div class="banner-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Graduate research scholar working in high-tech laboratory" 
+                 class="banner-img">
+          </div>
+          <div class="banner-content">
+            <span class="section-tag">Master of Science &bull; Ph.D. Pathways</span>
+            <h3 class="banner-title">Pioneering Research &amp; Professional Mastery</h3>
+            <p class="banner-text">
+              Engage in high-impact interdisciplinary research sponsored by international research councils and industry leaders. Our graduate students receive competitive fellowships, research grants, and dedicated faculty mentorship.
+            </p>
+            <div class="hero-cta-group">
+              <a href="graduate-details.html" class="btn btn-primary">Graduate Admissions</a>
+              <a href="graduate-details.html#curriculum" class="btn btn-secondary">Explore Curriculum</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Graduate Program Search Toolbar -->
+        <div class="program-search-toolbar">
+          <div class="toolbar-title-wrap">
+            <h3>Find Your Graduate Specialization</h3>
+            <p>Filter master's degrees, research doctorates, and executive certificates</p>
+          </div>
+          <div class="program-search-box">
+            <input type="text" placeholder="Search graduate programs..." aria-label="Filter graduate programs">
+          </div>
+        </div>
+
+        <!-- Graduate Cards Grid -->
+        <div class="cards-grid cards-grid-4">
+          
+          <!-- Graduate Card 1: Master's in Computer Science -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" 
+                   alt="Cybersecurity and advanced code streams" 
+                   class="program-card-img">
+              <span class="program-category-pill">Graduate &bull; M.Sc.</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">Master of Science &bull; 2 Years</span>
+              <h3 class="program-card-title">M.Sc. in Computer Science</h3>
+              <p class="program-card-desc">
+                Specialized graduate training in neural networks, cloud computing architectures, cryptography, and natural language processing.
+              </p>
+              <div class="program-card-meta">
+                <span>36 Credits</span>
+                <span>Thesis &amp; Non-Thesis</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="graduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Graduate Card 2: Master's in Data Science -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" 
+                   alt="Data science predictive modeling visualizations" 
+                   class="program-card-img">
+              <span class="program-category-pill">Graduate &bull; M.Sc.</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">Master of Science &bull; 1.5 Years</span>
+              <h3 class="program-card-title">M.Sc. in Data Science</h3>
+              <p class="program-card-desc">
+                Harness big data engineering, Bayesian statistics, predictive modeling, machine learning pipelines, and strategic data visualization.
+              </p>
+              <div class="program-card-meta">
+                <span>33 Credits</span>
+                <span>Applied Practicum</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="graduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Graduate Card 3: Master's in Electrical Engineering -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" 
+                   alt="Nanotechnology sensor development" 
+                   class="program-card-img">
+              <span class="program-category-pill">Graduate &bull; M.Sc.</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">Master of Science &bull; 2 Years</span>
+              <h3 class="program-card-title">M.Sc. in Electrical Engineering</h3>
+              <p class="program-card-desc">
+                Advanced studies in photonics, autonomous robotics systems, smart grids, quantum computing hardware, and digital signal processing.
+              </p>
+              <div class="program-card-meta">
+                <span>36 Credits</span>
+                <span>Research Focused</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="graduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Graduate Card 4: Master of Business Administration -->
+          <article class="program-card">
+            <div class="program-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" 
+                   alt="Executive business boardroom presentation" 
+                   class="program-card-img">
+              <span class="program-category-pill">Graduate &bull; MBA</span>
+            </div>
+            <div class="program-card-body">
+              <span class="program-degree">Master Degree &bull; 1.5 - 2 Years</span>
+              <h3 class="program-card-title">Master of Business Admin (MBA)</h3>
+              <p class="program-card-desc">
+                Executive leadership training covering corporate finance, international venture strategy, supply chain management, and innovation.
+              </p>
+              <div class="program-card-meta">
+                <span>60 Credits</span>
+                <span>Executive &amp; Regular</span>
+              </div>
+              <div class="program-card-footer">
+                <a href="graduate-details.html" class="btn btn-secondary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. UNIVERSITY LIBRARY SECTION
+         ======================================================================= -->
+    <section class="section-padding library-section" aria-label="University Library">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Knowledge &amp; Research Hub</span>
+          <h2 class="section-title">The Central University Library</h2>
+          <p class="section-description">
+            A state-of-the-art academic sanctuary housing over 500,000 physical volumes, millions of digital research papers, collaborative study pods, and 24/7 online journal access.
+          </p>
+        </div>
+
+        <!-- Large Library Hero Banner -->
+        <article class="library-hero-banner">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80" 
+               alt="Grand architectural interior of Metropolitan Central Library" 
+               class="library-hero-img">
+          <div class="library-hero-overlay"></div>
+          <div class="library-hero-content">
+            <span class="hero-badge">Open Daily &bull; 24/7 Digital Portal</span>
+            <h3>Explore Infinite Horizons of Research &amp; Scholarly Literature</h3>
+            <p>
+              Whether you are preparing a doctoral thesis or exploring classic literature, our specialized subject librarians, high-speed fiber internet workstations, and digital archives are available to empower your learning.
+            </p>
+            <div class="hero-cta-group">
+              <a href="library.html" class="btn btn-white">Explore Library Facilities</a>
+              <a href="library.html#membership" class="btn btn-outline-white">Apply for Membership</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Library Facilities Grid -->
+        <div class="cards-grid cards-grid-3">
+          
+          <div class="facility-card">
+            <div class="facility-icon-wrap">&sect;</div>
+            <h3 class="facility-title">Digital Library &amp; E-Books</h3>
+            <p class="facility-desc">
+              Direct access to IEEE Xplore, JSTOR, ScienceDirect, Springer, and over 1.2 million peer-reviewed e-books and research publications from anywhere.
+            </p>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-icon-wrap">&para;</div>
+            <h3 class="facility-title">Physical Book Collection</h3>
+            <p class="facility-desc">
+              Extensive multi-floor stacks categorized using the Dewey Decimal and Library of Congress classification systems across all academic disciplines.
+            </p>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-icon-wrap">&#9782;</div>
+            <h3 class="facility-title">Quiet Study &amp; Pods</h3>
+            <p class="facility-desc">
+              Sound-insulated individual research cubicles and reservable group study rooms equipped with smart whiteboards and presentation monitors.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. SPORTS AND RECREATION SECTION
+         ======================================================================= -->
+    <section id="campus-life" class="section-padding sports-section" aria-label="Sports and Recreation">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Athletics &amp; Wellness</span>
+          <h2 class="section-title">Sports &amp; Recreation</h2>
+          <p class="section-description">
+            Nurture athletic discipline, teamwork, and wellness through our championship sports programs, Olympic-standard facilities, and certified athletic coaching.
+          </p>
+        </div>
+
+        <!-- Featured Large Sports Banner -->
+        <article class="section-banner-card">
+          <div class="banner-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80" 
+                 alt="University varsity athletes on the track" 
+                 class="banner-img">
+          </div>
+          <div class="banner-content">
+            <span class="section-tag">Varsity &amp; Intramural League</span>
+            <h3 class="banner-title">Champions On &amp; Off The Field</h3>
+            <p class="banner-text">
+              Metropolitan University boasts top-ranking varsity teams in national inter-university tournaments. Students of all fitness levels can participate in competitive leagues, open gym sessions, and specialized fitness clinics.
+            </p>
+            <div class="hero-cta-group">
+              <a href="sports.html" class="btn btn-primary">View Sports Schedule</a>
+              <a href="sports.html#join" class="btn btn-secondary">Join a Varsity Team</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sports Cards Grid (Football, Cricket, Basketball, Volleyball, Badminton, Table Tennis, Chess, Indoor) -->
+        <div class="cards-grid cards-grid-4">
+          
+          <!-- Football Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" 
+                   alt="Football team practicing on grass stadium" 
+                   class="sport-img">
+              <span class="sport-badge">Outdoor</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Football</h3>
+              <p class="sport-desc">
+                FIFA-standard floodlit turf stadium with national championship coaching and daily tactical drills.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Main Stadium</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Mon - Thu (4:00 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#football" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Cricket Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1531415074868-036b107e775a?auto=format&fit=crop&w=600&q=80" 
+                   alt="Cricket match pitch and bats" 
+                   class="sport-img">
+              <span class="sport-badge">Outdoor</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Cricket</h3>
+              <p class="sport-desc">
+                BCCI/ICC compliant turf pitch, professional practice nets, and annual inter-collegiate tournaments.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">University Oval</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Tue - Fri (3:30 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#cricket" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Basketball Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80" 
+                   alt="Indoor hardwood basketball court" 
+                   class="sport-img">
+              <span class="sport-badge">Indoor</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Basketball</h3>
+              <p class="sport-desc">
+                Maple hardwood indoor court with electronic scoreboard, shot clocks, and dedicated men's &amp; women's rosters.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Sports Arena Court 1</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Mon - Wed (5:00 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#basketball" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Volleyball Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=600&q=80" 
+                   alt="Volleyball net and court" 
+                   class="sport-img">
+              <span class="sport-badge">Indoor / Sand</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Volleyball</h3>
+              <p class="sport-desc">
+                Both indoor sprung wood courts and outdoor sand volleyball courts for recreational play and championship matches.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Pavilion Court</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Wed - Sat (4:30 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#volleyball" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Badminton Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=600&q=80" 
+                   alt="Badminton racket and shuttlecock" 
+                   class="sport-img">
+              <span class="sport-badge">Indoor</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Badminton</h3>
+              <p class="sport-desc">
+                Four BWF standard synthetic courts with anti-glare illumination and regular coaching clinics.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Indoor Sports Hall</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Daily (6:00 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#badminton" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Table Tennis Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=600&q=80" 
+                   alt="Table tennis tournament table and paddle" 
+                   class="sport-img">
+              <span class="sport-badge">Indoor</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Table Tennis</h3>
+              <p class="sport-desc">
+                Eight ITTF tournament tables, automatic ball servers for precision training, and active intra-university cups.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Recreation Center</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Daily (3:00 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#table-tennis" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Chess Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80" 
+                   alt="Chess board with strategic pieces" 
+                   class="sport-img">
+              <span class="sport-badge">Mind Sport</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Chess</h3>
+              <p class="sport-desc">
+                Grandmaster-guided tactical lectures, blitz tournaments, FIDE rating matches, and inter-university leagues.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Mind Sports Lounge</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Practice:</span>
+                  <span class="sport-spec-val">Tue &amp; Thu (4:00 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html#chess" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Indoor & Outdoor Recreation Games Card -->
+          <article class="sport-card">
+            <div class="sport-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" 
+                   alt="Multi-sport arena athletes" 
+                   class="sport-img">
+              <span class="sport-badge">Recreation</span>
+            </div>
+            <div class="sport-body">
+              <h3 class="sport-name">Indoor &amp; Outdoor Games</h3>
+              <p class="sport-desc">
+                Carrom, billiards, squash courts, cross-country jogging trails, and open field recreation for all campus members.
+              </p>
+              <div class="sport-specs">
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Facility:</span>
+                  <span class="sport-spec-val">Activity Complex</span>
+                </div>
+                <div class="sport-spec-item">
+                  <span class="sport-spec-label">Open:</span>
+                  <span class="sport-spec-val">Daily (8 AM - 9 PM)</span>
+                </div>
+              </div>
+              <a href="sports.html" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CULTURAL ACTIVITIES SECTION
+         ======================================================================= -->
+    <section class="section-padding cultural-section" aria-label="Cultural Activities">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Arts &amp; Expression</span>
+          <h2 class="section-title">Cultural Activities</h2>
+          <p class="section-description">
+            Celebrate creative expression, heritage, and diverse artistic talents through theatrical drama, musical ensembles, visual arts, and international cultural festivals.
+          </p>
+        </div>
+
+        <!-- Cultural Activities Grid -->
+        <div class="cards-grid cards-grid-4">
+          
+          <!-- Music Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" 
+                   alt="Live musical instruments and performance" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Music &amp; Vocal Arts</h3>
+              <p class="cultural-desc">
+                Classical, contemporary, and folk acoustic bands, orchestra rehearsals, and vocal competitions held year-round in the University Auditorium.
+              </p>
+              <a href="cultural.html#music" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Dance Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" 
+                   alt="Expressive contemporary dance choreography" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Dance Troupe</h3>
+              <p class="cultural-desc">
+                Classical Bharatnatyam, contemporary choreography, and folk traditions coached by master performers for annual gala showcases.
+              </p>
+              <a href="cultural.html#dance" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Drama Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=600&q=80" 
+                   alt="Dramatic theater stage production" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Drama &amp; Theater</h3>
+              <p class="cultural-desc">
+                Original stage writing, classic theatrical plays, method acting, and stage design workshops staging four major productions annually.
+              </p>
+              <a href="cultural.html#drama" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Photography Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=600&q=80" 
+                   alt="Photographer framing architectural scene" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Photography Society</h3>
+              <p class="cultural-desc">
+                Photojournalism, landscape workshops, darkroom techniques, and our celebrated annual international campus photo exhibition.
+              </p>
+              <a href="cultural.html#photography" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Art and Drawing Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" 
+                   alt="Fine art watercolor and canvas painting" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Art &amp; Drawing</h3>
+              <p class="cultural-desc">
+                Oil on canvas, watercolor, digital illustration, and sculpting studios with open gallery spaces in the Fine Arts wing.
+              </p>
+              <a href="cultural.html#art" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Debate Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80" 
+                   alt="Public speaker debating at podium" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Debating Society</h3>
+              <p class="cultural-desc">
+                Parliamentary debate, model United Nations conferences, and oratory championships developing critical analysis and rhetoric.
+              </p>
+              <a href="cultural.html#debate" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Cultural Festivals Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80" 
+                   alt="Lively cultural festival celebration" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Cultural Festivals</h3>
+              <p class="cultural-desc">
+                Spring carnivals, international food and heritage bazaars, and intercultural exchange programs uniting students from 40+ countries.
+              </p>
+              <a href="cultural.html#festivals" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Annual Cultural Events Card -->
+          <article class="cultural-card">
+            <div class="cultural-img-wrap">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" 
+                   alt="Annual celebration with lights and audience" 
+                   class="cultural-img">
+            </div>
+            <div class="cultural-body">
+              <h3 class="cultural-title">Annual Cultural Gala</h3>
+              <p class="cultural-desc">
+                The flagship week-long university cultural festival featuring celebrity musical guests, theater premieres, and student award honors.
+              </p>
+              <a href="cultural.html#annual-events" class="btn btn-secondary btn-sm">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. UNIVERSITY CLUBS SECTION
+         ======================================================================= -->
+    <section class="section-padding clubs-section" aria-label="University Student Clubs">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Student Co-Curriculars</span>
+          <h2 class="section-title">University Clubs &amp; Societies</h2>
+          <p class="section-description">
+            Join student-run organizations where passions transform into leadership experience, professional networking, and national competition victories.
+          </p>
+        </div>
+
+        <!-- Clubs Grid (Programming, Robotics, Science, Business, Debating, Photography) -->
+        <div class="cards-grid cards-grid-3">
+          
+          <!-- Programming Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&lt;/&gt;</div>
+              <div>
+                <h3 class="club-title">Programming Club</h3>
+                <span class="club-category">Technology &amp; Algorithmic Coding</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Organizes bi-weekly competitive coding contests, ICPC coaching, open-source hackathons, and technical bootcamps with industry software engineers.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>850+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>Annual Hackathon</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Dr. Alan Vance</span></li>
+            </ul>
+            <a href="clubs.html#programming" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+          <!-- Robotics Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&#9881;</div>
+              <div>
+                <h3 class="club-title">Robotics Club</h3>
+                <span class="club-category">Hardware, AI &amp; Mechatronics</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Designs autonomous rovers, drone swarms, humanoid bots, and industrial automation prototypes for University Rover Challenges.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>420+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>RoboWars Championship</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Prof. Sarah Jensen</span></li>
+            </ul>
+            <a href="clubs.html#robotics" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+          <!-- Science Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&#9883;</div>
+              <div>
+                <h3 class="club-title">Science Club</h3>
+                <span class="club-category">Research, Physics &amp; Bio-tech</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Hosts astronomy stargazing nights, laboratory experiment demonstrations, scientific paper symposiums, and national STEM fairs.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>560+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>National Science Olympiad</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Dr. Marcus Thorne</span></li>
+            </ul>
+            <a href="clubs.html#science" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+          <!-- Business & Entrepreneurship Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&#128188;</div>
+              <div>
+                <h3 class="club-title">Business Club</h3>
+                <span class="club-category">Finance, Case Studies &amp; Startups</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Hosts venture capital pitch competitions, Harvard-style business case study challenges, angel investment seminars, and CEO leadership talks.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>620+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>StartUp Venture Cup</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Prof. Eleanor Brooks</span></li>
+            </ul>
+            <a href="clubs.html#business" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+          <!-- Debating Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&#128483;</div>
+              <div>
+                <h3 class="club-title">Debating Club</h3>
+                <span class="club-category">Public Speaking &amp; Diplomacy</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Trains parliamentary debate champions, organizes Model United Nations conferences, and sharpens analytical critical thinking.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>380+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>National Chancellor Trophy</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Dr. Julian Ward</span></li>
+            </ul>
+            <a href="clubs.html#debating" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+          <!-- Photography & Film Club -->
+          <article class="club-card">
+            <div class="club-header">
+              <div class="club-avatar">&#128247;</div>
+              <div>
+                <h3 class="club-title">Photography Club</h3>
+                <span class="club-category">Visual Media, Film &amp; Design</span>
+              </div>
+            </div>
+            <p class="club-desc">
+              Documents landmark university ceremonies, organizes visual storytelling expeditions, photo walks, and short film screenings.
+            </p>
+            <ul class="club-meta-list">
+              <li><strong>Members:</strong> <span>510+ Students</span></li>
+              <li><strong>Key Event:</strong> <span>Campus In Frames Gala</span></li>
+              <li><strong>Faculty Advisor:</strong> <span>Prof. David Chen</span></li>
+            </ul>
+            <a href="clubs.html#photography" class="btn btn-secondary btn-sm">Learn More &amp; Join</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FACULTY & RESEARCH SHOWCASE SECTION
+         ======================================================================= -->
+    <section id="faculty" class="section-padding" aria-label="Distinguished Faculty">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">World-Class Mentors</span>
+          <h2 class="section-title">Distinguished Faculty</h2>
+          <p class="section-description">
+            Learn directly from published scholars, industry consultants, and Fulbright fellows committed to undergraduate and graduate mentorship.
+          </p>
+        </div>
+
+        <div class="faculty-grid">
+          <div class="faculty-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" 
+                 alt="Dr. Aris Thorne" class="faculty-photo">
+            <h3 class="faculty-name">Dr. Elena Rostova</h3>
+            <span class="faculty-role">Dean of Computer Science &amp; AI</span>
+            <span class="faculty-email">e.rostova@metropolitan.edu</span>
+          </div>
+
+          <div class="faculty-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" 
+                 alt="Prof. Marcus Sterling" class="faculty-photo">
+            <h3 class="faculty-name">Prof. Marcus Sterling</h3>
+            <span class="faculty-role">Chair of Electrical Engineering</span>
+            <span class="faculty-email">m.sterling@metropolitan.edu</span>
+          </div>
+
+          <div class="faculty-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" 
+                 alt="Dr. Samantha Vance" class="faculty-photo">
+            <h3 class="faculty-name">Dr. Samantha Vance</h3>
+            <span class="faculty-role">Professor of Strategic Management</span>
+            <span class="faculty-email">s.vance@metropolitan.edu</span>
+          </div>
+
+          <div class="faculty-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" 
+                 alt="Dr. Arthur Davies" class="faculty-photo">
+            <h3 class="faculty-name">Dr. Arthur Davies</h3>
+            <span class="faculty-role">Head of Civil &amp; Environmental Eng</span>
+            <span class="faculty-email">a.davies@metropolitan.edu</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT & CAMPUS OVERVIEW SECTION
+         ======================================================================= -->
+    <section id="about" class="section-padding section-about-bg" aria-label="About the University">
+      <div class="container">
+        
+        <div class="section-banner-card">
+          <div class="banner-content">
+            <span class="section-tag">About Our University</span>
+            <h2 class="banner-title">A Tradition of Academic Excellence and Modern Discovery</h2>
+            <p class="banner-text">
+              Founded with the mission to cultivate transformative learning and critical discovery, Metropolitan University of Excellence combines heritage architecture with world-leading laboratories. We welcome scholars from over 75 countries and maintain institutional partnerships across Europe, North America, and Asia.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#academics" class="btn btn-primary">Our Programs</a>
+              <a href="#contact" class="btn btn-secondary">Contact Admissions</a>
+            </div>
+          </div>
+          <div class="banner-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Iconic campus university hall" class="banner-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (SEMANTIC HTML5 FOOTER)
+       ========================================================================= -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Column 1: University Identity and Overview -->
+        <div>
+          <h3 class="footer-col-title">Metropolitan University</h3>
+          <p class="footer-about-text">
+            Dedicated to academic rigor, pioneering research discoveries, ethical leadership, and inclusive student life. Accredited by national and global accreditation councils.
+          </p>
+          <div class="footer-contact-item">
+            <strong>Address:</strong>
+            <span>100 University Boulevard, Academic Quad, Metro City, 10020</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Admissions Hotline:</strong>
+            <span>+1 (800) 555-METRO</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Academics Links -->
+        <div>
+          <h3 class="footer-col-title">Academics</h3>
+          <ul class="footer-links-list">
+            <li><a href="undergraduate-details.html">Undergraduate Programs</a></li>
+            <li><a href="graduate-details.html">Graduate &amp; Master's</a></li>
+            <li><a href="library.html">University Library</a></li>
+            <li><a href="undergraduate-details.html#curriculum">Curriculum &amp; Syllabi</a></li>
+            <li><a href="undergraduate-details.html#tuition">Tuition &amp; Financial Aid</a></li>
+            <li><a href="undergraduate-details.html#apply">Online Application Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Campus Life Links -->
+        <div>
+          <h3 class="footer-col-title">Campus Life</h3>
+          <ul class="footer-links-list">
+            <li><a href="sports.html">Athletics &amp; Sports</a></li>
+            <li><a href="cultural.html">Cultural Activities</a></li>
+            <li><a href="clubs.html">Student Clubs &amp; Societies</a></li>
+            <li><a href="library.html#study">Quiet Study Facilities</a></li>
+            <li><a href="#faculty">Faculty Directory</a></li>
+            <li><a href="sports.html#schedule">Varsity Schedules</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Quick Contact & Operating Hours -->
+        <div>
+          <h3 class="footer-col-title">Contact &amp; Inquiries</h3>
+          <div class="footer-contact-item">
+            <strong>General Email:</strong>
+            <span>info@metropolitan.edu</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Admissions Desk:</strong>
+            <span>admissions@metropolitan.edu</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Office Hours:</strong>
+            <span>Monday &ndash; Friday: 8:00 AM &ndash; 5:00 PM</span>
+          </div>
+          <div class="footer-cta-box">
+            <a href="undergraduate-details.html#apply" class="btn btn-white btn-sm btn-block">Begin Application</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal Links -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metropolitan University of Excellence. All rights reserved. Designed with pure HTML5 and CSS3.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#sitemap">Campus Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

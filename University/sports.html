@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags for Character Encoding and Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports &amp; Athletics Department | Metropolitan University</title>
+  
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Official Athletics and Recreation portal of Metropolitan University: Football, Cricket, Basketball, Volleyball, Badminton, Table Tennis, Chess, facilities, training schedules, and team rosters.">
+  
+  <!-- External Stylesheet (Pure CSS, No Inline/Internal Styles) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pure CSS Mobile Navigation Toggle (Checkbox Hack) -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation Menu">
+  <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+  <!-- =========================================================================
+       1. HEADER AND TOP NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Left Header: Hamburger Menu Icon with Visible Label & Language Switcher -->
+      <div class="header-left">
+        <label for="nav-toggle" class="nav-toggle-label" title="Toggle Navigation">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="menu-text">Menu</span>
+        </label>
+
+        <div class="language-selector" title="Select Website Language">
+          <a href="sports.html" class="lang-link active">English</a>
+          <a href="#language-bn" class="lang-link">বাংলা</a>
+        </div>
+      </div>
+
+      <!-- Center Header: Navigation Links -->
+      <div class="header-center">
+        <nav class="main-navigation" aria-label="Main Navigation">
+          <div class="mobile-nav-header">
+            <span class="brand-title">University Menu</span>
+            <label for="nav-toggle" class="mobile-close-btn" title="Close Menu">&times;</label>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="undergraduate-details.html" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="library.html" class="nav-link">Library</a></li>
+            <li class="nav-item"><a href="sports.html" class="nav-link active">Sports</a></li>
+            <li class="nav-item"><a href="cultural.html" class="nav-link">Cultural</a></li>
+            <li class="nav-item"><a href="clubs.html" class="nav-link">Clubs</a></li>
+          </ul>
+
+          <div class="mobile-search-wrap">
+            <form action="#search" method="get" class="search-form">
+              <input type="search" name="q" class="search-input" placeholder="Search sports &amp; teams..." aria-label="Search sports">
+              <button type="submit" class="search-button" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <div class="header-search">
+          <form action="#search" method="get" class="search-form">
+            <input type="search" name="q" class="search-input" placeholder="Search sports..." aria-label="Search sports">
+            <button type="submit" class="search-button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Header: University Logo & Name -->
+      <div class="header-right">
+        <a href="index.html" class="university-brand">
+          <div class="brand-text-wrap">
+            <span class="brand-title">METROPOLITAN</span>
+            <span class="brand-subtitle">University of Excellence</span>
+          </div>
+          <div class="university-logo-box" aria-hidden="true">
+            <span>MU</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       PAGE HERO
+       ========================================================================= -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <span class="hero-badge">Department of Physical Education &amp; Varsity Athletics</span>
+      <h1 class="page-hero-title">Sports, Recreation &amp; Varsity League</h1>
+      <p class="page-hero-subtitle">
+        Fostering sportsmanship, physical resilience, elite championship performance, and community fitness across our world-class athletics infrastructure.
+      </p>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&gt;</span>
+        <span class="breadcrumb-current">Sports &amp; Athletics</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN DETAILS CONTENT & SIDEBAR
+       ========================================================================= -->
+  <main class="container section-padding">
+    <div class="details-layout">
+      
+      <!-- Primary Content Area -->
+      <article>
+        
+        <!-- 1. Athletics Overview -->
+        <section id="overview" class="content-block">
+          <h2 class="content-block-title">Athletics Department Overview</h2>
+          <p class="section-description">
+            Metropolitan University is home to the "Metropolitan Blue Knights" varsity teams, competing across nine major collegiate disciplines. Our athletics program emphasizes academic integrity, rigorous conditioning, leadership training, and holistic student well-being.
+          </p>
+          <p class="section-description mt-md">
+            All enrolled students enjoy complimentary access to Olympic-sized swimming facilities, strength conditioning centers, indoor arenas, and intramural tournament leagues throughout the academic calendar.
+          </p>
+        </section>
+
+        <!-- 2. Detailed Disciplines: Football -->
+        <section id="football" class="content-block">
+          <h2 class="content-block-title">Varsity Football Program</h2>
+          <p>
+            The Metropolitan Football team competes at the national collegiate division. Led by licensed UEFA coaches, training focuses on tactical positioning, aerobic endurance, and set-piece execution.
+          </p>
+          <ul class="checklist">
+            <li><strong>Facilities:</strong> FIFA-certified 10,000-seat stadium with natural Bermuda grass turf, night-match floodlights, and player hydrotherapy recovery rooms.</li>
+            <li><strong>Training Schedule:</strong> Monday &ndash; Thursday, 4:00 PM &ndash; 6:30 PM. Tactical film sessions on Friday mornings.</li>
+            <li><strong>Competitions:</strong> National Inter-University Football Championship, Chancellor's Gold Cup, and annual Alumni Invitational.</li>
+          </ul>
+        </section>
+
+        <!-- 3. Detailed Disciplines: Cricket -->
+        <section id="cricket" class="content-block">
+          <h2 class="content-block-title">Varsity Cricket Program</h2>
+          <p>
+            With a storied legacy of producing national league players, our cricket academy offers specialized net bowling machines, video biomechanical analysis, and tournament play in both T20 and 50-over formats.
+          </p>
+          <ul class="checklist">
+            <li><strong>Facilities:</strong> The University Oval featuring four first-class clay pitches, eight covered turf practice nets, and a digital pavilion scoreboard.</li>
+            <li><strong>Training Schedule:</strong> Tuesday &ndash; Friday, 3:30 PM &ndash; 6:00 PM; Saturday inter-squad friendly matches.</li>
+            <li><strong>Competitions:</strong> All-University Premier League (UPL) and National Collegiate Trophy.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Basketball, Volleyball, Badminton, Table Tennis, Chess -->
+        <section id="indoor-sports" class="content-block">
+          <h2 class="content-block-title">Court &amp; Mind Sports</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Sport</th>
+                <th>Training Facility</th>
+                <th>Weekly Practice Hours</th>
+                <th>Head Coach</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Basketball</strong></td>
+                <td>Sports Arena &bull; Court 1 (Maple Hardwood)</td>
+                <td>Mon, Wed, Fri &bull; 5:00 PM &ndash; 7:30 PM</td>
+                <td>Coach Darrell Hayes</td>
+              </tr>
+              <tr>
+                <td><strong>Volleyball</strong></td>
+                <td>Indoor Pavilion Court &amp; Sand Court</td>
+                <td>Tue, Thu, Sat &bull; 4:30 PM &ndash; 6:30 PM</td>
+                <td>Coach Brenda Morgan</td>
+              </tr>
+              <tr>
+                <td><strong>Badminton</strong></td>
+                <td>4 BWF Synthetic Courts (Hall B)</td>
+                <td>Daily &bull; 6:00 PM &ndash; 8:30 PM</td>
+                <td>Coach Lin Wen</td>
+              </tr>
+              <tr>
+                <td><strong>Table Tennis</strong></td>
+                <td>ITTF Arena &bull; 8 Competition Tables</td>
+                <td>Daily &bull; 3:00 PM &ndash; 5:30 PM</td>
+                <td>Coach Vikram Patel</td>
+              </tr>
+              <tr>
+                <td><strong>Chess</strong></td>
+                <td>Mind Sports Lounge &bull; FIDE Clocks</td>
+                <td>Tue &amp; Thu &bull; 4:00 PM &ndash; 7:00 PM</td>
+                <td>IM Mikhail Sorokin</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 5. How to Join & Registration Instructions -->
+        <section id="join" class="content-block">
+          <h2 class="content-block-title">How to Join &amp; Registration Instructions</h2>
+          <p>Whether aspiring to compete on a varsity roster or seeking recreational intramural leagues:</p>
+          <ol class="ordered-steps">
+            <li><strong>Step 1: Physical Clearance:</strong> Obtain a sports physical clearance certificate from the University Health Center.</li>
+            <li><strong>Step 2: Attend Seasonal Tryouts:</strong> Open varsity walk-on tryouts take place during the first three weeks of each semester.</li>
+            <li><strong>Step 3: Registration Submission:</strong> Complete the digital athletics registration profile using your Student ID.</li>
+            <li><strong>Step 4: Orientation &amp; Gear Issue:</strong> Selected team members attend the code-of-conduct briefing and receive official team jerseys and equipment.</li>
+          </ol>
+        </section>
+
+        <!-- 6. Featured Team Athletes & Leaders -->
+        <section id="team" class="content-block">
+          <h2 class="content-block-title">Varsity Team Captains &amp; Athletes</h2>
+          <p>Meet our student-athletes leading Metropolitan teams to victory:</p>
+          
+          <div class="faculty-grid">
+            <div class="faculty-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Tariq Rahman" class="faculty-photo">
+              <h3 class="faculty-name">Tariq Rahman</h3>
+              <span class="faculty-role">Captain &bull; Football Team (Forward)</span>
+              <span class="faculty-email">B.Sc. CSE Senior</span>
+            </div>
+
+            <div class="faculty-card">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Samantha Wu" class="faculty-photo">
+              <h3 class="faculty-name">Samantha Wu</h3>
+              <span class="faculty-role">Captain &bull; Basketball Team (Guard)</span>
+              <span class="faculty-email">BBA Junior</span>
+            </div>
+
+            <div class="faculty-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Rohan Verma" class="faculty-photo">
+              <h3 class="faculty-name">Rohan Verma</h3>
+              <span class="faculty-role">Captain &bull; Cricket Team (All-Rounder)</span>
+              <span class="faculty-email">B.Sc. EEE Senior</span>
+            </div>
+
+            <div class="faculty-card">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Aisha Chowdhury" class="faculty-photo">
+              <h3 class="faculty-name">Aisha Chowdhury</h3>
+              <span class="faculty-role">FIDE Master &bull; Chess Team Lead</span>
+              <span class="faculty-email">M.Sc. Data Science</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. Athletics Contact -->
+        <section id="contact" class="content-block">
+          <h2 class="content-block-title">Athletics Department Office</h2>
+          <div class="contact-details-box">
+            <p><strong>Office Location:</strong> Sports Complex, Building B, Room 104</p>
+            <p><strong>Department Email:</strong> athletics@metropolitan.edu</p>
+            <p><strong>Phone:</strong> +1 (800) 555-METRO ext. 601</p>
+            <p><strong>Equipment Room:</strong> Open Daily 8:00 AM &ndash; 7:00 PM</p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky-sidebar">
+          
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Athletic Fast Facts</h3>
+            <div class="sidebar-info-row">
+              <strong>Varsity Teams:</strong>
+              <span>12 Men's &amp; Women's</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Stadium:</strong>
+              <span>10,000 Capacity</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>National Titles:</strong>
+              <span>18 Championships</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Sports Scholarship:</strong>
+              <span>Up to 100% Tuition</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Gym Access:</strong>
+              <span>Free for All Students</span>
+            </div>
+
+            <div class="footer-cta-box">
+              <a href="#join" class="btn btn-primary btn-block">Join A Team</a>
+              <a href="#indoor-sports" class="btn btn-secondary btn-block mt-xs">View Practice Times</a>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Upcoming Tournaments</h3>
+            <div class="sidebar-info-row">
+              <strong>Chancellor's Cup (Football):</strong>
+              <span>March 22</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Inter-Uni Cricket Derby:</strong>
+              <span>April 05</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>State Chess Open:</strong>
+              <span>April 18</span>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <h3 class="footer-col-title">Metropolitan Athletics</h3>
+          <p class="footer-about-text">
+            Inspiring champions, fitness, character, and lifelong teamwork across 9 varsity disciplines and campus recreation.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Sports Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#football">Varsity Football</a></li>
+            <li><a href="#cricket">Cricket Team</a></li>
+            <li><a href="#indoor-sports">Court &amp; Mind Sports</a></li>
+            <li><a href="#join">Tryout Instructions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Campus Life</h3>
+          <ul class="footer-links-list">
+            <li><a href="cultural.html">Cultural Activities</a></li>
+            <li><a href="clubs.html">Student Clubs</a></li>
+            <li><a href="library.html">Central Library</a></li>
+            <li><a href="undergraduate-details.html">Undergraduate Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Athletics Inquiries</h3>
+          <div class="footer-contact-item">
+            <strong>Email:</strong>
+            <span>athletics@metropolitan.edu</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Hotline:</strong>
+            <span>+1 (800) 555-METRO ext. 601</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metropolitan University of Excellence. Designed with pure HTML5 and CSS3.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="index.html">Back to Home</a></li>
+          <li><a href="#overview">Top of Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

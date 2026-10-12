@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags for Character Encoding and Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Clubs &amp; Student Societies | Metropolitan University</title>
+  
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Discover student leadership at Metropolitan University: Programming Club, Robotics Club, Science Club, Business Club, registration guides, and competition schedules.">
+  
+  <!-- External Stylesheet (Pure CSS, No Inline/Internal Styles) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pure CSS Mobile Navigation Toggle (Checkbox Hack) -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation Menu">
+  <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+  <!-- =========================================================================
+       1. HEADER AND TOP NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Left Header: Hamburger Menu Icon with Visible Label & Language Switcher -->
+      <div class="header-left">
+        <label for="nav-toggle" class="nav-toggle-label" title="Toggle Navigation">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="menu-text">Menu</span>
+        </label>
+
+        <div class="language-selector" title="Select Website Language">
+          <a href="clubs.html" class="lang-link active">English</a>
+          <a href="#language-bn" class="lang-link">বাংলা</a>
+        </div>
+      </div>
+
+      <!-- Center Header: Navigation Links -->
+      <div class="header-center">
+        <nav class="main-navigation" aria-label="Main Navigation">
+          <div class="mobile-nav-header">
+            <span class="brand-title">University Menu</span>
+            <label for="nav-toggle" class="mobile-close-btn" title="Close Menu">&times;</label>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="undergraduate-details.html" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="library.html" class="nav-link">Library</a></li>
+            <li class="nav-item"><a href="sports.html" class="nav-link">Sports</a></li>
+            <li class="nav-item"><a href="cultural.html" class="nav-link">Cultural</a></li>
+            <li class="nav-item"><a href="clubs.html" class="nav-link active">Clubs</a></li>
+          </ul>
+
+          <div class="mobile-search-wrap">
+            <form action="#search" method="get" class="search-form">
+              <input type="search" name="q" class="search-input" placeholder="Search student clubs..." aria-label="Search clubs">
+              <button type="submit" class="search-button" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <div class="header-search">
+          <form action="#search" method="get" class="search-form">
+            <input type="search" name="q" class="search-input" placeholder="Search clubs..." aria-label="Search clubs">
+            <button type="submit" class="search-button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Header: University Logo & Name -->
+      <div class="header-right">
+        <a href="index.html" class="university-brand">
+          <div class="brand-text-wrap">
+            <span class="brand-title">METROPOLITAN</span>
+            <span class="brand-subtitle">University of Excellence</span>
+          </div>
+          <div class="university-logo-box" aria-hidden="true">
+            <span>MU</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       PAGE HERO
+       ========================================================================= -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <span class="hero-badge">Office of Student Affairs &amp; Co-Curricular Engagement</span>
+      <h1 class="page-hero-title">University Clubs &amp; Student Societies</h1>
+      <p class="page-hero-subtitle">
+        Empowering student leaders to build cutting-edge robotics rovers, compete in global coding championships, launch entrepreneurial ventures, and organize campus initiatives.
+      </p>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&gt;</span>
+        <span class="breadcrumb-current">Student Clubs</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN DETAILS CONTENT & SIDEBAR
+       ========================================================================= -->
+  <main class="container section-padding">
+    <div class="details-layout">
+      
+      <!-- Primary Content Area -->
+      <article>
+        
+        <!-- 1. Clubs Overview -->
+        <section id="overview" class="content-block">
+          <h2 class="content-block-title">Student Societies Overview</h2>
+          <p class="section-description">
+            Metropolitan University hosts more than 30 chartered student clubs overseen by the Office of Student Affairs. Each club provides practical experiential leadership, funded participation in international competitions, mentorship from prominent faculty advisors, and networking with industry alumni.
+          </p>
+        </section>
+
+        <!-- 2. Programming Club In-Depth -->
+        <section id="programming" class="content-block">
+          <h2 class="content-block-title">Metropolitan Programming Club (MPC)</h2>
+          <p>
+            Established in 1998, MPC is one of the nation's most active collegiate competitive programming and software development societies.
+          </p>
+          <ul class="checklist">
+            <li><strong>Core Activities:</strong> ICPC programming bootcamps, weekly algorithm mock contests on Codeforces/LeetCode, and open-source GitHub project sprints.</li>
+            <li><strong>Flagship Event:</strong> "MetroHacks" &ndash; an annual 48-hour national hackathon with $15,000 in prizes and direct recruiting from Fortune 500 tech companies.</li>
+            <li><strong>Meeting Schedule:</strong> Every Wednesday at 5:00 PM in Alan Turing Computer Lab 3.</li>
+            <li><strong>Faculty Advisor:</strong> Dr. Alan Vance, Associate Professor of Computer Science.</li>
+          </ul>
+        </section>
+
+        <!-- 3. Robotics Club In-Depth -->
+        <section id="robotics" class="content-block">
+          <h2 class="content-block-title">Metropolitan Robotics Club (MRC)</h2>
+          <p>
+            MRC brings together electrical, mechanical, and software engineers to prototype autonomous vehicles, aerial drones, and bio-inspired robotics.
+          </p>
+          <ul class="checklist">
+            <li><strong>Core Activities:</strong> Autonomous navigation (ROS2), PCB micro-soldering workshops, 3D additive manufacturing, and computer vision integration.</li>
+            <li><strong>Flagship Event:</strong> National University Rover Challenge (URC) &amp; Annual BattleBots Arena.</li>
+            <li><strong>Meeting Schedule:</strong> Every Tuesday &amp; Thursday at 4:30 PM in the Mechatronics Fabrication Lab.</li>
+            <li><strong>Faculty Advisor:</strong> Prof. Sarah Jensen, Department of Electrical Engineering.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Science Club In-Depth -->
+        <section id="science" class="content-block">
+          <h2 class="content-block-title">Metropolitan Science Club (MSC)</h2>
+          <p>
+            Dedicated to popularizing scientific curiosity, astrophysics, applied biotechnology, and environmental sustainability among undergraduates.
+          </p>
+          <ul class="checklist">
+            <li><strong>Core Activities:</strong> Telescopic astronomy observation nights, science journalism publications, laboratory demonstration exhibits, and scientific paper reading circles.</li>
+            <li><strong>Flagship Event:</strong> National Collegiate Science Olympiad and Youth Climate Innovation Summit.</li>
+            <li><strong>Meeting Schedule:</strong> Every Monday at 4:00 PM in the Science Quad Seminar Room 102.</li>
+            <li><strong>Faculty Advisor:</strong> Dr. Marcus Thorne, Professor of Physics &amp; Materials Science.</li>
+          </ul>
+        </section>
+
+        <!-- 5. Business Club In-Depth -->
+        <section id="business" class="content-block">
+          <h2 class="content-block-title">Metropolitan Business Club (MBC)</h2>
+          <p>
+            The premier incubator for aspiring corporate leaders, venture capitalists, marketing strategists, and ethical startup founders.
+          </p>
+          <ul class="checklist">
+            <li><strong>Core Activities:</strong> Harvard case-competition simulations, equity portfolio pitch decks, corporate boardroom visits, and CEO fireside chats.</li>
+            <li><strong>Flagship Event:</strong> "VentureQuest" &ndash; Annual Angel Pitch Competition awarding seed capital to viable student-founded ventures.</li>
+            <li><strong>Meeting Schedule:</strong> Every Thursday at 5:30 PM in the Executive MBA Boardroom.</li>
+            <li><strong>Faculty Advisor:</strong> Prof. Eleanor Brooks, Chair of Entrepreneurial Studies.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Club Registration & Membership Instructions -->
+        <section id="registration" class="content-block">
+          <h2 class="content-block-title">Club Membership &amp; Registration Instructions</h2>
+          <p>Any active university undergraduate or graduate student may register for up to three chartered clubs:</p>
+          <ol class="ordered-steps">
+            <li><strong>Browse Club Catalog:</strong> Review the active club directory and identify societies aligned with your career or personal passions.</li>
+            <li><strong>Club Fair Enrollment:</strong> Sign up during the bi-annual Club Fair held in the Central Quad during the second week of each semester.</li>
+            <li><strong>Membership Profile:</strong> Complete the digital registration form with your Student ID number. No membership dues are required; all club activities are fully subsidized by the student activity fund.</li>
+            <li><strong>Attend General Body Meeting (GBM):</strong> Join the semester kick-off orientation meeting to meet executive committee leads and pick project teams.</li>
+          </ol>
+        </section>
+
+        <!-- 7. Executive Leadership & Contact -->
+        <section id="contact" class="content-block">
+          <h2 class="content-block-title">Office of Student Affairs</h2>
+          <div class="contact-details-box">
+            <p><strong>Office Location:</strong> Student Union Building, 2nd Floor, Room 215</p>
+            <p><strong>Clubs Coordinator Email:</strong> studentclubs@metropolitan.edu</p>
+            <p><strong>Telephone:</strong> +1 (800) 555-METRO ext. 701</p>
+            <p><strong>Open Hours:</strong> Sunday &ndash; Thursday, 9:00 AM &ndash; 5:00 PM</p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky-sidebar">
+          
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Clubs Fast Facts</h3>
+            <div class="sidebar-info-row">
+              <strong>Chartered Clubs:</strong>
+              <span>32 Societies</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Active Members:</strong>
+              <span>6,500+ Students</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Annual Hackathons:</strong>
+              <span>8 National Events</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Funding Pool:</strong>
+              <span>$250,000 / Year</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>Membership Fee:</strong>
+              <span>100% Free</span>
+            </div>
+
+            <div class="footer-cta-box">
+              <a href="#registration" class="btn btn-primary btn-block">Register for a Club</a>
+              <a href="#programming" class="btn btn-secondary btn-block mt-xs">Explore MPC</a>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">Upcoming Club Events</h3>
+            <div class="sidebar-info-row">
+              <strong>MetroHacks 2026:</strong>
+              <span>March 14 &ndash; 16</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>RoboWars Arena:</strong>
+              <span>April 02</span>
+            </div>
+            <div class="sidebar-info-row">
+              <strong>VentureQuest Pitch:</strong>
+              <span>April 24</span>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <h3 class="footer-col-title">Metropolitan Student Societies</h3>
+          <p class="footer-about-text">
+            Fostering student leadership, technical problem solving, teamwork, and entrepreneurial innovation.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Featured Clubs</h3>
+          <ul class="footer-links-list">
+            <li><a href="#programming">Programming Club</a></li>
+            <li><a href="#robotics">Robotics Club</a></li>
+            <li><a href="#science">Science Club</a></li>
+            <li><a href="#business">Business Club</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Campus Life</h3>
+          <ul class="footer-links-list">
+            <li><a href="sports.html">Athletics &amp; Sports</a></li>
+            <li><a href="cultural.html">Cultural Activities</a></li>
+            <li><a href="library.html">Central Library</a></li>
+            <li><a href="index.html">University Home</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Student Affairs</h3>
+          <div class="footer-contact-item">
+            <strong>Email:</strong>
+            <span>studentclubs@metropolitan.edu</span>
+          </div>
+          <div class="footer-contact-item">
+            <strong>Hotline:</strong>
+            <span>+1 (800) 555-METRO ext. 701</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metropolitan University of Excellence. Designed with pure HTML5 and CSS3.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="index.html">Back to Home</a></li>
+          <li><a href="#overview">Top of Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
