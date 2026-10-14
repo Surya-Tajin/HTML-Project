@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif, 'Arial Narrow', Arial;
+    background-color: #afc8e8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator {
+    background-color: rgb(243, 158, 158);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #10243a;
+    margin-bottom: 12px;
+}
+
+.calculator > p {
+    text-align: center;
+    color: #332e2e;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #10243a;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background-color: #7c0d25;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6e0836;
+}
+
+.result {
+    margin-top: 22px;
+    padding: 15px;
+    background-color: #06192e;
+    color: rgb(179, 100, 100);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+}
+
+#out {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

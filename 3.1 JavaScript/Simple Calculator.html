@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="calculator">
+        <h1>Simple Calculator</h1>
+        <p>Enter two numbers and select an operator.</p>
+
+        <label for="a">First Number</label>
+        <input type="number" id="a" placeholder="Enter first number">
+
+        <label for="b">Second Number</label>
+        <input type="number" id="b" placeholder="Enter second number">
+
+        <label for="op">Select Operator</label>
+        <select id="op">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+        </select>
+
+        <button id="go" type="button">Calculate</button>
+
+        <section class="result">
+            <h2>Result</h2>
+            <p id="out" aria-live="polite">Your result will appear here.</p>
+        </section>
+    </main>
+
+</body>
+</html>
