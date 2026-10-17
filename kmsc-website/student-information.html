@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Information | Karatoa Multimedia School &amp; College</title>
+<meta name="description" content="Karatoa Multimedia School &amp; College (KMSC), Bogura, Bangladesh.">
+<!-- Colors, fonts and spacing live in assets/css/style.css (see :root). Responsive rules are in responsive.css. -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- TOP CONTACT BAR: replace with the official phone, email and address from the college. -->
+<div class="topbar"><div class="container"><span>Phone: [Add official phone]</span><span>Email: [Add official email]</span><span>Bogura, Bangladesh</span></div></div>
+<header class="site-header">
+<div class="container header-main">
+<!-- LOGO + NAME: replace assets/images/logo.svg with the official logo (e.g. logo.png) and update the src. -->
+<a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="KMSC logo"><span><strong>করতোয়া মাল্টিমিডিয়া স্কুল এন্ড কলেজ</strong><span>Karatoa Multimedia School &amp; College, Bogura</span></span></a>
+<!-- SEARCH: GET form. Set action to a real search endpoint (e.g. a Google site-search URL). Without one it only reloads the page. -->
+<form class="search-form" role="search" action="notices.html" method="get"><label class="skip-link" for="q">Search</label><input id="q" type="search" name="q" placeholder="Search..."><button type="submit">Search</button></form>
+<a class="btn btn-accent" href="admission.html">Admission</a>
+</div>
+<!-- MAIN NAVIGATION: edit links here. Dropdowns open with CSS hover/focus (no JavaScript). -->
+<nav class="main-nav" aria-label="Main navigation"><div class="container"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a><ul class="dropdown"><li><a href="about.html">About the College</a></li><li><a href="mission-vision.html">Mission & Vision</a></li><li><a href="administration.html">Administration</a></li><li><a href="teachers.html">Teachers & Staff</a></li></ul></li>
+<li><a href="departments.html">Academics</a><ul class="dropdown"><li><a href="departments.html">Departments</a></li><li><a href="routine.html">Class Routine</a></li><li><a href="academic-calendar.html">Academic Calendar</a></li><li><a href="facilities.html">Facilities</a></li></ul></li>
+<li><a href="admission.html">Admission</a></li>
+<li><a href="notices.html">Notices</a><ul class="dropdown"><li><a href="notices.html">Notice Board</a></li><li><a href="notice-details.html">Notice Details</a></li></ul></li>
+<li><a href="results.html">Results</a><ul class="dropdown"><li><a href="results.html">Results</a></li><li><a href="student-information.html">Student Information</a></li></ul></li>
+<li><a href="gallery.html">Media</a><ul class="dropdown"><li><a href="gallery.html">Photo Gallery</a></li><li><a href="videos.html">Videos</a></li><li><a href="events.html">News & Events</a></li><li><a href="achievements.html">Achievements</a></li></ul></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div></nav>
+<!-- NOTICE TICKER: replace with a verified official announcement. -->
+<div class="ticker" role="region" aria-label="Announcements"><p>Sample announcement: replace this text with the latest verified notice from the college office.</p></div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container"><p class="breadcrumb"><a href="index.html">Home</a> / Student Information</p><h1>Student Information</h1></div></section>
+<section class="section"><div class="container"><h2>Student Information (Demo Layout)</h2><p class="sample">Demo only. Never publish private student data without authorization.</p><form class="form" action="#" method="post"><!-- Set action to a real form service/backend URL to receive submissions. --><div class="form-row"><div><label for="cls">Class</label><select id="cls" name="cls" required><option value="">Select</option><option>Six</option><option>Seven</option><option>Eight</option><option>Nine</option><option>Ten</option><option>XI</option><option>XII</option></select></div><div><label for="ses">Academic session</label><input id="ses" name="ses" type="text" required placeholder="e.g. 2026" maxlength="9"></div><div><label for="exam">Examination</label><select id="exam" name="exam" required><option value="">Select</option><option>Half-yearly</option><option>Annual</option><option>Test</option></select></div><div><label for="grp">Group</label><select id="grp" name="grp" required><option value="">Select</option><option>Science</option><option>Humanities</option><option>Business Studies</option></select></div><div><label for="roll">Roll number</label><input id="roll" name="roll" type="text" required pattern="[0-9]{1,8}" maxlength="8"></div></div><div><button class="btn btn-primary" type="submit">Submit</button> <button class="btn btn-outline" type="reset">Reset</button></div></form></div></section>
+</main>
+<!-- FOOTER: update the college contact information and useful links here. -->
+<footer class="site-footer"><div class="container grid">
+<div><h3>KMSC</h3><p>Karatoa Multimedia School &amp; College<br>Bogura, Bangladesh<br>[Add full official address]</p></div>
+<div><h3>Useful Links</h3><ul><li><a href="admission.html">Admission</a></li><li><a href="notices.html">Notices</a></li><li><a href="routine.html">Class Routine</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+<div><h3>Follow Us</h3><!-- Replace # with official social media URLs. --><ul><li><a href="#">Facebook</a></li><li><a href="#">YouTube</a></li><li><a href="https://kmsc.edu.bd/">Official website</a></li></ul></div>
+</div><p class="copyright">&copy; Karatoa Multimedia School &amp; College. Sample redesign; verify all content before publishing.</p></footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* ===== 1. CSS VARIABLES: change these to restyle the whole site ===== */
+:root{
+  --primary-color:#142B55;   /* Deep navy */
+  --secondary-color:#2563EB; /* Royal blue */
+  --accent-color:#F2B544;    /* Golden yellow */
+  --background-color:#F7F9FC;
+  --card-color:#FFFFFF;
+  --text-color:#1F2937;
+  --muted-color:#5B6472;
+  --font-main:"Segoe UI","Noto Sans Bengali",Tahoma,Arial,sans-serif;
+  --radius:12px;
+  --shadow:0 4px 14px rgba(20,43,85,.12);
+  --space:1.25rem;
+  --max-width:1180px;
+}
+/* ===== 2. GLOBAL RESET ===== */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-main);color:var(--text-color);background:var(--background-color);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:var(--secondary-color)}
+ul{padding-left:1.2rem}
+.container{width:min(100% - 2rem,var(--max-width));margin-inline:auto}
+.skip-link{position:absolute;left:-999px;background:var(--accent-color);color:#000;padding:.5rem 1rem;z-index:99}
+.skip-link:focus{left:0}
+/* ===== 3. TYPOGRAPHY ===== */
+h1,h2,h3{color:var(--primary-color);line-height:1.25}
+h2{font-size:1.8rem;margin:0 0 .5rem}
+.section{padding:3rem 0}
+.section.alt{background:#EDF1F8}
+.section-intro{color:var(--muted-color);max-width:60ch;margin-bottom:1.5rem}
+.sample{font-size:.85rem;background:#FFF6DD;border-left:4px solid var(--accent-color);padding:.5rem .8rem;border-radius:6px}
+/* ===== 4. HEADER AND NAVIGATION ===== */
+.topbar{background:var(--primary-color);color:#fff;font-size:.85rem}
+.topbar .container{display:flex;flex-wrap:wrap;gap:.3rem 1.5rem;justify-content:space-between;padding:.4rem 0}
+.site-header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:var(--shadow)} /* sticky header */
+.header-main{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;padding:.6rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--primary-color)}
+.brand img{width:56px;height:56px}
+.brand strong{display:block;font-size:1.05rem}
+.brand span{font-size:.8rem;color:var(--muted-color)}
+.search-form{display:flex;margin-left:auto}
+.search-form input{padding:.5rem .7rem;border:1px solid #b8c2d4;border-radius:8px 0 0 8px;min-width:150px}
+.search-form button{border:0;background:var(--primary-color);color:#fff;padding:.5rem .9rem;border-radius:0 8px 8px 0;cursor:pointer}
+.main-nav{background:var(--primary-color)}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+.main-nav li{position:relative}
+.main-nav a{display:block;padding:.75rem 1rem;color:#fff;text-decoration:none;font-weight:600}
+.main-nav a:hover,.main-nav a:focus{background:var(--secondary-color)}
+/* ===== 5. CSS-ONLY DROPDOWN MENU ===== */
+.dropdown{display:none;position:absolute;left:0;top:100%;min-width:220px;background:#fff;box-shadow:var(--shadow);border-top:3px solid var(--accent-color);z-index:60}
+.dropdown a{color:var(--text-color);font-weight:500}
+.dropdown a:hover,.dropdown a:focus{background:#EDF1F8;color:var(--primary-color)}
+.main-nav li:hover>.dropdown,.main-nav li:focus-within>.dropdown{display:block}
+/* Notice ticker (CSS animation) */
+.ticker{background:var(--accent-color);color:#1b1b1b;overflow:hidden;white-space:nowrap}
+.ticker p{display:inline-block;margin:0;padding:.4rem 0 .4rem 100%;animation:scroll 30s linear infinite;font-weight:600}
+.ticker:hover p{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker{white-space:normal}.ticker p{animation:none;padding:.4rem 1rem}*{transition:none!important}}
+/* ===== 6. HERO SECTION: edit background image, height, spacing here ===== */
+.hero{min-height:440px;display:flex;align-items:center;color:#fff;
+  background:linear-gradient(rgba(20,43,85,.78),rgba(20,43,85,.78)),url("../images/hero/hero.jpg") center/cover,var(--primary-color)}
+.hero h1{color:#fff;font-size:2.6rem;margin:0 0 .5rem}
+.hero p{max-width:60ch;font-size:1.1rem}
+.page-banner{background:var(--primary-color);color:#fff;padding:2rem 0}
+.page-banner h1{color:#fff;margin:0}
+.breadcrumb{font-size:.85rem;color:#cfd8ea}.breadcrumb a{color:var(--accent-color)}
+/* ===== 7. BUTTONS AND LINKS ===== */
+.btn{display:inline-block;padding:.7rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn-accent{background:var(--accent-color);color:#1b1b1b}
+.btn-primary{background:var(--secondary-color);color:#fff}
+.btn-outline{border-color:#fff;color:#fff}
+.btn-small{padding:.35rem .9rem;font-size:.85rem}
+/* ===== 8. QUICK-ACCESS CARDS AND GENERIC CARDS ===== */
+.grid{display:grid;gap:var(--space);grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card-color);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.25rem;border-top:4px solid var(--accent-color)}
+.card h3{margin-top:0}
+.quick a{display:block;text-align:center;text-decoration:none;font-weight:700;color:var(--primary-color)}
+.stat{font-size:1.4rem;font-weight:800;color:var(--secondary-color)}
+/* ===== 9. ACADEMIC SECTIONS ===== */
+.two-col{display:grid;gap:2rem;grid-template-columns:1fr 1fr;align-items:center}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:var(--shadow)}
+th,td{border:1px solid #d5dbe7;padding:.6rem;text-align:left}
+th{background:var(--primary-color);color:#fff}
+/* ===== 10. TEACHER PROFILES ===== */
+.profile{text-align:center}
+.profile img{width:130px;height:130px;object-fit:cover;border-radius:50%;margin:0 auto 1rem;border:4px solid var(--accent-color)}
+/* ===== 11. NOTICES ===== */
+.notice{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;justify-content:space-between;background:#fff;border-left:5px solid var(--secondary-color);padding:.9rem 1rem;margin-bottom:.8rem;border-radius:8px;box-shadow:var(--shadow)}
+.notice h3{margin:0;font-size:1.05rem}
+.tag{display:inline-block;background:#E5ECFB;color:var(--primary-color);font-size:.75rem;padding:.1rem .6rem;border-radius:999px;font-weight:700}
+.tag.important{background:#FDE2E2;color:#9b1c1c}
+/* ===== 12. FORMS ===== */
+form.form{background:#fff;padding:1.5rem;border-radius:var(--radius);box-shadow:var(--shadow);display:grid;gap:1rem}
+label{font-weight:600;display:block;margin-bottom:.25rem}
+input,select,textarea{width:100%;padding:.6rem;border:1px solid #b8c2d4;border-radius:8px;font:inherit}
+input:focus,select:focus,textarea:focus,a:focus,summary:focus,button:focus{outline:3px solid var(--accent-color);outline-offset:2px}
+.form-row{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+/* ===== 13. CALENDAR ===== */
+.event-date{display:inline-block;background:var(--primary-color);color:var(--accent-color);padding:.3rem .7rem;border-radius:8px;font-weight:700}
+/* ===== 14. GALLERY (CSS-only lightbox using :target) ===== */
+.gallery{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.gallery figure{margin:0;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);background:#fff}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .3s}
+.gallery a:hover img{transform:scale(1.07)}
+.gallery figcaption{padding:.5rem .8rem;font-size:.9rem}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;align-items:center;justify-content:center;flex-direction:column;color:#fff;padding:1rem}
+.lightbox:target{display:flex}
+.lightbox img{max-height:80vh;width:auto}
+.lightbox a{color:var(--accent-color);font-weight:700;margin-top:1rem}
+video{width:100%;border-radius:var(--radius);background:#000}
+/* ===== 15. NEWS AND EVENTS ===== */
+.news img{border-radius:8px;margin-bottom:.8rem}
+/* ===== 16. FAQ ===== */
+details{background:#fff;border-radius:8px;box-shadow:var(--shadow);margin-bottom:.7rem;padding:.8rem 1rem}
+summary{cursor:pointer;font-weight:700;color:var(--primary-color)}
+/* ===== 17. CONTACT SECTION ===== */
+.contact-list{list-style:none;padding:0}
+/* ===== 18. FOOTER ===== */
+.site-footer{background:var(--primary-color);color:#dbe4f3;padding:2.5rem 0 1rem;margin-top:0}
+.site-footer h3{color:var(--accent-color)}
+.site-footer a{color:#fff}
+.copyright{border-top:1px solid rgba(255,255,255,.2);margin-top:1.5rem;padding-top:1rem;font-size:.85rem;text-align:center}
+/* ===== 19. HOVER EFFECTS AND TRANSITIONS ===== */
+.card,.btn{transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px)}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+/* ===== 21. PRINT STYLES (notices and routine) ===== */
+@media print{.topbar,.ticker,.main-nav,.search-form,.site-footer,.btn,.no-print{display:none!important}
+.site-header{position:static;box-shadow:none}body{background:#fff}}
